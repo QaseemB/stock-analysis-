@@ -1,0 +1,20 @@
+{
+  "name": "stockmarket",
+  "version": "1.0.0",
+  "main": "Server/src/server.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Server": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.0",
+    "request-promise-native": "^1.0.9"
+  }
+}
