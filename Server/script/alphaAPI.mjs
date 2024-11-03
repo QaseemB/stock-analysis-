@@ -1,18 +1,27 @@
 import dotenv from  'dotenv';
 import axios from 'axios';
 import request from 'request-promise-native'; 
+import { Stock } from '../src/models/StockSchema.mjs';
 
 dotenv.config();
 
-const APIKEY = process.env.API_KEY
+// const APIKEY = process.env.API_KEY
 
-// Function to fetch stock data
+// Function to delay execution
+const delay = (ms) => new  Promise(resolve => setTimeout(resolve, ms));
+
+// Function to fetch stock data with rate limiting
 export const fetchStockData = async (symbol) => {
  const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&interval=5min&apikey=${APIKEY}`;
+
   try  {  
+    //fetch stock data
  const response = await axios.get(url);
- console.log(response.status);
+ if (response.status !== 200) throw new  Error('API Error: ${response.status');
+
+
  const stockData = response.data['Global Quote'];
+// console.log(stockData)
 
  const processedData = {
     symbol: stockData['01. symbol'],  // Using '01. symbol' to access the symbol
@@ -25,23 +34,42 @@ export const fetchStockData = async (symbol) => {
     change: parseFloat(stockData['09. change']),
     changePercent: stockData['10. change percent']
 };
-return processedData;
+console.log('processed Data:', processedData);
+
+ // Check if stock with the same symbol and trading day already exists
+
+const existingStock = await Stock.findOne({
+  symbol: processedData.symbol,
+  tradingDay: processedData.tradingDay
+});
+
+if(existingStock){
+        console.log('Stock Already exist with the same tradign day:', existingStock)
+        await Stock.updateOne({ _id: existingStock._id }, processedData);
+            console.log('Stock data updated in MongoDB');
+    } else {
+    // If the stock does not exist, create a new stock instance
+   const  stock = new Stock(processedData);
+   // save to MongoDB
+  await stock.save()
+  console.log('stock saved to MongoDB');
+}
+  return processedData;
+
   }catch(error){
     console.error('error fetching stock data', error)
   }
-// request.get({
-//     url: url,
-//     json: true,
-//     headers: {'User-Agent': 'request'}
-//   }, (err, res, data) => {
-//     if (err) {
-//       console.log('Error:', err);
-//     } else if (res.statusCode !== 200) {
-//       console.log('Status:', res.statusCode);
-//     } else {
-//       // data is successfully parsed as a JSON object:
-//       console.log(data);
-//     }
-// });
+   return processedData;
 };
+
+const  fetchStockDataWithRateLimiting = async (symbols) => {
+  for (const symbol of  symbols) {
+    await fetchStockData(symbol);
+    // delay for 15 seconds to comply with 5 requests per minute
+    await delay(15000);
+  }
+};
+
+const stockSymbols =  ['AAPL', 'GOOG', 'MSFT', 'AMZN', 'META', 'IBM'];
+// fetchStockDataWithRateLimiting(stockSymbols);
 

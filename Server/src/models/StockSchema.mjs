@@ -1,7 +1,10 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const stockSchema = new mongoose.Schema({
-    symbol: String,
+    symbol:{
+        type:  String,
+        required: true,
+    },
     open: Number,
     high: Number,
     low: Number,
@@ -9,14 +12,10 @@ const stockSchema = new mongoose.Schema({
     volume: Number,
     tradingDay: String,
     change: Number,
-    changePercent: String
-});
+    changePercent: String,
+},{timestamps: true});
 
-const Stock = mongoose.model('Stock', stockSchema);
+stockSchema.index({ symbol: 1, tradingDay: 1 }, { unique: true });
 
-async function saveStockData(stock) {
-    const newStock = new Stock(stock);
-    await newStock.save();
-}
+export const Stock = mongoose.model('Stock', stockSchema);
 
-module.exports = { saveStockData };
