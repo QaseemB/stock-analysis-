@@ -5,7 +5,7 @@ dotenv.config();
 const app = express();
 import connectDB from './utilities/connectDB.mjs';
 import { fetchStockData } from '../script/alphaAPI.mjs';
-import { fetchAndUpdateStock} from '../script/updateHistory.mjs';
+import {fetchAndUpdateStock}  from '../script/updateHistory.mjs';
 import { fetchHistoryStock } from '../script/stockHistory.mjs';
 
 

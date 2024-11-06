@@ -1,12 +1,15 @@
 import dotenv from  'dotenv';
 import axios from 'axios';
 import { HistoricalStock } from '../src/models/HistoricalSchema.mjs';
+import cron from 'node-cron';
+import { logger } from '../src/utilities/logger.mjs';
+
 
 
 
 dotenv.config();
 
-// const APIKEY = process.env.API_KEY
+const APIKEY = process.env.API_KEY
 
 // Function to delay execution
 const delay = (ms) => new  Promise(resolve => setTimeout(resolve, ms));
@@ -74,13 +77,18 @@ export const fetchAndUpdateStock = async  (symbol) => {
 
 const  updateStockDataWithRateLimiting = async (symbols) => {
   for (const symbol of  symbols) {
-    await fetchHistoryStock(symbol);
+    await fetchAndUpdateStock(symbol);
     // delay for 15 seconds to comply with 5 requests per minute
     await delay(15000);
   }
 };
 
-const stockSymbols =  ['AAPL', 'GOOG', 'MSFT', 'AMZN', 'META', 'IBM',"TSLA"];
+cron.schedule('0 0 1,31 * *', () => {
+  console.log('Running scheduled stock data update....');
+  const stockSymbols =  ['AAPL', 'GOOG', 'MSFT', 'AMZN', 'META', 'IBM',"TSLA"];
+  updateStockDataWithRateLimiting(stockSymbols);
+});
+
 
 
 // updateStockDataWithRateLimiting(stockSymbols)
