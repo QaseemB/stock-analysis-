@@ -34,6 +34,7 @@ export const fetchAndUpdateStock = async  (symbol) => {
         const monthlyData = [];
         const monthlyTimeSeries =  historyData['Monthly Time Series'];
         const latestDate = Object.keys(monthlyTimeSeries)[0];
+        logger.info(`Fetched data for ${symbol}, last refreshed on ${lastRefreshed}`)
 
         // Check if the latest month is already in the database
         const existingEntry = await HistoricalStock.findOne({
@@ -42,7 +43,7 @@ export const fetchAndUpdateStock = async  (symbol) => {
         });
 
            if (existingEntry) {
-            console.log(`Data for ${symbol} up to ${latestDate} already exists. Skipping update.`);
+             logger.info(`Data for ${symbol} up to ${latestDate} already exists. Skipping update.`);
             return; // Skip if the latest month is already present
         }
 
@@ -68,10 +69,10 @@ export const fetchAndUpdateStock = async  (symbol) => {
             { upsert: true } // Create the document if it does not exist
         );
 
-        console.log('New data for ', symbol, 'up to', latestDate, 'has been added to the database.');
+         logger.info(`New data for ${symbol} up to ${latestDate} has been added to the database.`);
 
      }catch(error){
-    console.error('error fetching stock data', error)
+    logger.error(`Error fetching data for ${symbol}: ${error.message}`);
   }
 }
 

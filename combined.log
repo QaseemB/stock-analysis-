@@ -1,0 +1,2 @@
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-11-05","service":"user-service","timestamp":"2024-11-06T04:40:31.528Z"}
+{"level":"info","message":"Data for TSLA up to 2024-11-05 already exists. Skipping update.","service":"user-service","timestamp":"2024-11-06T04:40:31.799Z"}
