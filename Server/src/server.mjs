@@ -9,9 +9,14 @@ import { fetchHistoryStock } from '../script/stockHistory.mjs';
 import { fetchCrypto } from '../script/Cryptofetch.mjs';
 import {exec} from 'child_process';
 import { logger } from '../src/utilities/logger.mjs';
+import {router as stockRoute} from './routes/pythonAnalystRoute.mjs';
 
 
 const app = express();
+
+
+// Middleware (if any)
+app.use(express.json());
 
 
 // Connect to MongoDB
@@ -37,18 +42,8 @@ app.get('/', (req, res) => {
   res.send('Hello, world!');
 });
 
-app.get('/api/stock-analysis', (req, res) => {
-    exec('python3 history_analysis.py',{cwd: '/Users/qaseembarnhardt/Desktop/CODING/StockMarket/python'}, (error, stdout, stderr) => {
-      if (error) {
-        logger.error(`${error}`)
-        logger.error(`atderr: ${stderr}`)
-        logger.error(`stdout ${stdout}`)
-       return res.status(500).send({ message: 'python script execution failed' });
-      }
-       // Send the analysis result back to React (e.g., JSON or path to image)
-        res.json({ data: stdout });
-    })
-});
+app.use('/api', stockRoute);
+
 
 // Start the server on the specified port, defaulting to 3030
 const PORT = process.env.PORT ;

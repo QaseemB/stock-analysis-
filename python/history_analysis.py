@@ -90,7 +90,7 @@ def analyze_stock(symbol):
     plt.legend(loc='upper left', fontsize=12)
     # Show the plot
     plt.tight_layout()  # Adjust layout for better fit
-    plt.show()
+    # plt.show()
 
     # Plot volume data if available
     if 'volume' in df.columns:
@@ -99,7 +99,7 @@ def analyze_stock(symbol):
         plt.title(f"{symbol} Trading Volume")
         plt.xlabel("Date")
         plt.ylabel("Volume")
-        plt.show()
+        # plt.show()
 
     # Plot MACD
     plt.figure(figsize=(14, 5))
@@ -109,7 +109,7 @@ def analyze_stock(symbol):
     plt.xlabel("Date")
     plt.ylabel("MACD Value")
     plt.legend()
-    plt.show()
+    # plt.show()
 
     # Interactive plot using Plotly
     fig = px.line(df, x=df.index, y=["close", "moving_avg_3", "moving_avg_6", "upper_band", "lower_band"],
@@ -140,15 +140,11 @@ def generate_plots(symbol, df):
     plt.grid(True)
     plt.tight_layout()
 
-    # Save the plot as an image
-    plot_filename = f"{symbol}_bollinger_plot.png"
+    # Define plot filename path in the 'stockreport' folder
+    plot_filename = os.path.join('stockreport', f"{symbol}_bollinger_plot.png")
     try:
         plt.savefig(plot_filename)
         print(f"Plot saved as {plot_filename}")
-        if os.path.exists(plot_filename):
-            print(f"File {plot_filename} successfully saved.")
-        else:
-            print(f"Failed to save {plot_filename}.")
     except Exception as e:
         print(f"Error saving plot: {e}")
 
@@ -169,18 +165,16 @@ def create_pdf_report(symbol, df):
         plot_path = generate_plots(symbol, df)
         
         # Define the PDF file path (in the 'reports' folder)
-        pdf_filename = os.path.join(stockReports_folder),f"{symbol}_stock_report.pdf"
+        pdf_filename = os.path.join(stockReports_folder, f"{symbol}_stock_report.pdf")
 
-        # Create the PDF
+
+    
         c = canvas.Canvas(pdf_filename, pagesize=letter)
         c.drawString(100, 750, f"{symbol} Stock Analysis Report")
         
-        # Add plot image if it exists
-        if os.path.exists(plot_path):
-            c.drawImage(plot_path, 50, 400, width=500, height=300)
-        else:
-            print(f"Plot file {plot_path} not found. Skipping image.")
-            
+        # Add plot image
+        c.drawImage(plot_path, 50, 400, width=500, height=300)
+        
         # Add summary statistics
         stats = df.describe().to_string()
         text_object = c.beginText(50, 350)
@@ -193,7 +187,9 @@ def create_pdf_report(symbol, df):
         print(f"PDF report for {symbol} saved as {pdf_filename}")
         
         # Clean up the image file
-        os.remove(plot_path)
+        if os.path.exists(plot_path):
+            os.remove(plot_path)
+
 
 
 if __name__ == "__main__":
