@@ -5,7 +5,7 @@ import logger from 'winston'; // Make sure to import a logger if you are using o
 export const pythonAnalyzeStock = (req, res) => {
     exec('python3 history_analysis.py', {
         cwd: '/Users/qaseembarnhardt/Desktop/CODING/StockMarket/python',  // Path to where your Python script is located
-        timeout: 20000  // Timeout set to 20 seconds
+        timeout: 60000  // Timeout set to 20 seconds
     }, (error, stdout, stderr) => {
         if (error) {
             logger.error(`Execution error: ${error}`);
