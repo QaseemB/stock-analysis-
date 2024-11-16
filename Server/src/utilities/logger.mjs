@@ -15,12 +15,12 @@ export const logger = createLogger({
 
     // Write all logs with importance level of `info` or higher to `combined.log`
     new transports.File({ filename: 'combined.log' }),
+
+    // Add console transport for non-production environments
+    ...(process.env.NODE_ENV !== 'production' ? [
+      new transports.Console({
+        format: format.simple(),
+      })
+    ] : []),
   ],
 });
-
-// Log to the console in non-production environments
-if (process.env.NODE_ENV !== 'production') {
-  logger.add(new transports.Console({
-    format: format.simple(),
-  }));
-}
