@@ -141,8 +141,8 @@ def generate_plots(symbol, df):
     plt.tight_layout()
 
     # Save the plot as an image
+    plot_filename = f"{symbol}_bollinger_plot.png"
     try:
-        plot_filename = f"{symbol}_bollinger_plot.png"
         plt.savefig(plot_filename)
         print(f"Plot saved as {plot_filename}")
         if os.path.exists(plot_filename):
@@ -158,17 +158,29 @@ def generate_plots(symbol, df):
 
     # Function to create a PDF report with plots and statistics
 def create_pdf_report(symbol, df):
+        # Define the folder where the reports will be saved
+        stockReports_folder = 'stockreport'
+
+        # Create the folder if it doesn't exist
+        if not os.path.exists(stockReports_folder):
+            os.makedirs(stockReports_folder)
+
         # Generate the plot
         plot_path = generate_plots(symbol, df)
         
+        # Define the PDF file path (in the 'reports' folder)
+        pdf_filename = os.path.join(stockReports_folder),f"{symbol}_stock_report.pdf"
+
         # Create the PDF
-        pdf_filename = f"{symbol}_stock_report.pdf"
         c = canvas.Canvas(pdf_filename, pagesize=letter)
         c.drawString(100, 750, f"{symbol} Stock Analysis Report")
         
-        # Add plot image
-        c.drawImage(plot_path, 50, 400, width=500, height=300)
-        
+        # Add plot image if it exists
+        if os.path.exists(plot_path):
+            c.drawImage(plot_path, 50, 400, width=500, height=300)
+        else:
+            print(f"Plot file {plot_path} not found. Skipping image.")
+            
         # Add summary statistics
         stats = df.describe().to_string()
         text_object = c.beginText(50, 350)

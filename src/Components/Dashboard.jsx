@@ -13,6 +13,7 @@ export function Dashboard() {
 
         <div className='Profile'>
             <h2>Profile</h2>
+            <p>StockplaceHolder: random jargin</p>
         </div>
         </>
     )

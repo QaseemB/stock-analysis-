@@ -1,0 +1,14 @@
+{"level":"error","message":"Error; Error: Command failed: python3 history_analysis.py\npython3: can't open file '/Users/qaseembarnhardt/Desktop/CODING/StockMarket/history_analysis.py': [Errno 2] No such file or directory\n","service":"user-service","timestamp":"2024-11-16T18:35:48.962Z"}
+{"level":"error","message":"Error; Error: Command failed: python history_analysis.py\npython: can't open file '/Users/qaseembarnhardt/Desktop/CODING/StockMarket/history_analysis.py': [Errno 2] No such file or directory\n","service":"user-service","timestamp":"2024-11-16T18:36:18.359Z"}
+{"level":"error","message":"Error; Error: Command failed: python3 history_analysis.py\n","service":"user-service","timestamp":"2024-11-16T18:44:07.829Z"}
+{"level":"error","message":"Error; Error: Command failed: python history_analysis.py\n","service":"user-service","timestamp":"2024-11-16T18:44:31.720Z"}
+{"level":"error","message":"Error: Command failed: python3 history_analysis.py\n","service":"user-service","timestamp":"2024-11-16T18:46:05.787Z"}
+{"level":"error","message":"Error: Command failed: python3 history_analysis.py\n","service":"user-service","timestamp":"2024-11-16T18:50:57.317Z"}
+{"level":"error","message":"atderr: ","service":"user-service","timestamp":"2024-11-16T18:50:57.324Z"}
+{"level":"error","message":"stdout ","service":"user-service","timestamp":"2024-11-16T18:50:57.324Z"}
+{"level":"error","message":"Error: Command failed: python3 history_analysis.py\n","service":"user-service","timestamp":"2024-11-16T18:51:19.339Z"}
+{"level":"error","message":"atderr: ","service":"user-service","timestamp":"2024-11-16T18:51:19.342Z"}
+{"level":"error","message":"stdout ","service":"user-service","timestamp":"2024-11-16T18:51:19.342Z"}
+{"level":"error","message":"Error: Command failed: python3 history_analysis.py\n","service":"user-service","timestamp":"2024-11-16T18:52:53.769Z"}
+{"level":"error","message":"atderr: ","service":"user-service","timestamp":"2024-11-16T18:52:53.769Z"}
+{"level":"error","message":"stdout ","service":"user-service","timestamp":"2024-11-16T18:52:53.770Z"}
