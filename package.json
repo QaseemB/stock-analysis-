@@ -5,11 +5,8 @@
   "main": "Server/src/server.mjs",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "client": "npm run dev --prefix Client",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
     "Server": "nodemon"
   },
   "dependencies": {
