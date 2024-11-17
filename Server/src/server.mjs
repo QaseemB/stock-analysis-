@@ -9,7 +9,8 @@ import { fetchHistoryStock } from '../script/stockHistory.mjs';
 import { fetchCrypto } from '../script/Cryptofetch.mjs';
 import {exec} from 'child_process';
 import { logger } from '../src/utilities/logger.mjs';
-import {router as stockRoute} from './routes/pythonAnalystRoute.mjs';
+import {router as analyzeRoute} from './routes/pythonAnalystRoute.mjs';
+import {router as stockRoute} from './routes/StockHistoryRoute.mjs'
 
 
 const app = express();
@@ -41,6 +42,8 @@ app.use(logTime)
 app.get('/', (req, res) => {
   res.send('Hello, world!');
 });
+
+app.use('api',analyzeRoute)
 
 app.use('/api', stockRoute);
 
