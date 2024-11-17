@@ -96,7 +96,7 @@ def generate_plots(symbol, df):
     plot_paths = {}
 
     # Plot Close Price with Bollinger Bands
-    plt.figure(figsize=(14, 7))
+    plt.figure(figsize=(12, 6))
     plt.plot(df.index, df['close'], label='Close Price', color='blue')
     plt.plot(df.index, df['upper_band'], label='Upper Band', color='green', linestyle='--')
     plt.plot(df.index, df['lower_band'], label='Lower Band', color='red', linestyle='--')
@@ -117,7 +117,7 @@ def generate_plots(symbol, df):
     plt.close()
 
     # Plot MACD
-    plt.figure(figsize=(14, 5))
+    plt.figure(figsize=(10, 6))
     plt.plot(df.index, df['macd'], label="MACD", color="blue")
     plt.plot(df.index, df['signal_line'], label="Signal Line", color="red", linestyle="--")
     plt.title(f"{symbol} MACD Analysis")
@@ -135,7 +135,7 @@ def generate_plots(symbol, df):
 
     # Plot Trading Volume
     if 'volume' in df.columns:
-        plt.figure(figsize=(14, 3))
+        plt.figure(figsize=(12, 3))
         plt.bar(df.index, df['volume'], color='gray', alpha=0.5)
         plt.title(f"{symbol} Trading Volume")
         plt.xlabel("Date")
@@ -150,7 +150,7 @@ def generate_plots(symbol, df):
         plt.close()
 
     # Plot Moving Averages (3, 6, 12 months)
-    plt.figure(figsize=(14, 7))
+    plt.figure(figsize=(10, 6))
     plt.plot(df.index, df["close"], label="Close Price", color="blue")
     plt.plot(df.index, df["moving_avg_3"], label="3-Month Moving Average", linestyle="--", color="red")
     plt.plot(df.index, df["moving_avg_6"], label="6-Month Moving Average", linestyle="--", color="green")
@@ -191,11 +191,18 @@ def create_pdf_report(symbol, df):
     c.drawString(100, 750, f"{symbol} Stock Analysis Report")
     
     y_position = 650  # Starting Y position for content
+    margin_left = 50  # Left margin for content
+    margin_right = 550  # Right margin for content
     
     # Loop through the plot paths and add them to the PDF
     for plot_type, plot_path in plot_paths.items():
         if os.path.exists(plot_path):
-            c.drawImage(plot_path, 50, y_position, width=500, height=300)
+            if y_position < 100:  # Check if there is space for the next image
+                c.showPage()  # Start a new page if there isn't enough space
+                y_position = 650  # Reset Y position for the new page
+            
+            # Add the image to the PDF
+            c.drawImage(plot_path, margin_left, y_position, width=500, height=300)
             y_position -= 320  # Adjust for next plot
 
     # Add summary statistics

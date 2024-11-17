@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "client": "npm run dev --prefix Client",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
