@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 export const SideNav = (props) => {
@@ -9,7 +10,7 @@ export const SideNav = (props) => {
 return (
     <div className={`sideNav ${collapsed ? 'collapsed' : ''}`}>
         <button onClick={handleToggleSidebar}>Toggle sidebar</button>
-        <a href="test1">Stocks
+        <Link to="/Stocks">Stocks
             <label>
                 <select>
                     <option value="AAPL">Apple</option>
@@ -22,8 +23,8 @@ return (
                     
                 </select>
             </label>
-        </a>
-        <a href="test2">Crypto</a>
+        </Link>
+        <Link to="Crypto">Crypto</Link>
             <label>
                 <select>
                     <option value="BTC">Bitcoin</option>
@@ -35,7 +36,7 @@ return (
                     <option value="USDT">Tether</option>
                 </select>
             </label>
-        <a href="#">Contact</a>
+        <Link to="/Contact">Contact</Link>
     </div>
     );
 };

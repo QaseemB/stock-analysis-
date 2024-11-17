@@ -17,6 +17,16 @@
   width: 2%
 }
 
-.lineGraph{
-  margin-left: 10%;
+/* .lineGraph{
+   margin-left: 10%; 
+} */
+
+
+body{
+  background-color: grey;
+}
+
+.Container{
+  display: flex;
+  margin-left: 70%;
 }
