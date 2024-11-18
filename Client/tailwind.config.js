@@ -5,7 +5,11 @@ export default {
       'index.html',
       ],
   theme: {
-    extend: {},
+    extend: {
+      borderWidth:{
+        '20': '20%',
+      }
+    },
   },
   plugins: [],
 }

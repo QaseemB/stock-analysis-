@@ -1,6 +1,6 @@
 .sideNav{
   height: 100%;
-    width: 10%;
+    width: 15%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -12,9 +12,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* display: grid; */
+  
 }
 .sideNav.collapsed{
-  width: 2%
+  width: 10%
 }
 
 /* .lineGraph{

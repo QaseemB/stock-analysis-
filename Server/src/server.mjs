@@ -1,14 +1,9 @@
 import express from 'express';
-import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
 import connectDB from './utilities/connectDB.mjs';
-import { fetchStockData } from '../script/alphaAPI.mjs';
-import {fetchAndUpdateStock}  from '../script/updateHistory.mjs';
-import { fetchHistoryStock } from '../script/stockHistory.mjs';
-import { fetchCrypto } from '../script/Cryptofetch.mjs';
-import {exec} from 'child_process';
 import { logger } from '../src/utilities/logger.mjs';
+import cors from 'cors';
 import {router as analyzeRoute} from './routes/pythonAnalystRoute.mjs';
 import {router as stockRoute} from './routes/StockHistoryRoute.mjs'
 
@@ -16,16 +11,16 @@ import {router as stockRoute} from './routes/StockHistoryRoute.mjs'
 const app = express();
 
 
-// Middleware (if any)
+// Middleware 
 app.use(express.json());
+app.use(cors({
+  origin: '*',
+}))
 
 
 // Connect to MongoDB
 connectDB();
 
-// fetchHistoryStock('META')
-
-// fetchStockData('META')
 
 
 
