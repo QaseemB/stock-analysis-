@@ -1,27 +1,32 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-export const SideNav = (props) => {
+export const SideNav = ({ onStockSelect }) => {
   const [collapsed, setCollapsed] = useState(false);
-  const [showStockDropdown, setShowStockDropdown] = useState(false); // State for managing the dropdown visibility
-  const [showCryptoDropdown, setShowCryptoDropdown] = useState(false); // State for
+  const [showStockDropdown, setShowStockDropdown] = useState(false);
+  const [showCryptoDropdown, setShowCryptoDropdown] = useState(false);
+  const [selectedStock, setSelectedStock] = useState("AAPL"); // Default selected stock
 
-  const stockDropdownRef = useRef(null); // Reference for the stock dropdown
-  const cryptoDropdownRef = useRef(null); // Reference for the crypto dropdown
-
+  const stockDropdownRef = useRef(null);
+  const cryptoDropdownRef = useRef(null);
 
   function handleToggleSidebar() {
     setCollapsed(!collapsed);
   }
 
   function toggleStockDropdown() {
-    setShowStockDropdown(!showStockDropdown); // Toggle dropdown visibility when "Stocks" is clicked
-  }
-  function toggleCryptoDropdown() {
-    setShowCryptoDropdown(!showCryptoDropdown); // Toggle dropdown visibility when "Cryptok"
+    setShowStockDropdown(!showStockDropdown);
   }
 
-  // Close dropdown if click happens outside the dropdown
+  function toggleCryptoDropdown() {
+    setShowCryptoDropdown(!showCryptoDropdown);
+  }
+
+  function handleStockSelect(symbol) {
+    setSelectedStock(symbol); // Update selected stock
+    onStockSelect(symbol); // Pass the selected stock up to parent
+  }
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -36,37 +41,25 @@ export const SideNav = (props) => {
     };
 
     document.addEventListener("click", handleClickOutside);
-
-    // Clean up the event listener when component unmounts
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
   return (
-    <div className={`sideNav ${collapsed ? "collapsed" : ""}  `}>
-      <button
-        onClick={handleToggleSidebar}
-        className="bg-cyan-500 mb-6 hover:bg-sky-700 "
-      >
+    <div className={`sideNav ${collapsed ? "collapsed" : ""}`}>
+      <button onClick={handleToggleSidebar} className="bg-cyan-500 mb-6 hover:bg-sky-700">
         Toggle sidebar
       </button>
 
-      {/* Stocks link with a dropdown */}
-      <button
-        onClick={toggleStockDropdown}
-        className="bg-red-500 mb-4 hover:bg-red-700"
-      >
-        <Link to="/Stocks" className="text-center">
-          Stocks
-        </Link>
+      <button onClick={toggleStockDropdown} className="bg-red-500 mb-4 hover:bg-red-700">
+        <Link to="/Stocks" className="text-center">Stocks</Link>
       </button>
 
-      {/* Conditionally render the dropdown based on the state */}
       {showStockDropdown && (
         <div ref={stockDropdownRef} className="flex flex-col mb-6">
           <label>
-            <select>
+            <select onChange={(e) => handleStockSelect(e.target.value)}>
               <option value="AAPL">Apple</option>
               <option value="TSLA">Tesla</option>
               <option value="GOOG">Google</option>
@@ -79,19 +72,15 @@ export const SideNav = (props) => {
         </div>
       )}
 
-      {/* Crypto link with a dropdown */}
       <button onClick={toggleCryptoDropdown} className="bg-red-500 mb-2">
-        <Link to="/Crypto" className="text-center">
-          Crypto
-        </Link>
+        <Link to="/Crypto" className="text-center">Crypto</Link>
       </button>
-      {/* Conditionally render the dropdown based on the state */}
       {showCryptoDropdown && (
         <div ref={cryptoDropdownRef} className="flex flex-col mb-6">
           <label>
             <select>
               <option value="BTC">Bitcoin</option>
-              <option value="ETH">Etherum</option>
+              <option value="ETH">Ethereum</option>
               <option value="DOGE">DOGE</option>
               <option value="SHIB">Shiba-Inu</option>
               <option value="SOL">Solana</option>

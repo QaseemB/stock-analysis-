@@ -1,6 +1,7 @@
 import pandas as pd
 from pymongo import MongoClient
 import matplotlib.pyplot as plt
+import json
 from dotenv import load_dotenv
 import os
 import plotly.express as px
@@ -73,6 +74,30 @@ def analyze_stock(symbol):
     df['macd'] = df['ema12'] - df['ema26']
     df['signal_line'] = df['macd'].ewm(span=9, adjust=False).mean()
 
+    summary = {
+        "symbol": symbol,
+        "summary_stats": df.describe().to_dict(),
+        "moving_averages": {
+            "3_month": df["moving_avg_3"].dropna().to_dict(),
+            "6_month": df["moving_avg_6"].dropna().to_dict(),
+            "12_month": df["moving_avg_12"].dropna().to_dict()
+        },
+        "bollinger_bands": {
+            "upper_band": df["upper_band"].dropna().to_dict(),
+            "lower_band": df["lower_band"].dropna().to_dict()
+        },
+        "macd": {
+            "macd": df['macd'].dropna().to_dict(),
+            "signal_line": df['signal_line'].dropna().to_dict()
+        }
+    }
+    return summary
+
+if __name__ == "__main__":
+    symbol = "AAPL"
+    analysis_result = analyze_stock(symbol)
+    print(json.dumps(analysis_result))  # Output the result as JSON
+
 
 
     # Interactive plot using Plotly
@@ -85,7 +110,7 @@ def analyze_stock(symbol):
     print(f"Summary for {symbol}:")
     print(df.describe())
 
-    return df
+    # return df
 
 
         # Function to generate and save plots as images

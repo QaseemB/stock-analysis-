@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
   res.send('Hello, world!');
 });
 
-app.use('api',analyzeRoute)
+app.use('/api',analyzeRoute)
 
 app.use('/api', stockRoute);
 
