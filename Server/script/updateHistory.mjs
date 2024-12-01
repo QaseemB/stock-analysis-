@@ -84,9 +84,10 @@ const  updateStockDataWithRateLimiting = async (symbols) => {
   }
 };
 
+const stockSymbols =  ['AAPL', 'GOOG', 'MSFT', 'AMZN', 'META', 'IBM',"TSLA"];
+
 cron.schedule('0 0 1,31 * *', () => {
   console.log('Running scheduled stock data update....');
-  const stockSymbols =  ['AAPL', 'GOOG', 'MSFT', 'AMZN', 'META', 'IBM',"TSLA"];
   updateStockDataWithRateLimiting(stockSymbols);
 });
 

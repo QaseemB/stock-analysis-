@@ -17,3 +17,35 @@
 {"level":"error","message":"Error: Command failed: python3 history_analysis.py\n/Users/qaseembarnhardt/anaconda3/lib/python3.11/site-packages/_plotly_utils/basevalidators.py:106: FutureWarning: The behavior of DatetimeProperties.to_pydatetime is deprecated, in a future version this will return a Series containing python datetime objects instead of an ndarray. To retain the old behavior, call `np.array` on the result\n  v = v.dt.to_pydatetime()\n/Users/qaseembarnhardt/anaconda3/lib/python3.11/site-packages/_plotly_utils/basevalidators.py:106: FutureWarning:\n\nThe behavior of DatetimeProperties.to_pydatetime is deprecated, in a future version this will return a Series containing python datetime objects instead of an ndarray. To retain the old behavior, call `np.array` on the result\n\n","service":"user-service","timestamp":"2024-11-16T20:11:12.259Z"}
 {"level":"error","message":"atderr: /Users/qaseembarnhardt/anaconda3/lib/python3.11/site-packages/_plotly_utils/basevalidators.py:106: FutureWarning: The behavior of DatetimeProperties.to_pydatetime is deprecated, in a future version this will return a Series containing python datetime objects instead of an ndarray. To retain the old behavior, call `np.array` on the result\n  v = v.dt.to_pydatetime()\n/Users/qaseembarnhardt/anaconda3/lib/python3.11/site-packages/_plotly_utils/basevalidators.py:106: FutureWarning:\n\nThe behavior of DatetimeProperties.to_pydatetime is deprecated, in a future version this will return a Series containing python datetime objects instead of an ndarray. To retain the old behavior, call `np.array` on the result\n\n","service":"user-service","timestamp":"2024-11-16T20:11:12.262Z"}
 {"level":"error","message":"stdout ","service":"user-service","timestamp":"2024-11-16T20:11:12.262Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T19:23:22.759Z"}
+{"level":"info","message":"New data for AAPL up to 2024-11-29 has been added to the database.","service":"user-service","timestamp":"2024-12-01T19:23:23.277Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T19:23:24.892Z"}
+{"level":"info","message":"Data for AAPL up to 2024-11-29 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-01T19:23:25.310Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T19:23:40.427Z"}
+{"level":"info","message":"New data for GOOG up to 2024-11-29 has been added to the database.","service":"user-service","timestamp":"2024-12-01T19:23:40.477Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T19:23:55.591Z"}
+{"level":"info","message":"New data for MSFT up to 2024-11-29 has been added to the database.","service":"user-service","timestamp":"2024-12-01T19:23:55.632Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T19:24:10.883Z"}
+{"level":"info","message":"New data for AMZN up to 2024-11-29 has been added to the database.","service":"user-service","timestamp":"2024-12-01T19:24:10.931Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T19:24:26.036Z"}
+{"level":"info","message":"New data for META up to 2024-11-29 has been added to the database.","service":"user-service","timestamp":"2024-12-01T19:24:26.082Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T19:24:41.229Z"}
+{"level":"info","message":"New data for IBM up to 2024-11-29 has been added to the database.","service":"user-service","timestamp":"2024-12-01T19:24:41.267Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T19:24:56.451Z"}
+{"level":"info","message":"New data for TSLA up to 2024-11-29 has been added to the database.","service":"user-service","timestamp":"2024-12-01T19:24:56.489Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T20:15:38.850Z"}
+{"level":"info","message":"Data for AAPL up to 2024-11-29 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-01T20:15:39.385Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T20:15:42.111Z"}
+{"level":"info","message":"Data for AAPL up to 2024-11-29 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-01T20:15:42.654Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T20:15:57.791Z"}
+{"level":"info","message":"Data for GOOG up to 2024-11-29 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-01T20:15:57.836Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T20:16:13.247Z"}
+{"level":"info","message":"Data for MSFT up to 2024-11-29 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-01T20:16:13.462Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T20:16:28.592Z"}
+{"level":"info","message":"Data for AMZN up to 2024-11-29 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-01T20:16:28.642Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T20:16:43.764Z"}
+{"level":"info","message":"Data for META up to 2024-11-29 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-01T20:16:43.798Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T20:16:58.944Z"}
+{"level":"info","message":"Data for IBM up to 2024-11-29 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-01T20:16:58.994Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-11-29","service":"user-service","timestamp":"2024-12-01T20:17:14.244Z"}
+{"level":"info","message":"Data for TSLA up to 2024-11-29 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-01T20:17:14.406Z"}

@@ -4,6 +4,7 @@ dotenv.config();
 import connectDB from './utilities/connectDB.mjs';
 import { logger } from '../src/utilities/logger.mjs';
 import cors from 'cors';
+import { fetchAndUpdateStock } from '../script/updateHistory.mjs';
 import {router as analyzeRoute} from './routes/pythonAnalystRoute.mjs';
 import {router as stockRoute} from './routes/StockHistoryRoute.mjs'
 

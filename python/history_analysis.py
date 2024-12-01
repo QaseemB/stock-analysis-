@@ -2,18 +2,22 @@ import pandas as pd
 from pymongo import MongoClient
 import matplotlib.pyplot as plt
 import json
+import sys
 from dotenv import load_dotenv
 import os
 import plotly.express as px
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
+from flask import Flask,jsonify
+
+app = Flask(__name__)
 
 # Load environment variables from .env
 load_dotenv()
 
-print("Files in current directory:")
-for filename in os.listdir(os.getcwd()):
-    print(filename)
+# print("Files in current directory:")
+# for filename in os.listdir(os.getcwd()):
+#     print(filename)
 
 # Function to analyze and plot data for a specific stock symbol
 def analyze_stock(symbol):
@@ -45,6 +49,9 @@ def analyze_stock(symbol):
     df['date'] = pd.to_datetime(df['date'])
     df.set_index('date', inplace=True)
 
+    # Ensure the index (which is of type datetime) is converted to string for JSON serialization
+    df.index = df.index.astype(str)
+
     # Sort the data by date
     df.sort_index(inplace=True)
 
@@ -74,6 +81,8 @@ def analyze_stock(symbol):
     df['macd'] = df['ema12'] - df['ema26']
     df['signal_line'] = df['macd'].ewm(span=9, adjust=False).mean()
 
+  
+
     summary = {
         "symbol": symbol,
         "summary_stats": df.describe().to_dict(),
@@ -91,13 +100,18 @@ def analyze_stock(symbol):
             "signal_line": df['signal_line'].dropna().to_dict()
         }
     }
-    return summary
+    #convert to json
+    try:
+        summary_json = json.dumps(summary, indent=4).replace("\n", "").replace("\r", "")
+        print(summary_json)
+    except TypeError as e:
+        print(f"Error serializing summary: {e}")
+    except ValueError as e:
+        print(f"Error in JSON formatting: {e}")
+    
 
-if __name__ == "__main__":
-    symbol = "AAPL"
-    analysis_result = analyze_stock(symbol)
-    print(json.dumps(analysis_result))  # Output the result as JSON
-
+    
+    
 
 
     # Interactive plot using Plotly
@@ -107,10 +121,10 @@ if __name__ == "__main__":
     fig.show()
 
     # Print summary statistics
-    print(f"Summary for {symbol}:")
+    # print(f"Summary for {symbol}:")
     print(df.describe())
 
-    # return df
+    return df, summary_json
 
 
         # Function to generate and save plots as images
@@ -250,15 +264,21 @@ def create_pdf_report(symbol, df):
 
 if __name__ == "__main__":
     # List of stock symbols to analyze
-    stock_symbols = ['AAPL', 'GOOG', 'AMZN', 'META', 'MSFT', 'TSLA', 'IBM']
+    stock_symbols = ['AAPL','GOOG','AMZN','META','MSFT','TSLA','IBM']
     
     # Iterate over each stock symbol and process them
     for symbol in stock_symbols:
-        print(f"Processing {symbol}...")
-        df = analyze_stock(symbol)
+        # print(f"Processing {symbol}...")
+        result = analyze_stock(symbol)
 
         # Check if df is not None before proceeding
-        if df is not None:
+        if result is not None:
+            df, summary_json = result
+
+            # Print summary stats
+            print("Summary Statistics:")
+            print(summary_json)
+
             # Generate and save the plot image
             plot_path = generate_plots(symbol, df)
             
