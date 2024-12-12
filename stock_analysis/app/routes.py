@@ -5,6 +5,7 @@ from analysis.data_retrieval import get_stock_data
 from analysis.data_analysis import analyze_stock_data
 from analysis.generate_summary import generate_summary
 from analysis.data_visualization import generate_plots
+from analysis.report_generation import create_pdf_report
 import matplotlib
 import logging
 
@@ -22,7 +23,14 @@ def generate_plots_in_main_thread(symbol, df):
     except Exception as e:
         logging.error(f"Error generating plots for {symbol}: {e}")
         return {}
-
+    
+def create_pdf_report_in_main_thread(symbol, plot_paths, df):
+    try:
+        return create_pdf_report(symbol, plot_paths, df)
+    except Exception as e:
+        logging.error(f"Error generating PDF report for {symbol}: {e}")
+        return {}
+    
 @routes.route("/api/analyze/<symbol>", methods=["GET"])
 def analyze(symbol):
     if not symbol:
@@ -50,10 +58,13 @@ def analyze(symbol):
         # Step 5: Generate plots
         plot_paths = generate_plots_in_main_thread(symbol, df)
 
+        plot_pdf_path = create_pdf_report_in_main_thread(symbol, plot_paths, df)
+
         # Step 6: Return response
         return jsonify({
             "summary": summary_json,
-            "plots": plot_paths
+            "plots": plot_paths,
+            "pdf_report": plot_pdf_path
         }), 200
 
     except Exception as e:

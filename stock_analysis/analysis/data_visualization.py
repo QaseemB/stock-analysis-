@@ -6,6 +6,9 @@ def generate_plots(symbol, df):
     
     # Create a dictionary to store plot paths for different plots
     plot_paths = {}
+    # Create the subfolder for the symbol if it doesn't exist
+    symbol_folder = os.path.join('stockreport', symbol)
+    os.makedirs(symbol_folder, exist_ok=True)
 
     # Plot Close Price with Bollinger Bands
     plt.figure(figsize=(12, 6))
@@ -19,7 +22,7 @@ def generate_plots(symbol, df):
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    bollinger_plot_path = os.path.join('stockreport', f"{symbol}_bollinger_plot.png")
+    bollinger_plot_path = os.path.join(symbol_folder, f"{symbol}_bollinger_plot.png")
     try:
         plt.savefig(bollinger_plot_path)
         plot_paths['bollinger'] = bollinger_plot_path
@@ -36,7 +39,7 @@ def generate_plots(symbol, df):
     plt.xlabel("Date")
     plt.ylabel("MACD Value")
     plt.legend()
-    macd_plot_path = os.path.join('stockreport', f"{symbol}_macd_plot.png")
+    macd_plot_path = os.path.join(symbol_folder, f"{symbol}_macd_plot.png")
     try:
         plt.savefig(macd_plot_path)
         plot_paths['macd'] = macd_plot_path
@@ -52,7 +55,7 @@ def generate_plots(symbol, df):
         plt.title(f"{symbol} Trading Volume")
         plt.xlabel("Date")
         plt.ylabel("Volume")
-        volume_plot_path = os.path.join('stockreport', f"{symbol}_volume_plot.png")
+        volume_plot_path = os.path.join(symbol_folder, f"{symbol}_volume_plot.png")
         try:
             plt.savefig(volume_plot_path)
             plot_paths['volume'] = volume_plot_path
@@ -72,7 +75,7 @@ def generate_plots(symbol, df):
     plt.ylabel("Price")
     plt.legend()
     plt.grid(True)
-    moving_avg_plot_path = os.path.join('stockreport', f"{symbol}_moving_avg_plot.png")
+    moving_avg_plot_path = os.path.join(symbol_folder, f"{symbol}_moving_avg_plot.png")
     try:
         plt.savefig(moving_avg_plot_path)
         plot_paths['moving_avg'] = moving_avg_plot_path
