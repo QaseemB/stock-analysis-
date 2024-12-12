@@ -60,11 +60,14 @@ def analyze(symbol):
 
         plot_pdf_path = create_pdf_report_in_main_thread(symbol, plot_paths, df)
 
+        df_json = df.to_json(orient='records', date_format='iso')  # Use 'records' for a list of row objects
+
         # Step 6: Return response
         return jsonify({
             "summary": summary_json,
             "plots": plot_paths,
-            "pdf_report": plot_pdf_path
+            "pdf_report": plot_pdf_path,
+            "data": df_json,
         }), 200
 
     except Exception as e:
