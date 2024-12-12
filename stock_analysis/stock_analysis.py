@@ -1,6 +1,6 @@
 import pandas as pd 
 from pymongo import MongoClient 
-import matplotlib.pylot as plt
+import matplotlib.pyplot as plt
 from dotenv import load_dotenv
 import os
 
