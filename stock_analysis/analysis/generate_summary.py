@@ -12,6 +12,7 @@ def generate_summary(df, symbol):
     summary = {
         'symbol': symbol,
         'latest_date': df['date'].iloc[-1],
+        'latest_open': df['open'].iloc[-1],
         'latest_close': df['close'].iloc[-1],
         'moving_avg_3': df['moving_avg_3'].iloc[-1],
         'moving_avg_6': df['moving_avg_6'].iloc[-1],

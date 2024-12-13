@@ -4,12 +4,15 @@ import { CryptoData } from '../src/models/CryptoSchema.mjs';
 
 dotenv.config();
 
-const APIKEY = process.env.API_KEY;
+const APIKEY = process.env.API_KEY2;
 
 // Function to delay execution
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const fetchCrypto = async (symbol) => {
+    if (!APIKEY) {
+    throw new Error('API_KEY is missing. Please set it in your .env file.');
+}
     const url = `https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_MONTHLY&symbol=${symbol}&market=USD&apikey=${APIKEY}`;
 
     try {

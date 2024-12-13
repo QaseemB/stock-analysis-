@@ -19,6 +19,20 @@
   width: 10%
 }
 
+.Profile {
+  /* Keep the border */
+  max-width: 600px;
+  /* Limit width (adjust as needed) */
+  width: 100%;
+  /* Make sure it takes available space within limits */
+  padding: 15px;
+  /* Add some space inside the container */
+  word-wrap: break-word;
+  /* Ensure long words break to next line */
+  height: auto;
+  /* Allow height to expand based on content */
+}
+
 /* .lineGraph{
    margin-left: 10%; 
 } */

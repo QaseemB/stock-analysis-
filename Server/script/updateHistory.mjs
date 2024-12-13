@@ -9,13 +9,17 @@ import { logger } from '../src/utilities/logger.mjs';
 
 dotenv.config();
 
-const APIKEY = process.env.API_KEY
+const APIKEY = process.env.API_key
+
 
 // Function to delay execution
 const delay = (ms) => new  Promise(resolve => setTimeout(resolve, ms));
 
 
 export const fetchAndUpdateStock = async  (symbol) => { 
+     if (!APIKEY) {
+    throw new Error('API_KEY is missing. Please set it in your .env file.');
+}
      const url = `https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=${symbol}&interval=5min&apikey=${APIKEY}`;
 
      try {
@@ -86,12 +90,12 @@ const  updateStockDataWithRateLimiting = async (symbols) => {
 
 const stockSymbols =  ['AAPL', 'GOOG', 'MSFT', 'AMZN', 'META', 'IBM',"TSLA"];
 
-cron.schedule('0 0 1,31 * *', () => {
+cron.schedule('0 16 * * 1-5', async () => {
   console.log('Running scheduled stock data update....');
   updateStockDataWithRateLimiting(stockSymbols);
 });
 
 
 
-// updateStockDataWithRateLimiting(stockSymbols)
+updateStockDataWithRateLimiting(stockSymbols)
 // fetchAndUpdateStock('TSLA')

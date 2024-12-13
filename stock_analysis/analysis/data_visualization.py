@@ -1,9 +1,33 @@
 import matplotlib.pyplot as plt
 import os
+import pandas as pd
+import plotly.express as px
 
 def generate_plots(symbol, df):
     print(f"Generating plots for {symbol}")
     
+    # Ensure the index is datetime before plotting (if not already)
+    if not pd.api.types.is_datetime64_any_dtype(df.index):
+        df['date'] = pd.to_datetime(df['date'])
+        df.set_index('date', inplace=True)
+
+    # Create the plot
+    fig = px.line(df, 
+    x=df.index, 
+    y=["close", "moving_avg_3", "moving_avg_6", "upper_band", "lower_band"],
+    title=f"{symbol} Interactive Stock Analysis")
+
+    # Update layout with proper titles and axis formatting
+    fig.update_layout(
+    xaxis_title="Date", 
+    yaxis_title="Price",
+    xaxis=dict(
+        tickformat="%Y",  # Format the date as YYYY
+        tickangle=45  # Rotate the date labels to avoid overlap
+    )
+)
+    fig.show()
+
     # Create a dictionary to store plot paths for different plots
     plot_paths = {}
     # Create the subfolder for the symbol if it doesn't exist
@@ -11,7 +35,7 @@ def generate_plots(symbol, df):
     os.makedirs(symbol_folder, exist_ok=True)
 
     # Plot Close Price with Bollinger Bands
-    plt.figure(figsize=(12, 6))
+    plt.figure(figsize=(10, 6))
     plt.plot(df.index, df['close'], label='Close Price', color='blue')
     plt.plot(df.index, df['upper_band'], label='Upper Band', color='green', linestyle='--')
     plt.plot(df.index, df['lower_band'], label='Lower Band', color='red', linestyle='--')
@@ -50,7 +74,7 @@ def generate_plots(symbol, df):
 
     # Plot Trading Volume
     if 'volume' in df.columns:
-        plt.figure(figsize=(12, 3))
+        plt.figure(figsize=(10, 6))
         plt.bar(df.index, df['volume'], color='gray', alpha=0.5)
         plt.title(f"{symbol} Trading Volume")
         plt.xlabel("Date")

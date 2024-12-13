@@ -17,12 +17,12 @@ def create_pdf_report(symbol, plot_paths, df):
 
     for plot_type, plot_path in plot_paths.items():
         if os.path.exists(plot_path):
-            if y_position < 100:
+            if y_position < 130:
                 c.showPage()
                 y_position = 650
 
-            c.drawImage(plot_path, margin_left, y_position, width=500, height=300)
-            y_position -= 320
+            c.drawImage(plot_path, margin_left, y_position, width=500, height=140)
+            y_position -= 180
 
     stats = df.describe().to_string()
     text_object = c.beginText(50, y_position)
