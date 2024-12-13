@@ -1,12 +1,18 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import Plot from "react-plotly.js";
 import LinePlot from "./LinePlot";
 
 export function Dashboard({ selectedStock }) {
   const [dummydata, setDummydata] = useState([]); // Store stock data
   const [summaryData, setSummaryData] = useState({})
+  const [plotData, setPlotData] = useState({})
   const [loading, setLoading] = useState(true);  // Loading status
   const [error, setError] = useState(null);  // Error status
+  const [flaskLoading, setFlaskLoading] = useState(true);
+  const [stockError, setStockError] = useState(null);
+  const [flaskError, setFlaskError] = useState(null);
+
 
   useEffect(() => {
     const fetchStockData = async (symbol) => {
@@ -34,9 +40,12 @@ export function Dashboard({ selectedStock }) {
     const fetchFlaskData = async (symbol) =>{
       try{
         const response = await axios.get(`http://localhost:3030/api/stock-analysis/${symbol}`)
+        console.log(response.data)
         const summary= response.data?.summary;
-        if (summary){
+        const plot= response.data?.interactive_plot;
+        if (summary) {
           setSummaryData(summary);
+          setPlotData(plot);
           } else {
             throw new Error("Unexpected response structure");
         }
@@ -63,6 +72,7 @@ export function Dashboard({ selectedStock }) {
   timeZone: 'UTC',
 });
 console.log(formattedDate); 
+console.log(plotData)
 
   return (
     <div className="dashboard-container ml-[15%]">
@@ -79,6 +89,17 @@ console.log(formattedDate);
           <p className="tracking-wide leading-8">As of {formattedDate}, the latest data shows that {selectedStock} opened at ${summaryData.latest_open} and closed at ${summaryData.latest_close}. The monthly return for the stock stands at {summaryData.monthly_return}%, reflecting its recent performance. The 6-month moving average is {summaryData.moving_avg_6}, providing a broader view of the stock's trend, while the 3-month moving average is {summaryData.moving_avg_3}, offering a more short-term perspective on its movement.
 
 This analysis provides valuable insights into the stock's current performance and trend over multiple timeframes.</p>
+        </div>
+        <div className="linegraph plot border-2">
+          {plotData?.data && plotData?.layout &&(
+            <Plot
+                data={plotData.data}
+                layout={plotData.layout}
+                config={{ responsive: true }}
+                style={{ width: "100%", height: "100%" }}
+            />
+        )}
+
         </div>
       </div>
     </div>

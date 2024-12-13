@@ -1,11 +1,13 @@
 from flask import Blueprint, jsonify, request
 import threading
 import pandas as pd
+import json
 from analysis.data_retrieval import get_stock_data
 from analysis.data_analysis import analyze_stock_data
 from analysis.generate_summary import generate_summary
 from analysis.data_visualization import generate_plots
 from analysis.report_generation import create_pdf_report
+from analysis.gen_interactive_plt import gen_interactive_plt
 import matplotlib
 import logging
 
@@ -58,15 +60,20 @@ def analyze(symbol):
         # Step 5: Generate plots
         plot_paths = generate_plots_in_main_thread(symbol, df)
 
-        plot_pdf_path = create_pdf_report_in_main_thread(symbol, plot_paths, df)
 
         df_json = df.to_json(orient='records', date_format='iso')  # Use 'records' for a list of row objects
+
+        # Generate interactive plot this will now return json
+        interactive_plot_json = gen_interactive_plt(symbol,df)
+
+        # Parse the JSON string into a Python dictionary
+        interactive_plot_object = json.loads(interactive_plot_json)
 
         # Step 6: Return response
         return jsonify({
             "summary": summary_json,
-            "plots": plot_paths,
-            "pdf_report": plot_pdf_path,
+            "static_plots": plot_paths,
+            "interactive_plot": interactive_plot_object,
             "data": df_json,
         }), 200
 

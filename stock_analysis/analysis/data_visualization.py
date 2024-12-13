@@ -11,22 +11,22 @@ def generate_plots(symbol, df):
         df['date'] = pd.to_datetime(df['date'])
         df.set_index('date', inplace=True)
 
-    # Create the plot
-    fig = px.line(df, 
-    x=df.index, 
-    y=["close", "moving_avg_3", "moving_avg_6", "upper_band", "lower_band"],
-    title=f"{symbol} Interactive Stock Analysis")
+#     # Create the plot
+#     fig = px.line(df, 
+#     x=df.index, 
+#     y=["close", "moving_avg_3", "moving_avg_6", "upper_band", "lower_band"],
+#     title=f"{symbol} Interactive Stock Analysis")
 
-    # Update layout with proper titles and axis formatting
-    fig.update_layout(
-    xaxis_title="Date", 
-    yaxis_title="Price",
-    xaxis=dict(
-        tickformat="%Y",  # Format the date as YYYY
-        tickangle=45  # Rotate the date labels to avoid overlap
-    )
-)
-    fig.show()
+#     # Update layout with proper titles and axis formatting
+#     fig.update_layout(
+#     xaxis_title="Date", 
+#     yaxis_title="Price",
+#     xaxis=dict(
+#         tickformat="%Y-%m-%d",  # Format the date as YYYY-MM-DD
+#         tickangle=45  # Rotate the date labels to avoid overlap
+#     )
+# )
+#     fig.show()
 
     # Create a dictionary to store plot paths for different plots
     plot_paths = {}
