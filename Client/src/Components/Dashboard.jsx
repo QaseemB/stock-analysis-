@@ -28,6 +28,7 @@ export function Dashboard({ selectedStock }) {
         setError(err.message || "Error fetching data");
       } finally {
         setLoading(false);
+        setFlaskLoading(false)
       }
     };
 
@@ -39,6 +40,7 @@ export function Dashboard({ selectedStock }) {
   useEffect(()=>{
     const fetchFlaskData = async (symbol) =>{
       try{
+        setFlaskLoading(true)
         const response = await axios.get(`http://localhost:3030/api/stock-analysis/${symbol}`)
         console.log(response.data)
         const summary= response.data?.summary;
@@ -79,24 +81,33 @@ console.log(plotData)
       <div className="dashboard-title text-center block">
         <h1 className="text-3xl font-bold mb-4">Dashboard</h1>
       </div>
-      <div className="dashboard-content flex justify-between ">
-        <div className="lineGraph border-4 rounded-lg w-3/6">
+      <div className="dashboard-content flex flex-wrap gap-4 justify-between grid-rows-2 ">
+        <div className="lineGraph border-4 rounded-lg w-3/6 flex-[0_1_45%]">
           <h2 className="text-center">{selectedStock} Analysis</h2>
           <LinePlot data={dummydata} />
         </div>
-        <div className="Profile border-2">
+        <div className="Profile border-2 flex-[0_1_45%]">
           <h2 className="text-center">STOCK SUMMARY FOR {selectedStock}</h2>
           <p className="tracking-wide leading-8">As of {formattedDate}, the latest data shows that {selectedStock} opened at ${summaryData.latest_open} and closed at ${summaryData.latest_close}. The monthly return for the stock stands at {summaryData.monthly_return}%, reflecting its recent performance. The 6-month moving average is {summaryData.moving_avg_6}, providing a broader view of the stock's trend, while the 3-month moving average is {summaryData.moving_avg_3}, offering a more short-term perspective on its movement.
 
 This analysis provides valuable insights into the stock's current performance and trend over multiple timeframes.</p>
         </div>
-        <div className="linegraph plot border-2">
-          {plotData?.data && plotData?.layout &&(
+        <div className="linegraph plot border-2 flex">
+          {flaskLoading ? (
+            <div>Loading...</div>
+          ) : plotData?.data && plotData?.layout &&(
             <Plot
                 data={plotData.data}
-                layout={plotData.layout}
+                layout={{
+                  ...plotData.layout,
+                  autosize: true,
+                  width: undefined,
+                  height:400,
+                  responsive: true,
+                  margin: {l: 50, r: 50, t: 50, b: 50},
+                }}
                 config={{ responsive: true }}
-                style={{ width: "100%", height: "100%" }}
+                style={{ width: "100%", maxWidth: "600px", margin:"auto" }}
             />
         )}
 

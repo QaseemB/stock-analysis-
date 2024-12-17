@@ -160,3 +160,45 @@
 {"level":"info","message":"Data for IBM up to 2024-12-12 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-13T15:44:22.693Z"}
 {"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-12-12","service":"user-service","timestamp":"2024-12-13T15:44:37.815Z"}
 {"level":"info","message":"Data for TSLA up to 2024-12-12 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-13T15:44:37.854Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-12-12","service":"user-service","timestamp":"2024-12-13T21:00:00.645Z"}
+{"level":"info","message":"Data for AAPL up to 2024-12-12 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-13T21:00:00.884Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2024-12-12","service":"user-service","timestamp":"2024-12-13T21:00:16.119Z"}
+{"level":"info","message":"Data for GOOG up to 2024-12-12 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-13T21:00:16.160Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2024-12-12","service":"user-service","timestamp":"2024-12-13T21:00:31.359Z"}
+{"level":"info","message":"Data for MSFT up to 2024-12-12 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-13T21:00:31.430Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2024-12-12","service":"user-service","timestamp":"2024-12-13T21:00:46.584Z"}
+{"level":"info","message":"Data for AMZN up to 2024-12-12 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-13T21:00:46.632Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2024-12-12","service":"user-service","timestamp":"2024-12-13T21:01:03.846Z"}
+{"level":"info","message":"Data for META up to 2024-12-12 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-13T21:01:03.882Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2024-12-12","service":"user-service","timestamp":"2024-12-13T21:01:19.017Z"}
+{"level":"info","message":"Data for IBM up to 2024-12-12 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-13T21:01:19.061Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-12-12","service":"user-service","timestamp":"2024-12-13T21:01:34.204Z"}
+{"level":"info","message":"Data for TSLA up to 2024-12-12 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-13T21:01:34.242Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-12-13","service":"user-service","timestamp":"2024-12-14T15:32:45.190Z"}
+{"level":"info","message":"New data for AAPL up to 2024-12-13 has been added to the database.","service":"user-service","timestamp":"2024-12-14T15:32:45.703Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2024-12-13","service":"user-service","timestamp":"2024-12-14T15:33:00.817Z"}
+{"level":"info","message":"New data for GOOG up to 2024-12-13 has been added to the database.","service":"user-service","timestamp":"2024-12-14T15:33:00.862Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2024-12-13","service":"user-service","timestamp":"2024-12-14T15:33:15.994Z"}
+{"level":"info","message":"New data for MSFT up to 2024-12-13 has been added to the database.","service":"user-service","timestamp":"2024-12-14T15:33:16.036Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2024-12-13","service":"user-service","timestamp":"2024-12-14T15:33:31.192Z"}
+{"level":"info","message":"New data for AMZN up to 2024-12-13 has been added to the database.","service":"user-service","timestamp":"2024-12-14T15:33:31.232Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2024-12-13","service":"user-service","timestamp":"2024-12-14T15:33:46.349Z"}
+{"level":"info","message":"New data for META up to 2024-12-13 has been added to the database.","service":"user-service","timestamp":"2024-12-14T15:33:46.389Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2024-12-13","service":"user-service","timestamp":"2024-12-14T15:34:01.541Z"}
+{"level":"info","message":"New data for IBM up to 2024-12-13 has been added to the database.","service":"user-service","timestamp":"2024-12-14T15:34:01.580Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-12-13","service":"user-service","timestamp":"2024-12-14T15:34:16.700Z"}
+{"level":"info","message":"New data for TSLA up to 2024-12-13 has been added to the database.","service":"user-service","timestamp":"2024-12-14T15:34:16.739Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:12:57.331Z"}
+{"level":"info","message":"New data for AAPL up to 2024-12-16 has been added to the database.","service":"user-service","timestamp":"2024-12-17T03:12:57.700Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:13:12.942Z"}
+{"level":"info","message":"New data for GOOG up to 2024-12-16 has been added to the database.","service":"user-service","timestamp":"2024-12-17T03:13:12.978Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:13:28.100Z"}
+{"level":"info","message":"New data for MSFT up to 2024-12-16 has been added to the database.","service":"user-service","timestamp":"2024-12-17T03:13:28.137Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:13:43.345Z"}
+{"level":"info","message":"New data for AMZN up to 2024-12-16 has been added to the database.","service":"user-service","timestamp":"2024-12-17T03:13:43.380Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:13:58.495Z"}
+{"level":"info","message":"New data for META up to 2024-12-16 has been added to the database.","service":"user-service","timestamp":"2024-12-17T03:13:58.542Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:14:13.748Z"}
+{"level":"info","message":"New data for IBM up to 2024-12-16 has been added to the database.","service":"user-service","timestamp":"2024-12-17T03:14:13.786Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:14:28.884Z"}
+{"level":"info","message":"New data for TSLA up to 2024-12-16 has been added to the database.","service":"user-service","timestamp":"2024-12-17T03:14:28.934Z"}
