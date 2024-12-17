@@ -202,3 +202,17 @@
 {"level":"info","message":"New data for IBM up to 2024-12-16 has been added to the database.","service":"user-service","timestamp":"2024-12-17T03:14:13.786Z"}
 {"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:14:28.884Z"}
 {"level":"info","message":"New data for TSLA up to 2024-12-16 has been added to the database.","service":"user-service","timestamp":"2024-12-17T03:14:28.934Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:43:33.414Z"}
+{"level":"info","message":"Data for AAPL up to 2024-12-16 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-17T03:43:33.855Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:43:48.982Z"}
+{"level":"info","message":"Data for GOOG up to 2024-12-16 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-17T03:43:49.023Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:44:04.259Z"}
+{"level":"info","message":"Data for MSFT up to 2024-12-16 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-17T03:44:04.338Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:44:19.490Z"}
+{"level":"info","message":"Data for AMZN up to 2024-12-16 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-17T03:44:19.533Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:44:34.642Z"}
+{"level":"info","message":"Data for META up to 2024-12-16 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-17T03:44:34.680Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:44:49.973Z"}
+{"level":"info","message":"Data for IBM up to 2024-12-16 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-17T03:44:50.019Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-12-16","service":"user-service","timestamp":"2024-12-17T03:45:05.176Z"}
+{"level":"info","message":"Data for TSLA up to 2024-12-16 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-17T03:45:05.213Z"}

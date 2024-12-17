@@ -73,20 +73,20 @@ export function Dashboard({ selectedStock }) {
   day: 'numeric',
   timeZone: 'UTC',
 });
-console.log(formattedDate); 
-console.log(plotData)
+
+const imagePath = `/Users/qaseembarnhardt/Desktop/CODING/StockMarket/stock_analysis/stockreport/${selectedStock}/${selectedStock}_bollinger_plot.png`
 
   return (
     <div className="dashboard-container ml-[15%]">
       <div className="dashboard-title text-center block">
         <h1 className="text-3xl font-bold mb-4">Dashboard</h1>
       </div>
-      <div className="dashboard-content flex flex-wrap gap-4 justify-between grid-rows-2 ">
-        <div className="lineGraph border-4 rounded-lg w-3/6 flex-[0_1_45%]">
+      <div className="dashboard-content grid grid-cols-2 gap-4 ">
+        <div className="lineGraph border-4 ">
           <h2 className="text-center">{selectedStock} Analysis</h2>
           <LinePlot data={dummydata} />
         </div>
-        <div className="Profile border-2 flex-[0_1_45%]">
+        <div className="Profile border-2 p-4">
           <h2 className="text-center">STOCK SUMMARY FOR {selectedStock}</h2>
           <p className="tracking-wide leading-8">As of {formattedDate}, the latest data shows that {selectedStock} opened at ${summaryData.latest_open} and closed at ${summaryData.latest_close}. The monthly return for the stock stands at {summaryData.monthly_return}%, reflecting its recent performance. The 6-month moving average is {summaryData.moving_avg_6}, providing a broader view of the stock's trend, while the 3-month moving average is {summaryData.moving_avg_3}, offering a more short-term perspective on its movement.
 
@@ -110,6 +110,13 @@ This analysis provides valuable insights into the stock's current performance an
                 style={{ width: "100%", maxWidth: "600px", margin:"auto" }}
             />
         )}
+
+        </div>
+        <div className="png files border-2 flex">
+        <img
+         src={`${imagePath}/stockreport.png`}
+         style= {{width: "100%", maxWidth: "600px", margin:"auto"}}
+         />
 
         </div>
       </div>
