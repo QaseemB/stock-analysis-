@@ -74,7 +74,7 @@ export function Dashboard({ selectedStock }) {
   timeZone: 'UTC',
 });
 
-const imagePath = `http://localhost:3030/api/stock-analysis/stock_analysis/stockreport/${selectedStock}/${selectedStock}_bollinger_plot.png`
+const imagePath = "stock_analysis/stockreport/AAPL/AAPL_bollinger_plot.png"
 
   return (
     <div className="dashboard-container ml-[15%]">
@@ -114,7 +114,7 @@ This analysis provides valuable insights into the stock's current performance an
         </div>
         <div className="png files border-2 flex">
         <img
-         src={`${imagePath}/stockreport.png`}
+         src={`${imagePath}`}
          style= {{width: "100%", maxWidth: "600px", margin:"auto"}}
          />
 

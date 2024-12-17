@@ -1,4 +1,5 @@
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, request, send_from_directory
+import os
 import threading
 import pandas as pd
 import json
@@ -74,7 +75,7 @@ def analyze(symbol):
         # Step 6: Return response
         return jsonify({
             "summary": summary_json,
-            "static_plots": [f"http://localhost:3030/api/stock-analysis/{plot_paths}"],
+            "static_plots": plot_paths,
             "interactive_plot": interactive_plot_object,
             "data": df_json,
         }), 200
@@ -82,3 +83,10 @@ def analyze(symbol):
     except Exception as e:
         logging.error(f"An error occurred during analysis: {e}")
         return jsonify({"error": "An internal error occurred"}), 500
+    
+@routes.route('/stockreport/<symbol>/<filename>', methods=['GET'])
+def serve_stock_report(symbol, filename):
+    directory = os.path.join('stockreport', symbol)
+    if not os.path.exists(os.path.join(directory, filename)):
+        return jsonify({"error": "File not found"}), 404
+    return send_from_directory(directory, filename, as_attachment=True)

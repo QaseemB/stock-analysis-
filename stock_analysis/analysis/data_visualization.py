@@ -49,6 +49,7 @@ def generate_plots(symbol, df):
     bollinger_plot_path = os.path.join(symbol_folder, f"{symbol}_bollinger_plot.png")
     try:
         plt.savefig(bollinger_plot_path)
+        print(f"Saved Bollinger plot to: {os.path.abspath(bollinger_plot_path)}")
         plot_paths['bollinger'] = bollinger_plot_path
         print(f"Bollinger plot saved as {bollinger_plot_path}")
     except Exception as e:
