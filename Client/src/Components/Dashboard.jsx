@@ -42,7 +42,7 @@ export function Dashboard({ selectedStock }) {
       try{
         setFlaskLoading(true)
         const response = await axios.get(`http://localhost:3030/api/stock-analysis/${symbol}`)
-        console.log(response.data)
+
         const summary= response.data?.summary;
         const plot= response.data?.interactive_plot;
         if (summary) {
@@ -74,7 +74,7 @@ export function Dashboard({ selectedStock }) {
   timeZone: 'UTC',
 });
 
-const imagePath = `/Users/qaseembarnhardt/Desktop/CODING/StockMarket/stock_analysis/stockreport/${selectedStock}/${selectedStock}_bollinger_plot.png`
+const imagePath = `http://localhost:3030/api/stock-analysis/stock_analysis/stockreport/${selectedStock}/${selectedStock}_bollinger_plot.png`
 
   return (
     <div className="dashboard-container ml-[15%]">

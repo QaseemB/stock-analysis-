@@ -61,6 +61,8 @@ def analyze(symbol):
         plot_paths = generate_plots_in_main_thread(symbol, df)
 
 
+
+
         df_json = df.to_json(orient='records', date_format='iso')  # Use 'records' for a list of row objects
 
         # Generate interactive plot this will now return json
@@ -72,7 +74,7 @@ def analyze(symbol):
         # Step 6: Return response
         return jsonify({
             "summary": summary_json,
-            "static_plots": plot_paths,
+            "static_plots": [f"http://localhost:3030/api/stock-analysis/{plot_paths}"],
             "interactive_plot": interactive_plot_object,
             "data": df_json,
         }), 200
