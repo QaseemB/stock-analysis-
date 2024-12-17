@@ -74,7 +74,11 @@ export function Dashboard({ selectedStock }) {
   timeZone: 'UTC',
 });
 
-const imagePath = "stock_analysis/stockreport/AAPL/AAPL_bollinger_plot.png"
+const bollingerPath = `http://127.0.0.1:5000/stockreport/${selectedStock}/${selectedStock}_bollinger_plot.png`
+const movingAveragePath = `http://127.0.0.1:5000/stockreport/${selectedStock}/${selectedStock}_moving_avg_plot.png`
+const tradingVolumePath = `http://127.0.0.1:5000/stockreport/${selectedStock}/${selectedStock}_volume_plot.png`
+const macdPath = `http://127.0.0.1:5000/stockreport/${selectedStock}/${selectedStock}_macd_plot.png`
+
 
   return (
     <div className="dashboard-container ml-[15%]">
@@ -112,12 +116,27 @@ This analysis provides valuable insights into the stock's current performance an
         )}
 
         </div>
-        <div className="png files border-2 flex">
+        <div className="bollinger-graph border-2 p-4">
+          <h2 className="text-center">Bollinger bands for {selectedStock}</h2>
         <img
-         src={`${imagePath}`}
+         src={`${bollingerPath}`}
          style= {{width: "100%", maxWidth: "600px", margin:"auto"}}
          />
 
+        </div>
+        <div className= "trading-volume border-2 p-4">
+          <h2 className="text-center">Trading Volume for {selectedStock}</h2>
+          <img
+          src={`${tradingVolumePath}`}
+          style={{width: "100%", maxWidth: "600px", margin:"auto"}}
+          />
+        </div>
+        <div className= "macd border-2 p-4">
+          <h2 className="text-center">MACD for {selectedStock}</h2>
+          <img
+          src={`${macdPath}`}
+          style={{width: "100%", maxWidth: "600px", margin:"auto"}}
+          />
         </div>
       </div>
     </div>
