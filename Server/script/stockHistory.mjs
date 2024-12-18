@@ -70,7 +70,9 @@ const  fetchStockDataWithRateLimiting = async (symbols) => {
 
 const stockSymbols =  ['AAPL', 'GOOG', 'MSFT', 'AMZN', 'META', 'IBM','TSLA'];
 
+const stockSymbols2 = ['NVDA','AVGO','TSM','JPM','MA','COST','PG','NFLX','JNJ','BAC','CRM','TM','KO']
 
-// fetchStockDataWithRateLimiting(stockSymbols)
+
+// fetchStockDataWithRateLimiting(stockSymbols2)
 
 // fetchHistoryStock('TSLA')

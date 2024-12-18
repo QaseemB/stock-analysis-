@@ -67,6 +67,19 @@ export const SideNav = ({ onStockSelect }) => {
               <option value="MSFT">Microsoft</option>
               <option value="META">Meta</option>
               <option value="IBM">IBM</option>
+              <option value="NVDA">NVIDIA</option>
+              <option value="AVGO">AVGO</option>
+              <option value="TSM">TSM</option>
+              <option value="JPM">JPM</option>
+              <option value="MA">MA</option>
+              <option value="COST">COST</option>
+              <option value="PG">PG</option>
+              <option value="NFLX">NFLX</option>
+              <option value="JNJ">JNJ</option>
+              <option value="BAC">BAC</option>
+              <option value="CRM">CRM</option>
+              <option value="TM">TM</option>
+              <option value="KO">KO</option>
             </select>
           </label>
         </div>
