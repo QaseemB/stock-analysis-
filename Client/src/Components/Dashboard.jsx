@@ -19,6 +19,7 @@ export function Dashboard({ selectedStock }) {
       try {
         const response = await axios.get(`https://stock-analysis-frcb.onrender.com/api/stock-analysis/${symbol}`);
         const monthlyData = response.data?.monthlyData;
+        console.log("this is monthly data", monthlyData)
         if (monthlyData) {
           setDummydata(monthlyData); // Set stock data
         } else {
