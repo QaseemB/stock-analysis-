@@ -268,3 +268,24 @@
 {"level":"info","message":"Data for AAPL up to 2024-12-17 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-18T16:32:16.146Z"}
 {"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-12-17","service":"user-service","timestamp":"2024-12-18T16:32:19.246Z"}
 {"level":"info","message":"Data for AAPL up to 2024-12-17 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-18T16:32:19.596Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-12-17","service":"user-service","timestamp":"2024-12-18T21:00:03.140Z"}
+{"level":"info","message":"Data for AAPL up to 2024-12-17 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-18T21:00:03.225Z"}
+{"level":"error","message":"Error fetching data for GOOG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:00:18.359Z"}
+{"level":"error","message":"Error fetching data for MSFT: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:00:33.466Z"}
+{"level":"error","message":"Error fetching data for AMZN: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:00:48.647Z"}
+{"level":"error","message":"Error fetching data for META: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:01:04.156Z"}
+{"level":"error","message":"Error fetching data for IBM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:01:19.255Z"}
+{"level":"error","message":"Error fetching data for TSLA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:01:34.392Z"}
+{"level":"error","message":"Error fetching data for NVDA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:01:49.580Z"}
+{"level":"error","message":"Error fetching data for AVGO: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:02:04.730Z"}
+{"level":"error","message":"Error fetching data for TSM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:02:19.918Z"}
+{"level":"error","message":"Error fetching data for JPM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:02:35.154Z"}
+{"level":"error","message":"Error fetching data for MA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:02:50.235Z"}
+{"level":"error","message":"Error fetching data for COST: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:03:05.336Z"}
+{"level":"error","message":"Error fetching data for PG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:03:20.481Z"}
+{"level":"error","message":"Error fetching data for NFLX: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:03:35.595Z"}
+{"level":"error","message":"Error fetching data for JNJ: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:03:50.690Z"}
+{"level":"error","message":"Error fetching data for BAC: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:04:05.874Z"}
+{"level":"error","message":"Error fetching data for CRM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:04:21.015Z"}
+{"level":"error","message":"Error fetching data for TM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:04:36.157Z"}
+{"level":"error","message":"Error fetching data for KO: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:04:51.294Z"}
