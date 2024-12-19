@@ -1,0 +1,8 @@
+numpy
+matplotlib
+pandas
+flask
+plotly
+pymongo
+reportlab
+python-dotenv
