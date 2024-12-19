@@ -10,12 +10,15 @@ export const pythonAnalyzeStock = async (req, res) => {
     }
     try {
         // Call the Flask API for analysis
-        const response = await axios.get(`http://127.0.0.1:5000/api/analyze/${symbol}`,);
+        const response = await axios.get(`https://stock-analysis-6age.onrender.com/api/analyze/${symbol}`, {
+            params: { date, limit }
+        });
+        console.log('Flask API response:', response.data);
         
         // Send the analysis data and visualization back to React via Node
         res.json(response.data);
     } catch (error) {
-        console.error('Error calling Flask API:', error);
-        res.status(500).send({ error: 'Error retrieving data from Flask' });
+        console.error('Error calling Flask API:', error.message);
+        res.status(500).send({ error: 'Error retrieving data from Flask', details: error.message });
     }
 };
