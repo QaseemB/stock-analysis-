@@ -17,7 +17,7 @@ export function Dashboard({ selectedStock }) {
   useEffect(() => {
     const fetchStockData = async (symbol) => {
       try {
-        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/api/stock-analysis/${symbol}`);
+        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/api/stock/${symbol}`);
         const monthlyData = response.data?.monthlyData;
         console.log("this is monthly data", monthlyData)
         if (monthlyData) {
