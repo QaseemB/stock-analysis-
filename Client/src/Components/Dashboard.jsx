@@ -41,7 +41,7 @@ export function Dashboard({ selectedStock }) {
     const fetchFlaskData = async (symbol) =>{
       try{
         setFlaskLoading(true)
-        const response = await axios.get(`https://stock-analysis-frcb.onrender.com//api/stock-analysis/${symbol}`)
+        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/api/stock-analysis/${symbol}`)
 
         const summary= response.data?.summary;
         const plot= response.data?.interactive_plot;
