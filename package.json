@@ -7,9 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "npm run dev --prefix Client",
-    "Server": "nodemon Server/src/server.mjs",
-    "start": "concurrently \"npm run Server\" \"npm run client\"",
-    "build": "npm install && npm install --prefix Client && npm run build --prefix Client"
+    "dev": "nodemon Server/src/server.mjs",
+    "start": "node Server/src/server.mjs"
   },
   "dependencies": {
     "axios": "^1.7.7",
