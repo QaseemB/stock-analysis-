@@ -1,15 +1,13 @@
-import dotenv from 'dotenv';
+import { config } from '../src/utilities/config.mjs';
 import axios from 'axios';
 import { HistoricalStock } from '../src/models/HistoricalSchema.mjs';
 
-dotenv.config();
-
-const APIKEY = process.env.API_KEY;
+const APIKEY = config.APIKEY;
 
 // Function to delay execution
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-export const fetchHistoryStock = async (symbol) => {
+export const fetchHistoryStock = async (symbol, updateDB = true) => {
     const url = `https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=${symbol}&interval=5min&apikey=${APIKEY}`;
 
     try {
@@ -45,6 +43,7 @@ export const fetchHistoryStock = async (symbol) => {
         }
 
         // Update the document in MongoDB
+        if (updateDB) {
         await HistoricalStock.updateOne(
             { symbol },
             {
@@ -52,27 +51,27 @@ export const fetchHistoryStock = async (symbol) => {
                 $addToSet: { monthlyData: { $each: monthlyData } }, // Only add if not already present
             },
             { upsert: true } // Create the document if it doesn't exist
-        );
+        )};
 
         console.log('Stock data updated/saved successfully for:', symbol);
     } catch (error) {
         console.error('Error fetching stock data:', error.message);
+        return null;
     }
 };
 
-const  fetchStockDataWithRateLimiting = async (symbols) => {
+export const  fetchStockDataWithRateLimiting = async (symbols, updateDB = true) => {
   for (const symbol of  symbols) {
-    await fetchHistoryStock(symbol);
+    await fetchHistoryStock(symbol, updateDB);
     // delay for 15 seconds to comply with 5 requests per minute
     await delay(15000);
   }
 };
 
-const stockSymbols =  ['AAPL', 'GOOG', 'MSFT', 'AMZN', 'META', 'IBM','TSLA'];
+export const stockSymbols =  ['AAPL', 'GOOG', 'MSFT', 'AMZN', 'META', 'IBM','TSLA','NVDA','AVGO','TSM','JPM','MA','COST','PG','NFLX','JNJ','BAC','CRM','TM','KO'];
 
-const stockSymbols2 = ['NVDA','AVGO','TSM','JPM','MA','COST','PG','NFLX','JNJ','BAC','CRM','TM','KO']
+// const stockSymbols2 = ['NVDA','AVGO','TSM','JPM','MA','COST','PG','NFLX','JNJ','BAC','CRM','TM','KO']
 
 
-// fetchStockDataWithRateLimiting(stockSymbols2)
-
+// fetchStockDataWithRateLimiting(stockSymbols)
 // fetchHistoryStock('TSLA')

@@ -1,13 +1,12 @@
 import pandas as pd
-from pymongo import MongoClient
-from utils.config import ATLAS_URI
+from utils.config import config
+from utils.get_mongo_collection import get_mongo_collection
 
 def get_stock_data(symbol):
     try:
         # Connect to MongoDB
-        client = MongoClient(ATLAS_URI)
-        db = client["StockMarket"]
-        collection = db["historicalstocks"]
+        
+        collection = get_mongo_collection(config)
         
         # Fetch the stock data for the given symbol
         stock_data = collection.find_one({"symbol": symbol})

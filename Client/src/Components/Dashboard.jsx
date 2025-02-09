@@ -17,9 +17,9 @@ export function Dashboard({ selectedStock }) {
   useEffect(() => {
     const fetchStockData = async (symbol) => {
       try {
-        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/api/stock/${symbol}`);
+        const response = await axios.get(`http://localhost:3030/api/stock/${selectedStock}`);
         const monthlyData = response.data?.monthlyData;
-        console.log("this is monthly data", monthlyData)
+        console.log("reposne: ", response.data);
         if (monthlyData) {
           setDummydata(monthlyData); // Set stock data
         } else {
@@ -42,7 +42,7 @@ export function Dashboard({ selectedStock }) {
     const fetchFlaskData = async (symbol) =>{
       try{
         setFlaskLoading(true)
-        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/api/stock-analysis/${symbol}`)
+        const response = await axios.get(`http://localhost:3030/api/stock-analysis/${selectedStock}`)
 
         const summary= response.data?.summary;
         const plot= response.data?.interactive_plot;
@@ -75,10 +75,10 @@ export function Dashboard({ selectedStock }) {
   timeZone: 'UTC',
 });
 
-const bollingerPath = `https://stock-analysis-6age.onrender.com/stockreport/${selectedStock}/${selectedStock}_bollinger_plot.png`
-const movingAveragePath = `https://stock-analysis-6age.onrender.com/stockreport/${selectedStock}/${selectedStock}_moving_avg_plot.png`
-const tradingVolumePath = `https://stock-analysis-6age.onrender.com/stockreport/${selectedStock}/${selectedStock}_volume_plot.png`
-const macdPath = `https://stock-analysis-6age.onrender.com/stockreport/${selectedStock}/${selectedStock}_macd_plot.png`
+const bollingerPath = `http://127.0.0.1:5001/stockreport/${selectedStock}/${selectedStock}_bollinger_plot.png`
+const movingAveragePath = `http://127.0.0.1:5001/stockreport/${selectedStock}/${selectedStock}_moving_avg_plot.png`
+const tradingVolumePath = `http://127.0.0.1:5001/stockreport/${selectedStock}/${selectedStock}_volume_plot.png`
+const macdPath = `http://127.0.0.1:5001/stockreport/${selectedStock}/${selectedStock}_macd_plot.png`
 
 
   return (

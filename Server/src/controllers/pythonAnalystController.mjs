@@ -10,10 +10,10 @@ export const pythonAnalyzeStock = async (req, res) => {
     }
     try {
         // Call the Flask API for analysis
-        const response = await axios.get(`https://stock-analysis-6age.onrender.com/api/analyze/${symbol}`, {
+        const response = await axios.get(`http://127.0.0.1:5001//api/analyze/${symbol}`, {
             params: { date, limit }
         });
-        console.log('Flask API response:', response.data);
+        // console.log('Flask API response:', response.data);
         
         // Send the analysis data and visualization back to React via Node
         res.json(response.data);

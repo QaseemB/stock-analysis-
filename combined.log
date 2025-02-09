@@ -289,3 +289,806 @@
 {"level":"error","message":"Error fetching data for CRM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:04:21.015Z"}
 {"level":"error","message":"Error fetching data for TM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:04:36.157Z"}
 {"level":"error","message":"Error fetching data for KO: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2024-12-18T21:04:51.294Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:00:02.613Z"}
+{"level":"info","message":"Data for AAPL up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:00:02.735Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:00:18.048Z"}
+{"level":"info","message":"Data for GOOG up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:00:18.093Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:00:33.295Z"}
+{"level":"info","message":"Data for MSFT up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:00:33.390Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:00:48.587Z"}
+{"level":"info","message":"Data for AMZN up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:00:48.631Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:01:04.125Z"}
+{"level":"info","message":"Data for META up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:01:04.162Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:01:19.325Z"}
+{"level":"info","message":"Data for IBM up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:01:19.372Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:01:34.550Z"}
+{"level":"info","message":"Data for TSLA up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:01:34.592Z"}
+{"level":"info","message":"Fetched data for NVDA, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:01:49.741Z"}
+{"level":"info","message":"Data for NVDA up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:01:49.778Z"}
+{"level":"info","message":"Fetched data for AVGO, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:02:04.978Z"}
+{"level":"info","message":"Data for AVGO up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:02:05.019Z"}
+{"level":"info","message":"Fetched data for TSM, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:02:20.221Z"}
+{"level":"info","message":"Data for TSM up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:02:20.269Z"}
+{"level":"info","message":"Fetched data for JPM, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:02:35.434Z"}
+{"level":"info","message":"Data for JPM up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:02:35.476Z"}
+{"level":"info","message":"Fetched data for MA, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:02:50.619Z"}
+{"level":"info","message":"Data for MA up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:02:50.655Z"}
+{"level":"info","message":"Fetched data for COST, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:03:05.944Z"}
+{"level":"info","message":"Data for COST up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:03:05.984Z"}
+{"level":"info","message":"Fetched data for PG, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:03:21.267Z"}
+{"level":"info","message":"Data for PG up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:03:21.301Z"}
+{"level":"info","message":"Fetched data for NFLX, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:03:36.419Z"}
+{"level":"info","message":"Data for NFLX up to 2024-12-18 already exists. Skipping update.","service":"user-service","timestamp":"2024-12-19T21:03:36.458Z"}
+{"level":"info","message":"Fetched data for JNJ, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:03:51.749Z"}
+{"level":"info","message":"New data for JNJ up to 2024-12-18 has been added to the database.","service":"user-service","timestamp":"2024-12-19T21:03:51.812Z"}
+{"level":"info","message":"Fetched data for BAC, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:04:07.108Z"}
+{"level":"info","message":"New data for BAC up to 2024-12-18 has been added to the database.","service":"user-service","timestamp":"2024-12-19T21:04:07.146Z"}
+{"level":"info","message":"Fetched data for CRM, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:04:22.299Z"}
+{"level":"info","message":"New data for CRM up to 2024-12-18 has been added to the database.","service":"user-service","timestamp":"2024-12-19T21:04:22.334Z"}
+{"level":"info","message":"Fetched data for TM, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:04:37.484Z"}
+{"level":"info","message":"New data for TM up to 2024-12-18 has been added to the database.","service":"user-service","timestamp":"2024-12-19T21:04:37.521Z"}
+{"level":"info","message":"Fetched data for KO, last refreshed on 2024-12-18","service":"user-service","timestamp":"2024-12-19T21:04:52.727Z"}
+{"level":"info","message":"New data for KO up to 2024-12-18 has been added to the database.","service":"user-service","timestamp":"2024-12-19T21:04:52.766Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:00:01.302Z"}
+{"level":"info","message":"New data for AAPL up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:00:01.364Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:00:16.523Z"}
+{"level":"info","message":"New data for GOOG up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:00:16.556Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:00:31.832Z"}
+{"level":"info","message":"New data for MSFT up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:00:31.876Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:00:46.991Z"}
+{"level":"info","message":"New data for AMZN up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:00:47.029Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:01:02.270Z"}
+{"level":"info","message":"New data for META up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:01:02.306Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:01:17.457Z"}
+{"level":"info","message":"New data for IBM up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:01:17.492Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:01:32.638Z"}
+{"level":"info","message":"New data for TSLA up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:01:32.671Z"}
+{"level":"info","message":"Fetched data for NVDA, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:01:47.900Z"}
+{"level":"info","message":"New data for NVDA up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:01:47.935Z"}
+{"level":"info","message":"Fetched data for AVGO, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:02:03.232Z"}
+{"level":"info","message":"New data for AVGO up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:02:03.287Z"}
+{"level":"info","message":"Fetched data for TSM, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:02:18.476Z"}
+{"level":"info","message":"New data for TSM up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:02:18.515Z"}
+{"level":"info","message":"Fetched data for JPM, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:02:33.590Z"}
+{"level":"info","message":"New data for JPM up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:02:33.625Z"}
+{"level":"info","message":"Fetched data for MA, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:02:48.811Z"}
+{"level":"info","message":"New data for MA up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:02:48.847Z"}
+{"level":"info","message":"Fetched data for COST, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:03:04.011Z"}
+{"level":"info","message":"New data for COST up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:03:04.047Z"}
+{"level":"info","message":"Fetched data for PG, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:03:19.204Z"}
+{"level":"info","message":"New data for PG up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:03:19.238Z"}
+{"level":"info","message":"Fetched data for NFLX, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:03:34.351Z"}
+{"level":"info","message":"New data for NFLX up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:03:34.386Z"}
+{"level":"info","message":"Fetched data for JNJ, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:03:49.586Z"}
+{"level":"info","message":"New data for JNJ up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:03:49.619Z"}
+{"level":"info","message":"Fetched data for BAC, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:04:04.776Z"}
+{"level":"info","message":"New data for BAC up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:04:04.828Z"}
+{"level":"info","message":"Fetched data for CRM, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:04:20.391Z"}
+{"level":"info","message":"New data for CRM up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:04:20.425Z"}
+{"level":"info","message":"Fetched data for TM, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:04:35.619Z"}
+{"level":"info","message":"New data for TM up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:04:35.655Z"}
+{"level":"info","message":"Fetched data for KO, last refreshed on 2024-12-19","service":"user-service","timestamp":"2024-12-20T21:04:50.769Z"}
+{"level":"info","message":"New data for KO up to 2024-12-19 has been added to the database.","service":"user-service","timestamp":"2024-12-20T21:04:50.802Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:13:01.602Z"}
+{"level":"info","message":"New data for AAPL up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:13:02.239Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:13:17.334Z"}
+{"level":"info","message":"New data for GOOG up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:13:17.374Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:13:32.628Z"}
+{"level":"info","message":"New data for MSFT up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:13:32.667Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:13:47.785Z"}
+{"level":"info","message":"New data for AMZN up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:13:47.822Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:14:02.917Z"}
+{"level":"info","message":"New data for META up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:14:02.965Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:14:18.116Z"}
+{"level":"info","message":"New data for IBM up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:14:18.155Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:14:33.281Z"}
+{"level":"info","message":"New data for TSLA up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:14:33.319Z"}
+{"level":"info","message":"Fetched data for NVDA, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:14:48.426Z"}
+{"level":"info","message":"New data for NVDA up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:14:48.469Z"}
+{"level":"info","message":"Fetched data for AVGO, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:15:03.630Z"}
+{"level":"info","message":"New data for AVGO up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:15:03.688Z"}
+{"level":"info","message":"Fetched data for TSM, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:15:18.805Z"}
+{"level":"info","message":"New data for TSM up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:15:18.842Z"}
+{"level":"info","message":"Fetched data for JPM, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:15:33.973Z"}
+{"level":"info","message":"New data for JPM up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:15:34.008Z"}
+{"level":"info","message":"Fetched data for MA, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:15:49.122Z"}
+{"level":"info","message":"New data for MA up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:15:49.159Z"}
+{"level":"info","message":"Fetched data for COST, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:16:04.274Z"}
+{"level":"info","message":"New data for COST up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:16:04.314Z"}
+{"level":"info","message":"Fetched data for PG, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:16:19.455Z"}
+{"level":"info","message":"New data for PG up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:16:19.491Z"}
+{"level":"info","message":"Fetched data for NFLX, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:16:34.609Z"}
+{"level":"info","message":"New data for NFLX up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:16:34.654Z"}
+{"level":"info","message":"Fetched data for JNJ, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:16:49.796Z"}
+{"level":"info","message":"New data for JNJ up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:16:49.835Z"}
+{"level":"info","message":"Fetched data for BAC, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:17:04.945Z"}
+{"level":"info","message":"New data for BAC up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:17:05.002Z"}
+{"level":"info","message":"Fetched data for CRM, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:17:20.359Z"}
+{"level":"info","message":"New data for CRM up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:17:20.401Z"}
+{"level":"info","message":"Fetched data for TM, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:17:35.561Z"}
+{"level":"info","message":"New data for TM up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:17:35.597Z"}
+{"level":"info","message":"Fetched data for KO, last refreshed on 2024-12-27","service":"user-service","timestamp":"2024-12-28T20:17:50.700Z"}
+{"level":"info","message":"New data for KO up to 2024-12-27 has been added to the database.","service":"user-service","timestamp":"2024-12-28T20:17:50.734Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:14:14.040Z"}
+{"level":"info","message":"New data for AAPL up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:14:14.954Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:14:30.300Z"}
+{"level":"info","message":"New data for GOOG up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:14:30.454Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:14:45.678Z"}
+{"level":"info","message":"New data for MSFT up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:14:45.834Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:15:03.365Z"}
+{"level":"info","message":"New data for AMZN up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:15:03.523Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:15:19.069Z"}
+{"level":"info","message":"New data for META up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:15:19.222Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:15:34.475Z"}
+{"level":"info","message":"New data for IBM up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:15:34.634Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:15:51.057Z"}
+{"level":"info","message":"New data for TSLA up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:15:51.205Z"}
+{"level":"info","message":"Fetched data for NVDA, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:16:06.692Z"}
+{"level":"info","message":"New data for NVDA up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:16:06.844Z"}
+{"level":"info","message":"Fetched data for AVGO, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:16:22.092Z"}
+{"level":"info","message":"New data for AVGO up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:16:22.259Z"}
+{"level":"info","message":"Fetched data for TSM, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:16:37.715Z"}
+{"level":"info","message":"New data for TSM up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:16:37.872Z"}
+{"level":"info","message":"Fetched data for JPM, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:16:53.152Z"}
+{"level":"info","message":"New data for JPM up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:16:53.305Z"}
+{"level":"info","message":"Fetched data for MA, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:17:09.457Z"}
+{"level":"info","message":"New data for MA up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:17:09.609Z"}
+{"level":"info","message":"Fetched data for COST, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:17:25.000Z"}
+{"level":"info","message":"New data for COST up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:17:25.153Z"}
+{"level":"info","message":"Fetched data for PG, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:17:40.417Z"}
+{"level":"info","message":"New data for PG up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:17:40.564Z"}
+{"level":"info","message":"Fetched data for NFLX, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:17:55.830Z"}
+{"level":"info","message":"New data for NFLX up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:17:55.987Z"}
+{"level":"info","message":"Fetched data for JNJ, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:18:11.310Z"}
+{"level":"info","message":"New data for JNJ up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:18:11.457Z"}
+{"level":"info","message":"Fetched data for BAC, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:18:26.809Z"}
+{"level":"info","message":"New data for BAC up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:18:26.980Z"}
+{"level":"info","message":"Fetched data for CRM, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:18:42.308Z"}
+{"level":"info","message":"New data for CRM up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:18:42.455Z"}
+{"level":"info","message":"Fetched data for TM, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:18:58.000Z"}
+{"level":"info","message":"New data for TM up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:18:58.149Z"}
+{"level":"info","message":"Fetched data for KO, last refreshed on 2024-12-31","service":"user-service","timestamp":"2025-01-01T22:19:13.779Z"}
+{"level":"info","message":"New data for KO up to 2024-12-31 has been added to the database.","service":"user-service","timestamp":"2025-01-01T22:19:13.927Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:53:27.911Z"}
+{"level":"info","message":"New data for AAPL up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:53:28.754Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:53:44.037Z"}
+{"level":"info","message":"New data for GOOG up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:53:44.198Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:53:59.478Z"}
+{"level":"info","message":"New data for MSFT up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:53:59.634Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:54:14.902Z"}
+{"level":"info","message":"New data for AMZN up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:54:15.054Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:54:30.272Z"}
+{"level":"info","message":"New data for META up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:54:30.431Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:54:45.696Z"}
+{"level":"info","message":"New data for IBM up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:54:45.857Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:55:01.764Z"}
+{"level":"info","message":"New data for TSLA up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:55:01.922Z"}
+{"level":"info","message":"Fetched data for NVDA, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:55:17.183Z"}
+{"level":"info","message":"New data for NVDA up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:55:17.340Z"}
+{"level":"info","message":"Fetched data for AVGO, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:55:32.577Z"}
+{"level":"info","message":"New data for AVGO up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:55:32.762Z"}
+{"level":"info","message":"Fetched data for TSM, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:55:48.019Z"}
+{"level":"info","message":"New data for TSM up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:55:48.174Z"}
+{"level":"info","message":"Fetched data for JPM, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:56:03.674Z"}
+{"level":"info","message":"New data for JPM up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:56:03.832Z"}
+{"level":"info","message":"Fetched data for MA, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:56:19.089Z"}
+{"level":"info","message":"New data for MA up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:56:19.248Z"}
+{"level":"info","message":"Fetched data for COST, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:56:34.514Z"}
+{"level":"info","message":"New data for COST up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:56:34.669Z"}
+{"level":"info","message":"Fetched data for PG, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:56:49.932Z"}
+{"level":"info","message":"New data for PG up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:56:50.083Z"}
+{"level":"info","message":"Fetched data for NFLX, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:57:06.495Z"}
+{"level":"info","message":"New data for NFLX up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:57:06.647Z"}
+{"level":"info","message":"Fetched data for JNJ, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:57:21.933Z"}
+{"level":"info","message":"New data for JNJ up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:57:22.083Z"}
+{"level":"info","message":"Fetched data for BAC, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:57:37.352Z"}
+{"level":"info","message":"New data for BAC up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:57:37.523Z"}
+{"level":"info","message":"Fetched data for CRM, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:57:52.747Z"}
+{"level":"info","message":"New data for CRM up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:57:52.903Z"}
+{"level":"info","message":"Fetched data for TM, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:58:08.142Z"}
+{"level":"info","message":"New data for TM up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:58:08.291Z"}
+{"level":"info","message":"Fetched data for KO, last refreshed on 2025-01-06","service":"user-service","timestamp":"2025-01-07T03:58:23.552Z"}
+{"level":"info","message":"New data for KO up to 2025-01-06 has been added to the database.","service":"user-service","timestamp":"2025-01-07T03:58:23.707Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:10:09.487Z"}
+{"level":"info","message":"New data for AAPL up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:10:10.133Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:10:25.399Z"}
+{"level":"info","message":"New data for GOOG up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:10:25.559Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:10:40.913Z"}
+{"level":"info","message":"New data for MSFT up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:10:41.063Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:10:56.405Z"}
+{"level":"info","message":"New data for AMZN up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:10:56.565Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:11:11.794Z"}
+{"level":"info","message":"New data for META up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:11:11.954Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:11:27.320Z"}
+{"level":"info","message":"New data for IBM up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:11:27.471Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:11:42.768Z"}
+{"level":"info","message":"New data for TSLA up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:11:42.923Z"}
+{"level":"info","message":"Fetched data for NVDA, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:11:58.366Z"}
+{"level":"info","message":"New data for NVDA up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:11:58.562Z"}
+{"level":"info","message":"Fetched data for AVGO, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:12:13.845Z"}
+{"level":"info","message":"New data for AVGO up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:12:14.010Z"}
+{"level":"info","message":"Fetched data for TSM, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:12:29.340Z"}
+{"level":"info","message":"New data for TSM up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:12:29.487Z"}
+{"level":"info","message":"Fetched data for JPM, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:12:44.796Z"}
+{"level":"info","message":"New data for JPM up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:12:44.945Z"}
+{"level":"info","message":"Fetched data for MA, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:13:00.203Z"}
+{"level":"info","message":"New data for MA up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:13:00.358Z"}
+{"level":"info","message":"Fetched data for COST, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:13:15.661Z"}
+{"level":"info","message":"New data for COST up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:13:15.811Z"}
+{"level":"info","message":"Fetched data for PG, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:13:31.129Z"}
+{"level":"info","message":"New data for PG up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:13:31.278Z"}
+{"level":"info","message":"Fetched data for NFLX, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:13:46.611Z"}
+{"level":"info","message":"New data for NFLX up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:13:46.765Z"}
+{"level":"info","message":"Fetched data for JNJ, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:14:02.129Z"}
+{"level":"info","message":"New data for JNJ up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:14:02.277Z"}
+{"level":"info","message":"Fetched data for BAC, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:14:17.533Z"}
+{"level":"info","message":"New data for BAC up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:14:17.696Z"}
+{"level":"info","message":"Fetched data for CRM, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:14:32.998Z"}
+{"level":"info","message":"New data for CRM up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:14:33.146Z"}
+{"level":"info","message":"Fetched data for TM, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:14:48.395Z"}
+{"level":"info","message":"New data for TM up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:14:48.544Z"}
+{"level":"info","message":"Fetched data for KO, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T02:15:04.429Z"}
+{"level":"info","message":"New data for KO up to 2025-01-07 has been added to the database.","service":"user-service","timestamp":"2025-01-08T02:15:04.579Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:42:42.367Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:42:42.922Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:42:58.069Z"}
+{"level":"info","message":"Data for GOOG up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:42:58.112Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:43:13.239Z"}
+{"level":"info","message":"Data for MSFT up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:43:13.316Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:43:28.533Z"}
+{"level":"info","message":"Data for AMZN up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:43:28.580Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:43:43.670Z"}
+{"level":"info","message":"Data for META up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:43:43.706Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:43:58.823Z"}
+{"level":"info","message":"Data for IBM up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:43:58.865Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:44:13.986Z"}
+{"level":"info","message":"Data for TSLA up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:44:14.027Z"}
+{"level":"info","message":"Fetched data for NVDA, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:44:29.159Z"}
+{"level":"info","message":"Data for NVDA up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:44:29.205Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:44:47.277Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:44:47.814Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:44:52.436Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:44:52.907Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:44:54.964Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:44:55.355Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:45:10.468Z"}
+{"level":"info","message":"Data for GOOG up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:45:10.514Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:45:25.674Z"}
+{"level":"info","message":"Data for MSFT up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:45:25.759Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:45:40.878Z"}
+{"level":"info","message":"Data for AMZN up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:45:40.927Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:45:56.027Z"}
+{"level":"info","message":"Data for META up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:45:56.065Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:46:11.194Z"}
+{"level":"info","message":"Data for IBM up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:46:11.238Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:46:26.345Z"}
+{"level":"info","message":"Data for TSLA up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:46:26.386Z"}
+{"level":"info","message":"Fetched data for NVDA, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:46:41.521Z"}
+{"level":"info","message":"Data for NVDA up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:46:41.566Z"}
+{"level":"info","message":"Fetched data for AVGO, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:46:56.703Z"}
+{"level":"info","message":"Data for AVGO up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:46:56.742Z"}
+{"level":"info","message":"Fetched data for TSM, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:47:11.858Z"}
+{"level":"info","message":"Data for TSM up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:47:11.900Z"}
+{"level":"info","message":"Fetched data for JPM, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:47:27.026Z"}
+{"level":"info","message":"Data for JPM up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:47:27.066Z"}
+{"level":"info","message":"Fetched data for MA, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:47:42.201Z"}
+{"level":"info","message":"Data for MA up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:47:42.243Z"}
+{"level":"info","message":"Fetched data for COST, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:47:57.381Z"}
+{"level":"info","message":"Data for COST up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:47:57.432Z"}
+{"level":"info","message":"Fetched data for PG, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:48:12.552Z"}
+{"level":"info","message":"Data for PG up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:48:12.604Z"}
+{"level":"info","message":"Fetched data for NFLX, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:48:27.743Z"}
+{"level":"info","message":"Data for NFLX up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:48:27.787Z"}
+{"level":"info","message":"Fetched data for JNJ, last refreshed on 2025-01-07","service":"user-service","timestamp":"2025-01-08T16:48:42.911Z"}
+{"level":"info","message":"Data for JNJ up to 2025-01-07 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-08T16:48:42.951Z"}
+{"level":"error","message":"Error fetching data for BAC: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-08T16:48:58.070Z"}
+{"level":"error","message":"Error fetching data for CRM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-08T16:49:13.159Z"}
+{"level":"error","message":"Error fetching data for TM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-08T16:49:28.240Z"}
+{"level":"error","message":"Error fetching data for KO: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-08T16:49:43.327Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:19:03.908Z"}
+{"level":"info","message":"New data for AAPL up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:19:04.336Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:19:06.830Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:19:07.191Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:19:22.322Z"}
+{"level":"info","message":"New data for GOOG up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:19:22.368Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:19:37.491Z"}
+{"level":"info","message":"New data for MSFT up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:19:37.541Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:19:52.648Z"}
+{"level":"info","message":"New data for AMZN up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:19:52.685Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:20:08.309Z"}
+{"level":"info","message":"New data for META up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:20:08.346Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:20:23.489Z"}
+{"level":"info","message":"New data for IBM up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:20:23.531Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:20:38.667Z"}
+{"level":"info","message":"New data for TSLA up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:20:38.706Z"}
+{"level":"info","message":"Fetched data for NVDA, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:20:53.911Z"}
+{"level":"info","message":"New data for NVDA up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:20:53.947Z"}
+{"level":"info","message":"Fetched data for AVGO, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:21:09.047Z"}
+{"level":"info","message":"New data for AVGO up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:21:09.098Z"}
+{"level":"info","message":"Fetched data for TSM, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:21:24.223Z"}
+{"level":"info","message":"New data for TSM up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:21:24.265Z"}
+{"level":"info","message":"Fetched data for JPM, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:21:39.369Z"}
+{"level":"info","message":"New data for JPM up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:21:39.408Z"}
+{"level":"info","message":"Fetched data for MA, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:21:54.525Z"}
+{"level":"info","message":"New data for MA up to 2025-01-08 has been added to the database.","service":"user-service","timestamp":"2025-01-09T04:21:54.567Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:21:56.297Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:21:56.715Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:22:11.816Z"}
+{"level":"info","message":"Data for GOOG up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:22:11.855Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:22:14.534Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:22:14.987Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:22:30.105Z"}
+{"level":"info","message":"Data for GOOG up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:22:30.165Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:22:45.336Z"}
+{"level":"info","message":"Data for MSFT up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:22:45.425Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:23:01.558Z"}
+{"level":"info","message":"Data for AMZN up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:23:01.607Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:23:07.485Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:23:07.960Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:23:23.046Z"}
+{"level":"info","message":"Data for GOOG up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:23:23.088Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:23:38.211Z"}
+{"level":"info","message":"Data for MSFT up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:23:38.294Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:23:53.411Z"}
+{"level":"info","message":"Data for AMZN up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:23:53.456Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:24:08.572Z"}
+{"level":"info","message":"Data for META up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:24:08.609Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:24:23.726Z"}
+{"level":"info","message":"Data for IBM up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:24:23.770Z"}
+{"level":"info","message":"Fetched data for TSLA, last refreshed on 2025-01-08","service":"user-service","timestamp":"2025-01-09T04:24:38.906Z"}
+{"level":"info","message":"Data for TSLA up to 2025-01-08 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-09T04:24:38.942Z"}
+{"level":"error","message":"Error fetching data for NVDA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:24:54.014Z"}
+{"level":"error","message":"Error fetching data for AVGO: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:25:09.088Z"}
+{"level":"error","message":"Error fetching data for TSM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:25:24.247Z"}
+{"level":"error","message":"Error fetching data for JPM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:25:39.331Z"}
+{"level":"error","message":"Error fetching data for MA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:25:54.426Z"}
+{"level":"error","message":"Error fetching data for COST: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:26:09.490Z"}
+{"level":"error","message":"Error fetching data for PG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:26:24.558Z"}
+{"level":"error","message":"Error fetching data for NFLX: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:26:39.629Z"}
+{"level":"error","message":"Error fetching data for JNJ: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:26:54.703Z"}
+{"level":"error","message":"Error fetching data for BAC: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:27:09.762Z"}
+{"level":"error","message":"Error fetching data for CRM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:27:24.851Z"}
+{"level":"error","message":"Error fetching data for TM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:27:39.936Z"}
+{"level":"error","message":"Error fetching data for KO: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:27:55.001Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:34:15.891Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:34:20.576Z"}
+{"level":"error","message":"Error fetching data for GOOG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:34:35.671Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:34:49.810Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:34:51.071Z"}
+{"level":"error","message":"Error fetching data for GOOG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:35:06.137Z"}
+{"level":"error","message":"Error fetching data for MSFT: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:35:21.217Z"}
+{"level":"error","message":"Error fetching data for AMZN: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:35:36.275Z"}
+{"level":"error","message":"Error fetching data for META: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:35:51.346Z"}
+{"level":"error","message":"Error fetching data for IBM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:36:06.186Z"}
+{"level":"error","message":"Error fetching data for TSLA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:36:21.253Z"}
+{"level":"error","message":"Error fetching data for NVDA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:36:36.318Z"}
+{"level":"error","message":"Error fetching data for AVGO: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:36:51.382Z"}
+{"level":"error","message":"Error fetching data for TSM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:37:06.527Z"}
+{"level":"error","message":"Error fetching data for JPM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:37:21.608Z"}
+{"level":"error","message":"Error fetching data for MA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:37:36.680Z"}
+{"level":"error","message":"Error fetching data for COST: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:37:51.770Z"}
+{"level":"error","message":"Error fetching data for PG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:38:06.856Z"}
+{"level":"error","message":"Error fetching data for NFLX: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:38:21.922Z"}
+{"level":"error","message":"Error fetching data for JNJ: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:38:37.016Z"}
+{"level":"error","message":"Error fetching data for BAC: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:38:52.088Z"}
+{"level":"error","message":"Error fetching data for CRM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:39:07.162Z"}
+{"level":"error","message":"Error fetching data for TM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:39:22.261Z"}
+{"level":"error","message":"Error fetching data for KO: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:39:37.363Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:47:35.268Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:47:42.437Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:47:44.904Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:47:48.481Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:47:51.285Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:47:58.003Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:48:02.896Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:48:14.406Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:48:17.068Z"}
+{"level":"error","message":"Error fetching data for GOOG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:48:32.134Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:48:44.104Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:48:46.971Z"}
+{"level":"error","message":"Error fetching data for GOOG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:49:02.949Z"}
+{"level":"error","message":"Error fetching data for MSFT: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:49:18.022Z"}
+{"level":"error","message":"Error fetching data for AMZN: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:49:33.100Z"}
+{"level":"error","message":"Error fetching data for META: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:49:48.171Z"}
+{"level":"error","message":"Error fetching data for IBM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:50:03.729Z"}
+{"level":"error","message":"Error fetching data for TSLA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:50:18.819Z"}
+{"level":"error","message":"Error fetching data for NVDA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:50:33.882Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:50:40.258Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:50:43.316Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:50:46.782Z"}
+{"level":"error","message":"Error fetching data for GOOG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:51:01.986Z"}
+{"level":"error","message":"Error fetching data for MSFT: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:51:17.046Z"}
+{"level":"error","message":"Error fetching data for AMZN: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:51:32.117Z"}
+{"level":"error","message":"Error fetching data for META: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:51:47.211Z"}
+{"level":"error","message":"Error fetching data for IBM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:52:03.244Z"}
+{"level":"error","message":"Error fetching data for TSLA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:52:18.307Z"}
+{"level":"error","message":"Error fetching data for NVDA: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:52:33.365Z"}
+{"level":"error","message":"Error fetching data for AVGO: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:52:48.428Z"}
+{"level":"error","message":"Error fetching data for TSM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:53:03.875Z"}
+{"level":"error","message":"Error fetching data for JPM: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:53:18.939Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:53:22.444Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:53:36.817Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:53:49.574Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:53:54.973Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:53:57.723Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:54:03.996Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:54:08.135Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:54:12.781Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:54:14.125Z"}
+{"level":"error","message":"Error fetching data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:54:16.914Z"}
+{"level":"error","message":"Error fetching data for GOOG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-09T04:54:31.981Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-12T21:59:37.194Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-12T22:00:12.919Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-12T22:01:28.287Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-13T17:04:44.439Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-13T17:05:47.659Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-13T17:09:16.527Z"}
+{"level":"error","message":"Error fetching and updating stock data for GOOG: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-13T17:09:41.641Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-13T17:24:16.477Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-13T17:43:42.261Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-13T17:45:09.568Z"}
+{"level":"error","message":"Error fetching and updating stock data for GOOG: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-13T17:45:34.755Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-10","service":"user-service","timestamp":"2025-01-13T17:47:59.732Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-13T17:48:00.165Z"}
+{"level":"info","message":"Fetched data for GOOG, last refreshed on 2025-01-10","service":"user-service","timestamp":"2025-01-13T17:48:15.522Z"}
+{"level":"info","message":"Data for GOOG up to 2025-01-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-13T17:48:15.572Z"}
+{"level":"info","message":"Fetched data for MSFT, last refreshed on 2025-01-10","service":"user-service","timestamp":"2025-01-13T17:48:31.034Z"}
+{"level":"info","message":"Data for MSFT up to 2025-01-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-13T17:48:31.096Z"}
+{"level":"info","message":"Fetched data for AMZN, last refreshed on 2025-01-10","service":"user-service","timestamp":"2025-01-13T17:48:46.352Z"}
+{"level":"info","message":"Data for AMZN up to 2025-01-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-13T17:48:46.399Z"}
+{"level":"info","message":"Fetched data for META, last refreshed on 2025-01-10","service":"user-service","timestamp":"2025-01-13T17:49:01.608Z"}
+{"level":"info","message":"Data for META up to 2025-01-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-13T17:49:01.648Z"}
+{"level":"info","message":"Fetched data for IBM, last refreshed on 2025-01-10","service":"user-service","timestamp":"2025-01-13T17:49:16.874Z"}
+{"level":"info","message":"Data for IBM up to 2025-01-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-13T17:49:16.927Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-13T17:50:54.462Z"}
+{"level":"info","message":"Fetched data for AAPL, last refreshed on 2025-01-10","service":"user-service","timestamp":"2025-01-13T17:51:40.731Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-13T17:51:41.214Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Operation `historicalstocks.findOne()` buffering timed out after 10000ms","service":"user-service","timestamp":"2025-01-13T18:03:19.275Z"}
+{"level":"info","message":"Data for A up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:47:38.515Z"}
+{"level":"info","message":"Data for A up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:47:53.696Z"}
+{"level":"info","message":"Data for P up to 2019-02-26 has been updated.","service":"user-service","timestamp":"2025-01-13T19:48:08.832Z"}
+{"level":"info","message":"Data for L up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:48:23.994Z"}
+{"level":"info","message":"Data for G up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:48:39.130Z"}
+{"level":"info","message":"Data for O up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:48:54.325Z"}
+{"level":"info","message":"Data for O up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:49:09.507Z"}
+{"level":"info","message":"Data for G up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:49:24.804Z"}
+{"level":"info","message":"Data for M up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:49:39.952Z"}
+{"level":"info","message":"Data for S up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:49:55.052Z"}
+{"level":"info","message":"Data for F up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:50:10.256Z"}
+{"level":"info","message":"Data for T up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:50:25.439Z"}
+{"level":"info","message":"Data for A up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:50:40.587Z"}
+{"level":"info","message":"Data for M up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:50:55.738Z"}
+{"level":"info","message":"Data for Z up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:51:10.870Z"}
+{"level":"error","message":"Error fetching and updating stock data for N: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:51:26.088Z"}
+{"level":"info","message":"Data for M up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:51:41.260Z"}
+{"level":"info","message":"Data for E up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:51:56.554Z"}
+{"level":"info","message":"Data for T up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:52:11.697Z"}
+{"level":"info","message":"Data for A up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:52:26.846Z"}
+{"level":"info","message":"Data for I up to 2022-02-23 has been updated.","service":"user-service","timestamp":"2025-01-13T19:52:42.059Z"}
+{"level":"info","message":"Data for B up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:52:57.208Z"}
+{"level":"info","message":"Data for M up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:53:12.349Z"}
+{"level":"info","message":"Data for T up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:53:27.546Z"}
+{"level":"info","message":"Data for S up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:53:42.655Z"}
+{"level":"info","message":"Data for L up to 2025-01-10 has been updated.","service":"user-service","timestamp":"2025-01-13T19:53:57.822Z"}
+{"level":"error","message":"Error fetching and updating stock data for A: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:54:12.893Z"}
+{"level":"error","message":"Error fetching and updating stock data for N: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:54:28.098Z"}
+{"level":"error","message":"Error fetching and updating stock data for V: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:54:43.192Z"}
+{"level":"error","message":"Error fetching and updating stock data for D: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:54:58.264Z"}
+{"level":"error","message":"Error fetching and updating stock data for A: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:55:13.493Z"}
+{"level":"error","message":"Error fetching and updating stock data for A: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:55:28.570Z"}
+{"level":"error","message":"Error fetching and updating stock data for V: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:55:43.643Z"}
+{"level":"error","message":"Error fetching and updating stock data for G: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:55:58.727Z"}
+{"level":"error","message":"Error fetching and updating stock data for O: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:56:13.858Z"}
+{"level":"error","message":"Error fetching and updating stock data for T: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:56:28.928Z"}
+{"level":"error","message":"Error fetching and updating stock data for S: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:56:43.997Z"}
+{"level":"error","message":"Error fetching and updating stock data for M: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:56:59.077Z"}
+{"level":"error","message":"Error fetching and updating stock data for J: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:57:14.957Z"}
+{"level":"error","message":"Error fetching and updating stock data for P: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:57:30.032Z"}
+{"level":"error","message":"Error fetching and updating stock data for M: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:57:45.105Z"}
+{"level":"error","message":"Error fetching and updating stock data for M: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:58:00.402Z"}
+{"level":"error","message":"Error fetching and updating stock data for A: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:58:15.620Z"}
+{"level":"error","message":"Error fetching and updating stock data for C: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:58:30.696Z"}
+{"level":"error","message":"Error fetching and updating stock data for O: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:58:45.799Z"}
+{"level":"error","message":"Error fetching and updating stock data for S: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:59:01.691Z"}
+{"level":"error","message":"Error fetching and updating stock data for T: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:59:17.042Z"}
+{"level":"error","message":"Error fetching and updating stock data for P: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:59:32.190Z"}
+{"level":"error","message":"Error fetching and updating stock data for G: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T19:59:47.267Z"}
+{"level":"error","message":"Error fetching and updating stock data for N: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:00:03.215Z"}
+{"level":"error","message":"Error fetching and updating stock data for F: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:00:18.713Z"}
+{"level":"error","message":"Error fetching and updating stock data for L: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:00:33.799Z"}
+{"level":"error","message":"Error fetching and updating stock data for X: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:00:48.874Z"}
+{"level":"error","message":"Error fetching and updating stock data for J: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:01:04.984Z"}
+{"level":"error","message":"Error fetching and updating stock data for N: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:01:20.067Z"}
+{"level":"error","message":"Error fetching and updating stock data for J: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:01:35.153Z"}
+{"level":"error","message":"Error fetching and updating stock data for B: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:01:50.250Z"}
+{"level":"error","message":"Error fetching and updating stock data for A: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:02:06.721Z"}
+{"level":"error","message":"Error fetching and updating stock data for C: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:02:21.812Z"}
+{"level":"error","message":"Error fetching and updating stock data for C: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:02:36.897Z"}
+{"level":"error","message":"Error fetching and updating stock data for R: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:02:52.006Z"}
+{"level":"error","message":"Error fetching and updating stock data for M: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:03:07.647Z"}
+{"level":"error","message":"Error fetching and updating stock data for T: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:03:22.874Z"}
+{"level":"error","message":"Error fetching and updating stock data for M: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:03:37.975Z"}
+{"level":"error","message":"Error fetching and updating stock data for K: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:03:53.054Z"}
+{"level":"error","message":"Error fetching and updating stock data for O: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:04:08.247Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-13T20:18:44.784Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T04:11:49.221Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: entry is not defined","service":"user-service","timestamp":"2025-01-15T04:28:35.360Z"}
+{"level":"info","message":"Data for AAPL up to Mon Jan 13 2025 19:00:00 GMT-0500 (Eastern Standard Time) has been updated.","service":"user-service","timestamp":"2025-01-15T04:29:50.326Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: object is not defined","service":"user-service","timestamp":"2025-01-15T04:38:21.113Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: object is not defined","service":"user-service","timestamp":"2025-01-15T04:39:31.283Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: object is not defined","service":"user-service","timestamp":"2025-01-15T04:40:17.408Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Invalid or missing data for symbol: AAPL","service":"user-service","timestamp":"2025-01-15T04:42:08.372Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Invalid or missing data for symbol: AAPL","service":"user-service","timestamp":"2025-01-15T04:48:03.907Z"}
+{"level":"error","message":"Error fetching and updating stock data for GOOG: Invalid or missing data for symbol: GOOG","service":"user-service","timestamp":"2025-01-15T04:48:19.042Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Invalid or missing data for symbol: AAPL","service":"user-service","timestamp":"2025-01-15T04:49:48.599Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Invalid or missing data for symbol: AAPL","service":"user-service","timestamp":"2025-01-15T05:06:48.855Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:08:56.294Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:13:22.103Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:18:08.984Z"}
+{"level":"info","message":"Data for GOOG up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:18:24.173Z"}
+{"level":"info","message":"Data for MSFT up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:18:39.349Z"}
+{"level":"info","message":"Data for AMZN up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:18:54.529Z"}
+{"level":"info","message":"Data for META up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:19:09.682Z"}
+{"level":"info","message":"Data for IBM up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:19:24.889Z"}
+{"level":"info","message":"Data for TSLA up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:19:40.067Z"}
+{"level":"info","message":"Data for NVDA up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:19:55.533Z"}
+{"level":"info","message":"Data for AVGO up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:20:10.733Z"}
+{"level":"info","message":"Data for TSM up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:20:25.908Z"}
+{"level":"info","message":"Data for JPM up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:20:41.091Z"}
+{"level":"info","message":"Data for MA up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:20:56.275Z"}
+{"level":"info","message":"Data for COST up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:21:11.640Z"}
+{"level":"info","message":"Data for PG up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:21:26.996Z"}
+{"level":"info","message":"Data for NFLX up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:21:42.185Z"}
+{"level":"info","message":"Data for JNJ up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:21:57.414Z"}
+{"level":"info","message":"Data for BAC up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:22:12.852Z"}
+{"level":"info","message":"Data for CRM up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:22:28.056Z"}
+{"level":"info","message":"Data for TM up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:22:43.349Z"}
+{"level":"info","message":"Data for KO up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:22:58.773Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:24:39.465Z"}
+{"level":"info","message":"Data for GOOG up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T05:24:54.796Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-14 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-15T17:00:36.645Z"}
+{"level":"error","message":"Error ensuring bucket exists: s3Client is not defined","service":"user-service","timestamp":"2025-01-15T18:42:36.929Z"}
+{"level":"error","message":"Error ensuring bucket exists: s3Client is not defined","service":"user-service","timestamp":"2025-01-15T18:46:10.371Z"}
+{"level":"error","message":"Error ensuring bucket exists: s3Client is not defined","service":"user-service","timestamp":"2025-01-15T18:57:06.070Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T18:58:51.482Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T18:59:23.558Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-14 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-15T18:59:47.195Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T18:59:55.394Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:57.329Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:57.576Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:57.805Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:57.985Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:58.177Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:58.356Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:58.513Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:58.670Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:58.820Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:58.978Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:59.140Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:59.289Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:59.440Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:59.589Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:59.732Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:08:59.881Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:09:00.029Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:09:00.206Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:09:00.412Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:09:00.685Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:09:00.915Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T19:46:01.808Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:00:08.302Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:00:41.529Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:01:20.714Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:01:55.095Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:06:23.338Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:07:19.109Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:08:01.042Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:08:23.201Z"}
+{"level":"error","message":"Error fetching and updating stock data for GOOG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:08:38.414Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:09:04.796Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:10:25.208Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:12:46.332Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:13:10.384Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:13:33.570Z"}
+{"level":"error","message":"Error fetching and updating stock data for GOOG: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:13:48.737Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:13:57.326Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:15:11.862Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:17:08.261Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:22:05.806Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:23:38.740Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:24:32.379Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:29:07.185Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot read properties of undefined (reading '3. Last Refreshed')","service":"user-service","timestamp":"2025-01-15T20:32:51.438Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-14 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-15T20:34:52.277Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-14 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-15T21:07:35.642Z"}
+{"level":"info","message":"Data for GOOG up to 2025-01-14 already exists. Skipping update.","service":"user-service","timestamp":"2025-01-15T21:07:51.003Z"}
+{"level":"info","message":"Data for MSFT up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:08:06.950Z"}
+{"level":"info","message":"Data for AMZN up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:08:22.361Z"}
+{"level":"info","message":"Data for META up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:08:37.713Z"}
+{"level":"info","message":"Data for IBM up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:08:53.097Z"}
+{"level":"info","message":"Data for TSLA up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:09:08.450Z"}
+{"level":"info","message":"Data for NVDA up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:09:23.826Z"}
+{"level":"info","message":"Data for AVGO up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:09:39.203Z"}
+{"level":"info","message":"Data for TSM up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:09:54.586Z"}
+{"level":"info","message":"Data for JPM up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:10:09.963Z"}
+{"level":"info","message":"Data for MA up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:10:25.349Z"}
+{"level":"info","message":"Data for COST up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:10:40.717Z"}
+{"level":"info","message":"Data for PG up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:10:56.137Z"}
+{"level":"info","message":"Data for NFLX up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:11:11.533Z"}
+{"level":"info","message":"Data for JNJ up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:11:26.914Z"}
+{"level":"info","message":"Data for BAC up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:11:42.313Z"}
+{"level":"info","message":"Data for CRM up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:11:57.683Z"}
+{"level":"info","message":"Data for TM up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:12:13.070Z"}
+{"level":"info","message":"Data for KO up to 2025-01-14 has been updated.","service":"user-service","timestamp":"2025-01-15T21:12:28.454Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-15T21:13:04.504Z"}
+{"level":"info","message":"Data for AAPL up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:05:48.985Z"}
+{"level":"info","message":"Data for GOOG up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:06:04.171Z"}
+{"level":"info","message":"Data for MSFT up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:06:19.330Z"}
+{"level":"info","message":"Data for AMZN up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:06:34.550Z"}
+{"level":"info","message":"Data for META up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:06:50.021Z"}
+{"level":"info","message":"Data for IBM up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:07:05.492Z"}
+{"level":"info","message":"Data for TSLA up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:07:20.802Z"}
+{"level":"info","message":"Data for NVDA up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:07:36.370Z"}
+{"level":"info","message":"Data for AVGO up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:07:51.801Z"}
+{"level":"info","message":"Data for TSM up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:08:07.047Z"}
+{"level":"info","message":"Data for JPM up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:08:22.242Z"}
+{"level":"info","message":"Data for MA up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:08:37.423Z"}
+{"level":"info","message":"Data for COST up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:08:52.588Z"}
+{"level":"info","message":"Data for PG up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:09:07.963Z"}
+{"level":"info","message":"Data for NFLX up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:09:23.482Z"}
+{"level":"info","message":"Data for JNJ up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:09:38.846Z"}
+{"level":"info","message":"Data for BAC up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:09:54.194Z"}
+{"level":"info","message":"Data for CRM up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:10:09.356Z"}
+{"level":"info","message":"Data for TM up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:10:24.606Z"}
+{"level":"info","message":"Data for KO up to 2025-01-15 has been updated.","service":"user-service","timestamp":"2025-01-16T04:10:40.088Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-01-17T15:45:04.467Z"}
+{"level":"info","message":"Data for AAPL up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:11:49.508Z"}
+{"level":"info","message":"Data for GOOG up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:12:04.696Z"}
+{"level":"info","message":"Data for MSFT up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:12:19.950Z"}
+{"level":"info","message":"Data for AMZN up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:12:35.154Z"}
+{"level":"info","message":"Data for META up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:12:50.362Z"}
+{"level":"info","message":"Data for IBM up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:13:05.689Z"}
+{"level":"info","message":"Data for TSLA up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:13:21.913Z"}
+{"level":"info","message":"Data for NVDA up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:13:37.133Z"}
+{"level":"info","message":"Data for AVGO up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:13:52.337Z"}
+{"level":"info","message":"Data for TSM up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:14:07.522Z"}
+{"level":"info","message":"Data for JPM up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:14:22.769Z"}
+{"level":"info","message":"Data for MA up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:14:37.994Z"}
+{"level":"info","message":"Data for COST up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:14:53.206Z"}
+{"level":"info","message":"Data for PG up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:15:08.391Z"}
+{"level":"info","message":"Data for NFLX up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:15:23.878Z"}
+{"level":"info","message":"Data for JNJ up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:15:39.056Z"}
+{"level":"info","message":"Data for BAC up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:15:54.308Z"}
+{"level":"info","message":"Data for CRM up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:16:09.523Z"}
+{"level":"info","message":"Data for TM up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:16:24.808Z"}
+{"level":"info","message":"Data for KO up to 2025-02-04 has been updated.","service":"user-service","timestamp":"2025-02-05T00:16:40.004Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-02-06T11:00:09.548Z"}
+{"level":"info","message":"Stock ENPH - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:03:23.785Z"}
+{"level":"info","message":"Stock ZM - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:03:23.820Z"}
+{"level":"info","message":"Stock CRWD - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:03:23.860Z"}
+{"level":"info","message":"Stock FSLY - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:03:23.885Z"}
+{"level":"info","message":"Stock DOCU - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:03:23.919Z"}
+{"level":"info","message":"Stock TEAM - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:03:23.946Z"}
+{"level":"info","message":"Stock HUBS - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:03:23.959Z"}
+{"level":"info","message":"Stock OKTA - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:03:23.977Z"}
+{"level":"info","message":"Stock ZS - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:03:23.981Z"}
+{"level":"info","message":"Stock SEDG - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:03:24.090Z"}
+{"level":"info","message":"Stock ZM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:11:06.264Z"}
+{"level":"info","message":"Stock ZSAN - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:11:06.403Z"}
+{"level":"info","message":"Stock WMT - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.229Z"}
+{"level":"info","message":"Stock CSCO - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.284Z"}
+{"level":"info","message":"Stock T - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.570Z"}
+{"level":"info","message":"Stock XOM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.685Z"}
+{"level":"info","message":"Stock CVX - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.733Z"}
+{"level":"info","message":"Stock NKE - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.769Z"}
+{"level":"info","message":"Stock CMCSA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.776Z"}
+{"level":"info","message":"Stock DIS - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.781Z"}
+{"level":"info","message":"Stock HON - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:12:50.804Z"}
+{"level":"info","message":"Stock UPS - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.821Z"}
+{"level":"info","message":"Stock PEP - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.830Z"}
+{"level":"info","message":"Stock INTC - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.844Z"}
+{"level":"info","message":"Stock MCD - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.861Z"}
+{"level":"info","message":"Stock TXN - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:12:50.868Z"}
+{"level":"info","message":"Stock NEE - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.884Z"}
+{"level":"info","message":"Stock LLY - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:12:50.896Z"}
+{"level":"info","message":"Stock BMY - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.909Z"}
+{"level":"info","message":"Stock PM - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:12:50.910Z"}
+{"level":"info","message":"Stock PFE - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.929Z"}
+{"level":"info","message":"Stock LOW - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.945Z"}
+{"level":"info","message":"Stock UNH - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.946Z"}
+{"level":"info","message":"Stock VZ - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:50.947Z"}
+{"level":"info","message":"Stock MS - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:51.055Z"}
+{"level":"info","message":"Stock SCHW - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:12:51.075Z"}
+{"level":"info","message":"Stock GS - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:13:51.303Z"}
+{"level":"info","message":"Stock SPGI - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:13:51.322Z"}
+{"level":"info","message":"Stock CAT - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:13:51.336Z"}
+{"level":"info","message":"Stock ZTS - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:57:52.996Z"}
+{"level":"info","message":"Stock LMT - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:53.392Z"}
+{"level":"info","message":"Stock APD - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:53.622Z"}
+{"level":"info","message":"Stock CB - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:57:54.032Z"}
+{"level":"info","message":"Stock AMT - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:57:54.283Z"}
+{"level":"info","message":"Stock DUK - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:54.869Z"}
+{"level":"info","message":"Stock MDT - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:55.112Z"}
+{"level":"info","message":"Stock UNP - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:57:55.268Z"}
+{"level":"info","message":"Stock CCI - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:55.280Z"}
+{"level":"info","message":"Stock C - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:55.611Z"}
+{"level":"info","message":"Stock FIS - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:55.691Z"}
+{"level":"info","message":"Stock EL - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:55.838Z"}
+{"level":"info","message":"Stock GILD - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:55.931Z"}
+{"level":"info","message":"Stock SO - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:56.042Z"}
+{"level":"info","message":"Stock NOW - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:56.100Z"}
+{"level":"info","message":"Stock SYK - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:56.115Z"}
+{"level":"info","message":"Stock ISRG - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:56.256Z"}
+{"level":"info","message":"Stock MO - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:56.506Z"}
+{"level":"info","message":"Stock DE - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:56.522Z"}
+{"level":"info","message":"Stock TMO - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T21:57:56.624Z"}
+{"level":"info","message":"Stock MMM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:56.696Z"}
+{"level":"info","message":"Stock BKNG - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:57.112Z"}
+{"level":"info","message":"Stock BDX - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:57.147Z"}
+{"level":"info","message":"Stock ADP - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:57:57.646Z"}
+{"level":"info","message":"Stock CL - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:58:59.304Z"}
+{"level":"info","message":"Stock DHR - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:58:59.394Z"}
+{"level":"info","message":"Stock ITW - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:58:59.659Z"}
+{"level":"info","message":"Stock PNC - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T21:59:00.914Z"}
+{"level":"info","message":"Stock PSA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:00:10.757Z"}
+{"level":"info","message":"Stock MTD - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:00:11.739Z"}
+{"level":"info","message":"Stock ECL - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:47.287Z"}
+{"level":"info","message":"Stock HUM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:47.489Z"}
+{"level":"info","message":"Stock ETN - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:47.564Z"}
+{"level":"info","message":"Stock AON - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:47.637Z"}
+{"level":"info","message":"Stock ATVI - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:47.708Z"}
+{"level":"info","message":"Stock AEP - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:47.783Z"}
+{"level":"info","message":"Stock FISV - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:47.800Z"}
+{"level":"info","message":"Stock PSA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:47.866Z"}
+{"level":"info","message":"Stock KMB - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:47.915Z"}
+{"level":"info","message":"Stock MTD - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:47.949Z"}
+{"level":"info","message":"Stock MAR - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:47.987Z"}
+{"level":"info","message":"Stock CTAS - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:48.024Z"}
+{"level":"info","message":"Stock LRCX - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:48.062Z"}
+{"level":"info","message":"Stock KLAC - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:48.079Z"}
+{"level":"info","message":"Stock MCO - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T22:02:48.090Z"}
+{"level":"info","message":"Stock REGN - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:48.133Z"}
+{"level":"info","message":"Stock NSC - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:48.140Z"}
+{"level":"info","message":"Stock ILMN - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:48.149Z"}
+{"level":"info","message":"Stock SHW - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:48.156Z"}
+{"level":"info","message":"Stock EQIX - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:48.199Z"}
+{"level":"info","message":"Stock ROP - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T22:02:48.206Z"}
+{"level":"info","message":"Stock IDXX - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:48.246Z"}
+{"level":"info","message":"Stock SBUX - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:48.357Z"}
+{"level":"info","message":"Stock ORLY - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:02:48.433Z"}
+{"level":"info","message":"Stock PAYC - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:03:48.731Z"}
+{"level":"info","message":"Stock FTNT - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:03:48.789Z"}
+{"level":"info","message":"Stock SNPS - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:03:48.829Z"}
+{"level":"info","message":"Stock ANSS - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:03:48.849Z"}
+{"level":"info","message":"Stock CRWD - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:10.575Z"}
+{"level":"info","message":"Stock CPRT - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:10.900Z"}
+{"level":"info","message":"Stock RMD - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:11.081Z"}
+{"level":"info","message":"Stock MSCI - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:11.250Z"}
+{"level":"info","message":"Stock TEAM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:11.415Z"}
+{"level":"info","message":"Stock TDG - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:11.537Z"}
+{"level":"info","message":"Stock HUBS - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:11.573Z"}
+{"level":"info","message":"Stock DOCU - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:11.581Z"}
+{"level":"info","message":"Stock DDOG - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T22:05:11.689Z"}
+{"level":"info","message":"Stock NET - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T22:05:11.730Z"}
+{"level":"info","message":"Stock PLUG - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T22:05:11.758Z"}
+{"level":"info","message":"Stock SEDG - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:11.846Z"}
+{"level":"info","message":"Stock ZS - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:11.892Z"}
+{"level":"info","message":"Stock ENPH - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:11.926Z"}
+{"level":"info","message":"Stock KEYS - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T22:05:12.016Z"}
+{"level":"info","message":"Stock FSLY - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:12.053Z"}
+{"level":"info","message":"Stock TECH - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:12.102Z"}
+{"level":"info","message":"Stock OKTA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:12.183Z"}
+{"level":"info","message":"Stock ALGN - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:12.184Z"}
+{"level":"info","message":"Stock WST - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:12.226Z"}
+{"level":"info","message":"Stock BIO - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:12.339Z"}
+{"level":"info","message":"Stock TER - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:13.164Z"}
+{"level":"info","message":"Stock STE - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:05:13.173Z"}
+{"level":"info","message":"Stock ROKU - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:06:13.817Z"}
+{"level":"info","message":"Stock PTON - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T22:06:13.820Z"}
+{"level":"info","message":"Stock TWLO - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-02-09T22:06:13.822Z"}
+{"level":"info","message":"Stock ZSAN - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:08:35.315Z"}
+{"level":"info","message":"Stock ZM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:08:36.174Z"}
+{"level":"info","message":"Stock TSLA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:12:10.608Z"}
+{"level":"info","message":"Stock AAPL - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:12:11.541Z"}
+{"level":"info","message":"Stock TSLA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:16:36.601Z"}
+{"level":"info","message":"Stock AAPL - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-02-09T22:16:37.511Z"}

@@ -1,6 +1,13 @@
 import pandas as pd
+import os 
 
-def analyze_stock_data(monthly_data):
+
+
+def analyze_stock_data(monthly_data,symbol):
+    
+    symbol_folder = os.path.join('csv_report', symbol)
+    os.makedirs(symbol_folder, exist_ok=True)
+
     df = pd.DataFrame(monthly_data)
     if df.empty:
         print("No data available for analysis.")
@@ -30,5 +37,15 @@ def analyze_stock_data(monthly_data):
     df['ema26'] = df['close'].ewm(span=26, adjust=False).mean()
     df['macd'] = df['ema12'] - df['ema26']
     df['signal_line'] = df['macd'].ewm(span=9, adjust=False).mean()
+
+    # Drop NaN values from the DataFrame
+    df.dropna(inplace=True)
+
+    # Create the path for the CSV file for the specific symbol
+    csv_path = os.path.join(symbol_folder, f"{symbol}_csv_report.csv")
+    # Save the analyzed data to a CSV file within the symbol-specific folder
+    df.to_csv(csv_path, index=True)
+    print(f"CSV report for {symbol} saved to {csv_path}")
+    
 
     return df
