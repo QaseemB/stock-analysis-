@@ -68,4 +68,4 @@ const runFetchStockss = async (symbols) => {
   }
 }
 // run the stocks updates
-runFetchStockss(['U','AAPL','TSLA'])
+runFetchStockss(stockstack1)

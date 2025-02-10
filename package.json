@@ -12,6 +12,7 @@
     "fetchStocks": "node Server/script/fetchStocks.mjs",
     "backupData": "node Server/script/s3BackupData.mjs",
     "backupProcessedData": "node Server/script/s3BackupProcessedData.mjs",
+    "cleanRawData": "node Server/script/cleanRawData.mjs",
     "start": "node Server/src/server.mjs"
   },
   "dependencies": {
