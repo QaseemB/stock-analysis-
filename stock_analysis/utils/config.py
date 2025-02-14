@@ -17,5 +17,13 @@ config = {
 "DB_RAW_COLLECTION": os.getenv("DB_Raw_Collection"),
 "DB_PROCESSED_COLLECTION": os.getenv("DB_Processed_Collection"),
 "environment": os.getenv("NODE_ENV", "development"),
+"SQL_NAME": os.getenv("SQL_NAME"),
+"SQL_USER": os.getenv("SQL_USER"),
+"SQL_PASSWORD": os.getenv("SQL_PASSWORD"),
+"SQL_HOST": os.getenv("SQL_HOST"),
+"SQL_PORT": os.getenv("SQL_PORT"),
+"SQL_DB": os.getenv("SQL_DB"),
+"SQL_TABLE_NAME": os.getenv("SQL_TABLE_NAME"),   
+"SQL_TABLE_ANALYSIS": os.getenv("SQL_TABLE_NAME_ANALYSIS"),
 }
 
