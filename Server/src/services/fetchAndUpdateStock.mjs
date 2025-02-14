@@ -13,13 +13,21 @@ export const fetchAndUpdateStock = async (symbol) =>{
     return;
   }
   try{
+    const {metadata} = parseStockData(data)
+    const { monthlyTimeSeries, lastRefreshed, 
+      timezone, monthlyData } =
+    metadata;
+    
     const data = await fetchStockApi(symbol)
-    //  if (!data || !data.metadata || !data.metadata.monthlyTimeSeries) {
-    //   throw new Error(`Invalid or missing data for symbol: ${symbol}`);
-    // }
-    const {metadata, newMonthlyData} = parseStockData(data)
 
-    const latestDate = Object.keys(metadata.monthlyTimeSeries)[0]
+    if (!data || !data["Meta Data"]) {
+      console.error("Invalid Meta Data for symbol:", symbol);
+      console.log("API Response:", data);
+      return;
+    }
+    
+
+    const latestDate = Object.keys(monthlyTimeSeries)[0]
     
     //check if data exists
     const dataExists = await checkIfDataExists(symbol, latestDate)

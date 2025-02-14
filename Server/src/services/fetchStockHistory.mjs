@@ -7,11 +7,11 @@ import { HistoricalStock } from "../models/HistoricalSchema.mjs";
 import { logger } from "../utilities/logger.mjs";
 
 export const fetchStockHistory = async (symbol, updateDB = true) => {
-  //   if (mongoose.connection.readyState !== 1) {
-  //     // 1 = connected
-  //     console.error("MongoDB connection is not established. Aborting operation.");
-  //     return;
-  //   }
+    if (mongoose.connection.readyState !== 1) {
+      1 = connected
+      console.error("MongoDB connection is not established. Aborting operation.");
+      return;
+    }
   try {
     const data = await fetchStockApi(symbol);
 
