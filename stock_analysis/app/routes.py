@@ -10,8 +10,9 @@ from analysis.generate_summary import generate_summary
 from analysis.data_visualization import generate_plots
 from analysis.report_generation import create_pdf_report
 from analysis.gen_interactive_plt import gen_interactive_plt
-from utils.data_transform import transform_to_processed_data
-from utils.mongo_connect import db
+from utils.transform_data import transform_to_processed_data_sql
+from utils.insert_processed_data import insert_processed_data
+# from utils.mongo_connect import db
 from utils.config import config
 import matplotlib
 import logging
@@ -64,11 +65,11 @@ def analyze(symbol):
         
       
 
-        processed_data = transform_to_processed_data(df,symbol)
+        processed_data = transform_to_processed_data_sql(df,symbol)
 
-        processed_data_collection = db[config['DB_PROCESSED_COLLECTION']]
-
-        insert_result = processed_data_collection.insert_one(processed_data)
+        for entry in processed_data:
+            insert_processed_data(symbol, entry)  # Your SQL insertion function
+    
 
         # Step 4: Generate summary
         summary_json = generate_summary(df, symbol)
@@ -92,7 +93,7 @@ def analyze(symbol):
             "static_plots": plot_paths,
             "interactive_plot": interactive_plot_object,
             "data": df_json,
-            "message": f"Data for {symbol} analyzed and saved to MongoDB successfully.",
+            "message": f"Data for {symbol} analyzed and saved to PostgreSql successfully.",
             # "inserted_ids": [str(_id) for _id in insert_result.inserted_ids],  # Return inserted IDs
         }
 
