@@ -1,41 +1,49 @@
-import {S3Module} from '../utilities/connectS3.mjs'
-import {fetchStockApi} from '../utilities/fetchStockApi.mjs'
-import {delay} from '../utilities/delay.mjs'
+import { S3Module } from "../utilities/connectS3.mjs";
+import connectDB  from "../utilities/connectDB.mjs";
+import { processSymbol } from "../utilities/processSymbol.mjs";
+import { delay } from "../utilities/delay.mjs";
 
-export const backupRawStockData = async (symbols) => {
-  const {createStockS3Client,uploadFile,ensureBucketExists} = S3Module;
+/**
+ * Backs up raw stock data from MongoDB to S3 using batch and parallel processing.
+ * @param {Array} symbols - Array of stock symbols.
+ * @param {number} batchSize - Number of symbols to process concurrently per batch.
+ */
+
+export const backupRawStockData = async (symbols, batchSize = 10) => {
+  const { createStockS3Client, uploadFile, ensureBucketExists } = S3Module;
 
   const bucketName = "stock-market-analysis-qb";
 
+  try {
+    // Connect to MongoDB
+    await connectDB();
 
-  try{
+    // Create and prepare S3 client
     const s3client = await createStockS3Client();
     await ensureBucketExists(s3client, bucketName);
 
-     for (const symbol of symbols){
-    try{
-       // Fetch data for stock symbols
-    const rawData = await fetchStockApi(symbol);
-    if (!rawData || rawData["Error Message"]) {
-      console.error("API Response Error:", rawData);
-      continue;
-    }
-    console.log(`Retrying after 15 seconds...`);
-    await delay(15000);
-    // prepare file details
-    const fileKey = `raw-data/${symbol}.json`;
-    const fileContent = JSON.stringify(rawData);
+    // Process symbols in batches
+    for (let i = 0; i < symbols.length; i += batchSize) {
+      const batch = symbols.slice(i, i + batchSize);
+      console.log(`Processing batch: ${batch.join(", ")}`);
 
-    //upload file to s3
-    await uploadFile(s3client, bucketName, fileKey, fileContent);
-    console.log(`Uploaded ${symbol} data to S3`);
-    }catch(error) {
-        console.error(`Error uploading ${symbol} data to S3:`, error.message);
-      }
-   };
-  } catch(error){
-    console.error(`Error creating S3 client or ensuring bucket exists:`, error.message);
-    }
+      // Process the batch concurrently using Promise.all
+      await Promise.all(
+        batch.map((symbol) =>
+          processSymbol(s3client, bucketName, symbol, uploadFile)
+        )
+      );
 
- 
+      // Optionally add a delay between batches to avoid overwhelming resources
+      await delay(2000); // delay in milliseconds
+    }
+    console.log("Backup complete.");
+  } catch (error) {
+    console.error(`Error during backup process:`, error.message);
+  }
 };
+
+
+
+
+
