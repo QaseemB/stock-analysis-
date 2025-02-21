@@ -33,6 +33,12 @@ def transform_to_processed_data_sql(df: pd.DataFrame, symbol: str) -> list:
             # Build a dictionary for the current row with the required fields.
             processed_row = {
                 "date": row["date"].strftime("%Y-%m-%d") if pd.notnull(row["date"]) else None,
+                "symbol": symbol,
+                # "open": row.get("open", 0.0),
+                # "close": row["close"],
+                # "high": row["high"],
+                # "low": row["low"],
+                # "volume": row.get("volume", 0.0),
                 "moving_avg_3": row.get("moving_avg_3", 0.0),
                 "moving_avg_6": row.get("moving_avg_6", 0.0),
                 "moving_avg_12": row.get("moving_avg_12", 0.0),
