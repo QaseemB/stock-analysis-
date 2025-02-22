@@ -5,7 +5,6 @@ from utils.sql_connect import connect_to_sql
 def insert_processed_data(stock_symbol, processed_data):
     conn = connect_to_sql()
     cursor = conn.cursor()
-    symbol = stock_symbol
 
     # Get stock_id from `stocks` table
     cursor.execute("SELECT stock_id FROM stocks WHERE symbol = %s;", (stock_symbol,))
@@ -29,14 +28,19 @@ def insert_processed_data(stock_symbol, processed_data):
 
     query = """
     INSERT INTO stock_analysis (
-    stock_id, symbol, date, moving_avg_3, moving_avg_6, moving_avg_12,
+    stock_id, symbol, date, open_price, high_price, low_price, close_price, volume, moving_avg_3, moving_avg_6, moving_avg_12,
     upper_band, lower_band, monthly_return, rolling_mean, rolling_std,
     ema12, ema26, macd, signal_line
 ) VALUES (
-    %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+    %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
 ) ON CONFLICT (stock_id, date)
 DO UPDATE SET
     symbol = EXCLUDED.symbol,
+    open_price = EXCLUDED.open_price,
+    high_price = EXCLUDED.high_price,
+    low_price = EXCLUDED.low_price,
+    close_price = EXCLUDED.close_price,
+    volume = EXCLUDED.volume,
     moving_avg_3 = EXCLUDED.moving_avg_3,
     moving_avg_6 = EXCLUDED.moving_avg_6,
     moving_avg_12 = EXCLUDED.moving_avg_12,
@@ -55,11 +59,11 @@ DO UPDATE SET
         stock_id,
         stock_symbol,
         parsed_date.date(),
-        # processed_data["open"],
-        # processed_data["close"],
-        # processed_data["high"],
-        # processed_data["low"],
-        # processed_data["volume"],
+        processed_data["open"],
+        processed_data["close"],
+        processed_data["high"],
+        processed_data["low"],
+        processed_data["volume"],
         processed_data["moving_avg_3"],
         processed_data["moving_avg_6"],
         processed_data["moving_avg_12"],
