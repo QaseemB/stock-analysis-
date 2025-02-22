@@ -14,7 +14,9 @@ Secure Data Backup: Ensures data integrity and availability with comprehensive b
 Intuitive Dashboard Interface: Data is funneled into a frontend dashboard that provides easy-to-digest summaries and visual data representations, designed for optimal user experience.
 Scalability and Performance: Currently, the system manages an extensive dataset comprising over 150 stocks spanning more than 20 years, demonstrating remarkable scalability and robust data handling capabilities.
 
+
 Ideal for Financial Analysts and Data Scientists: This system is tailored for financial analysts, data scientists, and market enthusiasts who require reliable, processed data for detailed market analysis and decision-making processes
+
 ---
 
 ## Features
