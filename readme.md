@@ -2,8 +2,19 @@
 
 ## Overview
 
-The **Stock Market Analysis Dashboard** is a web-based application that fetches and analyzes stock data from various sources, visualizes key metrics (such as Bollinger Bands, Moving Averages, Trading Volume, and MACD), and provides a detailed stock summary. It allows users to track stock performance over time, with interactive charts and analysis tools. The project uses a **Node.js backend** to fetch stock data, stores it in **MongoDB**, and leverages **Flask** for data analysis and visualization.
+The **Stock Market Analysis System**  is a data engineering platform designed to capture, analyze, and present over two decades of stock market data. This robust system utilizes Node.js to fetch real-time stock data, storing the raw input in MongoDB for high-performance data retrieval.
 
+Key System Capabilities:
+
+Comprehensive Data Fetching: Utilizes Node.js to efficiently gather stock data, ensuring comprehensive coverage and timeliness.
+Dynamic Data Processing: Ingests raw stock data into a Python-based analysis framework where it undergoes rigorous processing. Utilizing sophisticated algorithms, the system calculates key financial indicators such as Bollinger Bands, Moving Averages, Trading Volume, and MACD to ensure accuracy and relevance.
+Advanced Data Storage: Processed data is meticulously stored in PostgreSQL, providing a structured and scalable solution for handling complex data sets.
+Data Visualization: Generates a variety of visualization outputs including PDF reports, CSV files for data manipulation, and JPEG images for quick visual references, facilitating diverse analytical needs.
+Secure Data Backup: Ensures data integrity and availability with comprehensive backups to Amazon S3, preserving both raw and processed data along with all visual outputs.
+Intuitive Dashboard Interface: Data is funneled into a frontend dashboard that provides easy-to-digest summaries and visual data representations, designed for optimal user experience.
+Scalability and Performance: Currently, the system manages an extensive dataset comprising over 150 stocks spanning more than 20 years, demonstrating remarkable scalability and robust data handling capabilities.
+
+Ideal for Financial Analysts and Data Scientists: This system is tailored for financial analysts, data scientists, and market enthusiasts who require reliable, processed data for detailed market analysis and decision-making processes
 ---
 
 ## Features
