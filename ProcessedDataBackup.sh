@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Load environment variables
-source /path/to/your/.env
+source /.env
 
 # Variables from .env
 DB_NAME=$SQL_NAME
