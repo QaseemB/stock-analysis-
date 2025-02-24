@@ -42,8 +42,8 @@ Ideal for Financial Analysts and Data Scientists: This system is tailored for fi
 - **Frontend**: React, Plotly.js, TailwindCSS
 - **Backend**: Node.js, Express.js
 - **Data Analysis**: Python, Flask (for data processing and generating charts)
-- **Data Storage**: MongoDB
-- **Visualizations**: Plotly for interactive graphs, static images generated via Python/Flask (Bollinger Bands, Moving Average, MACD)
+- **Data Storage**: MongoDB, PostgreSQL, Amazon S3 (for backups)
+- **Visualizations**: Plotly for interactive graphs, static images generated via Python/Flask (Bollinger Bands, Moving Average, MACD), and PDF/CSV reports generated via Python/Flask
 
 ---
 
