@@ -12,6 +12,8 @@ from analysis.report_generation import create_pdf_report
 from analysis.gen_interactive_plt import gen_interactive_plt
 from utils.transform_data import transform_to_processed_data_sql
 from utils.insert_processed_data import insert_processed_data
+from utils.store_plots_in_sql import store_plot_in_db
+from utils.sql_connect import connect_to_sql
 # from utils.mongo_connect import db
 from utils.config import config
 import matplotlib
@@ -34,6 +36,7 @@ def generate_plots_in_main_thread(symbol, df):
     
 def create_pdf_report_in_main_thread(symbol, plot_paths, df):
     try:
+        print (f"Creating PDF report for {symbol}...")
         return create_pdf_report(symbol, plot_paths, df)
     except Exception as e:
         logging.error(f"Error generating PDF report for {symbol}: {e}")
@@ -77,6 +80,12 @@ def analyze(symbol):
         # Step 5: Generate plots
         plot_paths = generate_plots_in_main_thread(symbol, df)
 
+        if plot_paths: 
+            pdf_report = create_pdf_report_in_main_thread(symbol, plot_paths, df)
+            
+        else: 
+            logging.warning(f"skipping pdf generation for {symbol} due to missing plots")
+
 
 
 
@@ -84,6 +93,12 @@ def analyze(symbol):
 
         # Generate interactive plot this will now return json
         interactive_plot_json = gen_interactive_plt(symbol,df)
+
+        if interactive_plot_json:
+            store_plot_in_DB = store_plot_in_db(symbol, interactive_plot_json,)
+            print(f"storing plots for {symbol} in postgreSql")
+        else: 
+            logging.warning(f"skipping plot storage for {symbol} due to missing plot")
 
         # Parse the JSON string into a Python dictionary
         interactive_plot_object = json.loads(interactive_plot_json)
@@ -142,3 +157,21 @@ def analyze_all_stocks():
         except Exception as e:
             results.append({"symbol": symbol, "status": "Failed", "error": str(e)})
     return jsonify(results), 200
+
+@routes.route("/api/plots/<symbol>", methods=["GET"])
+
+def get_plot(symbol):
+    conn = connect_to_sql()
+    cur = conn.cursor()
+
+    query = "SELECT interactive_plot FROM stock_visualizations WHERE symbol = %s;"
+    cur.execute(query, (symbol,))
+    result = cur.fetchone()
+
+    cur.close()
+    conn.close()
+
+    if result:
+        return jsonify({"interactive_plot": result[0]})
+    return jsonify({"error": "Plot not found"}), 404
+
