@@ -94,14 +94,17 @@ def analyze(symbol):
         # Generate interactive plot this will now return json
         interactive_plot_json = gen_interactive_plt(symbol,df)
 
-        if interactive_plot_json:
-            store_plot_in_DB = store_plot_in_db(symbol, interactive_plot_json,)
+        # Parse the JSON string into a Python dictionary
+        interactive_plot_object = json.loads(interactive_plot_json)
+
+        if interactive_plot_object:
+            store_plot_in_DB = store_plot_in_db(symbol, interactive_plot_object,)
             print(f"storing plots for {symbol} in postgreSql")
         else: 
             logging.warning(f"skipping plot storage for {symbol} due to missing plot")
 
         # Parse the JSON string into a Python dictionary
-        interactive_plot_object = json.loads(interactive_plot_json)
+        # interactive_plot_object = json.loads(interactive_plot_json)
 
         response = {
             "summary": summary_json,
