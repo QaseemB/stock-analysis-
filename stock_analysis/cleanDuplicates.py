@@ -17,10 +17,14 @@ for stock in stocks:
     cleaned_data = []
 
     for entry in monthly_data:
-        date = entry["date"]
-        if date not in seen_dates:
-            seen_dates[date] = True
-            cleaned_data.append(entry)  # Keep the first occurrence
+        if 'date' in entry:
+            date = entry['date']
+            if date not in seen_dates:
+                seen_dates[date] = True
+                cleaned_data.append(entry)  # Keep the first occurrence
+        else : 
+            print(f"⚠️ Missing 'date' in entry for {symbol}: {entry}")
+    
 
     # Update the document with deduplicated monthlyData
     result = collection.update_one({"_id": stock["_id"]}, {"$set": {"monthlyData": cleaned_data}})

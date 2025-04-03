@@ -1280,3 +1280,764 @@
 {"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-02-15T00:28:40.419Z"}
 {"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-02-15T00:28:42.652Z"}
 {"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-02-15T00:28:42.660Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cannot access 'data' before initialization","service":"user-service","timestamp":"2025-03-11T02:12:15.807Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: newMonthlyData is not defined","service":"user-service","timestamp":"2025-03-11T02:17:41.129Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: latestdate is not defined","service":"user-service","timestamp":"2025-03-11T02:18:19.774Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T02:18:55.790Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T02:23:06.795Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 241.79,\n  high: 244.0272,\n  low: 224.22,\n  close: 227.48,\n  volume: 311104955\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T02:24:44.567Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 241.79,\n  high: 244.0272,\n  low: 224.22,\n  close: 227.48,\n  volume: 311104955\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T02:36:08.028Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 241.79,\n  high: 244.0272,\n  low: 224.22,\n  close: 227.48,\n  volume: 311104955\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T02:39:31.083Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 241.79,\n  high: 244.0272,\n  low: 224.22,\n  close: 227.48,\n  volume: 311104955\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T02:47:35.371Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 241.79,\n  high: 244.0272,\n  low: 224.22,\n  close: 227.48,\n  volume: 311104955\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T02:49:23.311Z"}
+{"level":"error","message":"Error fetching and updating stock data for GOOG: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 173.73,\n  high: 176.9,\n  low: 165.565,\n  close: 167.81,\n  volume: 137494626\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T02:49:38.431Z"}
+{"level":"error","message":"Error fetching and updating stock data for MSFT: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 398.82,\n  high: 402.15,\n  low: 377.22,\n  close: 380.16,\n  volume: 153692261\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T02:49:53.570Z"}
+{"level":"error","message":"Error fetching and updating stock data for AMZN: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 213.352,\n  high: 214.01,\n  low: 190.85,\n  close: 194.54,\n  volume: 313907423\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T02:50:08.696Z"}
+{"level":"error","message":"Error fetching and updating stock data for META: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 673.675,\n  high: 681.25,\n  low: 586.87,\n  close: 597.99,\n  volume: 102327110\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T02:50:23.816Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 241.79,\n  high: 244.0272,\n  low: 224.22,\n  close: 227.48,\n  volume: 311104955\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T02:53:31.221Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 241.79,\n  high: 244.0272,\n  low: 224.22,\n  close: 227.48,\n  volume: 311104955\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T02:54:45.075Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 241.79,\n  high: 244.0272,\n  low: 224.22,\n  close: 227.48,\n  volume: 311104955\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T03:01:29.703Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: Cast to string failed for value \"{\n  date: '2025-03-10',\n  open: 241.79,\n  high: 244.0272,\n  low: 224.22,\n  close: 227.48,\n  volume: 311104955\n}\" (type Object) at path \"date\" for model \"HistoricalStock\"","service":"user-service","timestamp":"2025-03-11T03:03:34.157Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: checkIfDataExistforHistory is not defined","service":"user-service","timestamp":"2025-03-11T03:12:49.426Z"}
+{"level":"error","message":"Error fetching and updating stock data for AAPL: newMonthlyData.map is not a function","service":"user-service","timestamp":"2025-03-11T03:13:37.834Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T03:17:22.122Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T03:18:29.469Z"}
+{"level":"info","message":"Data for GOOG up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T03:18:44.514Z"}
+{"level":"info","message":"Data for MSFT up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T03:18:59.693Z"}
+{"level":"info","message":"Data for AMZN up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T03:19:14.901Z"}
+{"level":"info","message":"Data for META up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T03:19:30.088Z"}
+{"level":"info","message":"Stock META - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.111Z"}
+{"level":"info","message":"Stock JPM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.212Z"}
+{"level":"info","message":"Stock MSFT - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.353Z"}
+{"level":"info","message":"Stock PLTR - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.438Z"}
+{"level":"info","message":"Stock ABBV - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.490Z"}
+{"level":"info","message":"Stock GOOG - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.594Z"}
+{"level":"info","message":"Stock AVGO - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.603Z"}
+{"level":"info","message":"Stock MA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.612Z"}
+{"level":"info","message":"Stock HD - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.674Z"}
+{"level":"info","message":"Stock NFLX - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.682Z"}
+{"level":"info","message":"Stock KO - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.688Z"}
+{"level":"info","message":"Stock COST - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.718Z"}
+{"level":"info","message":"Stock NVDA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.744Z"}
+{"level":"info","message":"Stock IBM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.754Z"}
+{"level":"info","message":"Stock TM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.783Z"}
+{"level":"info","message":"Stock D - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.788Z"}
+{"level":"info","message":"Stock BAC - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.795Z"}
+{"level":"info","message":"Stock TSLA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.796Z"}
+{"level":"info","message":"Stock ORCL - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.822Z"}
+{"level":"info","message":"Stock PG - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.842Z"}
+{"level":"info","message":"Stock JNJ - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.899Z"}
+{"level":"info","message":"Stock AMZN - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.900Z"}
+{"level":"info","message":"Stock CRM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.945Z"}
+{"level":"info","message":"Stock TSM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:25:09.949Z"}
+{"level":"info","message":"Stock QCOM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:26:10.188Z"}
+{"level":"info","message":"Stock ADBE - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:26:10.225Z"}
+{"level":"info","message":"Stock AXP - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:26:10.226Z"}
+{"level":"info","message":"Stock MRK - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:26:10.270Z"}
+{"level":"info","message":"Stock GOOG - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:31:41.919Z"}
+{"level":"info","message":"Stock AMZN - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:31:42.003Z"}
+{"level":"info","message":"Stock MSFT - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:31:42.157Z"}
+{"level":"info","message":"Stock META - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:28.216Z"}
+{"level":"info","message":"Stock MA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:28.380Z"}
+{"level":"info","message":"Stock NFLX - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:28.687Z"}
+{"level":"info","message":"Stock PG - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:28.993Z"}
+{"level":"info","message":"Stock GOOG - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.089Z"}
+{"level":"info","message":"Stock AVGO - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.098Z"}
+{"level":"info","message":"Stock NVDA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.171Z"}
+{"level":"info","message":"Stock TSLA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.259Z"}
+{"level":"info","message":"Stock KO - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.351Z"}
+{"level":"info","message":"Stock JPM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.402Z"}
+{"level":"info","message":"Stock IBM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.438Z"}
+{"level":"info","message":"Stock AMZN - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.536Z"}
+{"level":"info","message":"Stock MSFT - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.580Z"}
+{"level":"info","message":"Stock CRM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.600Z"}
+{"level":"info","message":"Stock COST - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.706Z"}
+{"level":"info","message":"Stock TM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.863Z"}
+{"level":"info","message":"Stock TSM - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:29.882Z"}
+{"level":"info","message":"Stock JNJ - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:30.635Z"}
+{"level":"info","message":"Stock BAC - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:32:30.636Z"}
+{"level":"info","message":"Stock PG - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:40:40.756Z"}
+{"level":"info","message":"Stock TSLA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:40:40.915Z"}
+{"level":"info","message":"Stock AVGO - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:40:41.083Z"}
+{"level":"info","message":"Stock MA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:40:41.247Z"}
+{"level":"info","message":"Stock GOOG - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:40:41.516Z"}
+{"level":"info","message":"Stock META - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-03-11T03:40:41.527Z"}
+{"level":"info","message":"Data for AVGO up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:46.305Z"}
+{"level":"info","message":"Data for COST up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:46.650Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:46.769Z"}
+{"level":"info","message":"Data for TSLA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:46.836Z"}
+{"level":"info","message":"Data for AMZN up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.016Z"}
+{"level":"info","message":"Data for META up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.092Z"}
+{"level":"info","message":"Data for NVDA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.116Z"}
+{"level":"info","message":"Data for IBM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.178Z"}
+{"level":"info","message":"Data for JNJ up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.283Z"}
+{"level":"info","message":"Data for TSM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.343Z"}
+{"level":"info","message":"Data for MSFT up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.406Z"}
+{"level":"info","message":"Data for MA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.452Z"}
+{"level":"info","message":"Data for TM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.502Z"}
+{"level":"info","message":"Data for KO up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.572Z"}
+{"level":"info","message":"Data for BAC up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.609Z"}
+{"level":"info","message":"Data for JPM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.683Z"}
+{"level":"info","message":"Data for GOOG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.817Z"}
+{"level":"info","message":"Data for PG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:47.978Z"}
+{"level":"info","message":"Data for NFLX up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:48.770Z"}
+{"level":"info","message":"Data for CRM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T03:44:48.789Z"}
+{"level":"info","message":"Data for GOOG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:43:42.441Z"}
+{"level":"info","message":"Data for AMZN up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:43:42.489Z"}
+{"level":"info","message":"Data for META up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:43:42.523Z"}
+{"level":"info","message":"Data for MSFT up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:43:42.588Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:43:42.688Z"}
+{"level":"info","message":"Data for PG up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.693Z"}
+{"level":"info","message":"Data for TSLA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.696Z"}
+{"level":"info","message":"Data for AVGO up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.704Z"}
+{"level":"info","message":"Data for MA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.715Z"}
+{"level":"info","message":"Data for NFLX up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.718Z"}
+{"level":"info","message":"Data for NVDA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.720Z"}
+{"level":"info","message":"Data for CRM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.721Z"}
+{"level":"info","message":"Data for JNJ up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.730Z"}
+{"level":"info","message":"Data for TM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.732Z"}
+{"level":"info","message":"Data for BAC up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.737Z"}
+{"level":"info","message":"Data for KO up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.738Z"}
+{"level":"info","message":"Data for TSM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.747Z"}
+{"level":"info","message":"Data for IBM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.756Z"}
+{"level":"info","message":"Data for JPM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.805Z"}
+{"level":"info","message":"Data for COST up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:43:42.861Z"}
+{"level":"info","message":"Data for AMZN up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:46:51.069Z"}
+{"level":"info","message":"Data for GOOG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:46:51.082Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:46:51.096Z"}
+{"level":"info","message":"Data for META up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:46:51.107Z"}
+{"level":"info","message":"Data for IBM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.207Z"}
+{"level":"info","message":"Data for TSLA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.217Z"}
+{"level":"info","message":"Data for NVDA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.223Z"}
+{"level":"info","message":"Data for KO up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.229Z"}
+{"level":"info","message":"Data for COST up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.252Z"}
+{"level":"info","message":"Data for TM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.260Z"}
+{"level":"info","message":"Data for JNJ up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.269Z"}
+{"level":"info","message":"Data for PG up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.271Z"}
+{"level":"info","message":"Data for NFLX up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.272Z"}
+{"level":"info","message":"Data for AVGO up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.292Z"}
+{"level":"info","message":"Data for TSM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.338Z"}
+{"level":"info","message":"Data for JPM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:46:51.351Z"}
+{"level":"info","message":"Data for GOOG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:49:45.746Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:49:45.853Z"}
+{"level":"info","message":"Data for MSFT up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:49:45.915Z"}
+{"level":"info","message":"Data for META up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:49:46.039Z"}
+{"level":"info","message":"Data for TSM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.285Z"}
+{"level":"info","message":"Data for NVDA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.292Z"}
+{"level":"info","message":"Data for AMZN up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T04:49:46.335Z"}
+{"level":"info","message":"Data for JPM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.337Z"}
+{"level":"info","message":"Data for AVGO up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.338Z"}
+{"level":"info","message":"Data for MA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.343Z"}
+{"level":"info","message":"Data for NFLX up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.385Z"}
+{"level":"info","message":"Data for COST up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.387Z"}
+{"level":"info","message":"Data for JNJ up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.389Z"}
+{"level":"info","message":"Data for PG up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.392Z"}
+{"level":"info","message":"Data for IBM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.404Z"}
+{"level":"info","message":"Data for TM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.434Z"}
+{"level":"info","message":"Data for KO up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.436Z"}
+{"level":"info","message":"Data for BAC up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.437Z"}
+{"level":"info","message":"Data for CRM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.613Z"}
+{"level":"info","message":"Data for TSLA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T04:49:46.621Z"}
+{"level":"info","message":"Data for AMZN up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:08:04.939Z"}
+{"level":"info","message":"Data for CRM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:05.346Z"}
+{"level":"info","message":"Data for META up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:08:05.599Z"}
+{"level":"info","message":"Data for MSFT up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:08:05.692Z"}
+{"level":"info","message":"Data for TSLA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:05.694Z"}
+{"level":"info","message":"Data for JNJ up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:05.695Z"}
+{"level":"info","message":"Data for TSM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:05.880Z"}
+{"level":"info","message":"Data for PG up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:05.938Z"}
+{"level":"info","message":"Data for NFLX up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:05.962Z"}
+{"level":"info","message":"Data for NVDA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:06.055Z"}
+{"level":"info","message":"Data for TM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:06.099Z"}
+{"level":"info","message":"Data for MA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:06.105Z"}
+{"level":"info","message":"Data for KO up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:06.129Z"}
+{"level":"info","message":"Data for COST up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:06.199Z"}
+{"level":"info","message":"Data for BAC up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:06.390Z"}
+{"level":"info","message":"Data for IBM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:06.909Z"}
+{"level":"info","message":"Data for AVGO up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:07.015Z"}
+{"level":"info","message":"Data for JPM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:08:07.025Z"}
+{"level":"info","message":"Data for GOOG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:08:07.187Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:08:07.280Z"}
+{"level":"info","message":"Data for PLTR up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:29.896Z"}
+{"level":"info","message":"Data for META up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:30.242Z"}
+{"level":"info","message":"Data for TSM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:30.260Z"}
+{"level":"info","message":"Data for AMZN up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:30.330Z"}
+{"level":"info","message":"Data for MA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:30.342Z"}
+{"level":"info","message":"Data for ORCL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:30.376Z"}
+{"level":"info","message":"Data for META up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.179Z"}
+{"level":"info","message":"Data for TSM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.219Z"}
+{"level":"info","message":"Data for MSFT up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.244Z"}
+{"level":"info","message":"Data for PLTR up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.271Z"}
+{"level":"info","message":"Data for PG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.301Z"}
+{"level":"info","message":"Data for JPM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.327Z"}
+{"level":"info","message":"Data for MA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.350Z"}
+{"level":"info","message":"Data for TSLA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.366Z"}
+{"level":"info","message":"Data for AVGO up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.376Z"}
+{"level":"info","message":"Data for D up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.384Z"}
+{"level":"info","message":"Data for HD up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.410Z"}
+{"level":"info","message":"Data for ORCL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.422Z"}
+{"level":"info","message":"Data for TM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.435Z"}
+{"level":"info","message":"Data for AMZN up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.451Z"}
+{"level":"info","message":"Data for COST up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.462Z"}
+{"level":"info","message":"Data for KO up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.470Z"}
+{"level":"info","message":"Data for ABBV up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.474Z"}
+{"level":"info","message":"Data for BAC up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.532Z"}
+{"level":"info","message":"Data for NVDA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.539Z"}
+{"level":"info","message":"Data for GOOG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.729Z"}
+{"level":"info","message":"Data for IBM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.859Z"}
+{"level":"info","message":"Data for NFLX up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.870Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.877Z"}
+{"level":"info","message":"Data for JNJ up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.884Z"}
+{"level":"info","message":"Data for CRM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:10:56.945Z"}
+{"level":"info","message":"Data for AXP up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:11:57.104Z"}
+{"level":"info","message":"Data for ADBE up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:11:57.116Z"}
+{"level":"info","message":"Data for MRK up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:11:57.153Z"}
+{"level":"info","message":"Data for ABT up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:11:57.156Z"}
+{"level":"info","message":"Data for QCOM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:11:57.196Z"}
+{"level":"info","message":"Data for GOOG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.166Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.221Z"}
+{"level":"info","message":"Data for IBM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.262Z"}
+{"level":"info","message":"Data for AMZN up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.300Z"}
+{"level":"info","message":"Data for MSFT up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.331Z"}
+{"level":"info","message":"Data for TSLA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.357Z"}
+{"level":"info","message":"Data for TSM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.377Z"}
+{"level":"info","message":"Data for JPM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.391Z"}
+{"level":"info","message":"Data for META up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.396Z"}
+{"level":"info","message":"Data for PLTR up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.400Z"}
+{"level":"info","message":"Data for ABBV up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.415Z"}
+{"level":"info","message":"Data for MA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.440Z"}
+{"level":"info","message":"Data for TM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.448Z"}
+{"level":"info","message":"Data for CRM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.454Z"}
+{"level":"info","message":"Data for PG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.471Z"}
+{"level":"info","message":"Data for BAC up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.483Z"}
+{"level":"info","message":"Data for NFLX up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.490Z"}
+{"level":"info","message":"Data for JNJ up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.502Z"}
+{"level":"info","message":"Data for KO up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.512Z"}
+{"level":"info","message":"Data for D up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.519Z"}
+{"level":"info","message":"Data for COST up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.538Z"}
+{"level":"info","message":"Data for HD up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.549Z"}
+{"level":"info","message":"Data for AVGO up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.571Z"}
+{"level":"info","message":"Data for NVDA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:32:52.583Z"}
+{"level":"info","message":"Data for ORCL up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:32:52.616Z"}
+{"level":"info","message":"Data for ABT up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:33:52.801Z"}
+{"level":"info","message":"Data for ADBE up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:33:52.814Z"}
+{"level":"info","message":"Data for QCOM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:33:52.826Z"}
+{"level":"info","message":"Data for MRK up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:33:52.901Z"}
+{"level":"info","message":"Data for AXP up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:33:52.908Z"}
+{"level":"info","message":"Data for GOOG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:49:49.205Z"}
+{"level":"info","message":"Data for TSLA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:49:49.236Z"}
+{"level":"info","message":"Data for MSFT up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:49:49.274Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:49:49.310Z"}
+{"level":"info","message":"Data for IBM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:49:49.342Z"}
+{"level":"info","message":"Data for AMZN up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:49:49.370Z"}
+{"level":"info","message":"Data for AVGO up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:49:49.385Z"}
+{"level":"info","message":"Data for META up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:49:49.396Z"}
+{"level":"info","message":"Data for NVDA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:49:49.530Z"}
+{"level":"info","message":"Data for D up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:51:23.635Z"}
+{"level":"info","message":"Data for PLTR up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:52:07.482Z"}
+{"level":"info","message":"Data for JPM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:07.542Z"}
+{"level":"info","message":"Data for IBM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:07.584Z"}
+{"level":"info","message":"Data for NVDA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:07.684Z"}
+{"level":"info","message":"Data for JNJ up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:07.724Z"}
+{"level":"info","message":"Data for META up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:07.822Z"}
+{"level":"info","message":"Data for TSLA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:07.838Z"}
+{"level":"info","message":"Data for MA up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:07.853Z"}
+{"level":"info","message":"Data for TSM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:07.880Z"}
+{"level":"info","message":"Data for AAPL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:07.892Z"}
+{"level":"info","message":"Data for NFLX up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:07.983Z"}
+{"level":"info","message":"Data for AVGO up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.502Z"}
+{"level":"info","message":"Data for COST up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.556Z"}
+{"level":"info","message":"Data for PG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.616Z"}
+{"level":"info","message":"Data for GOOG up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.667Z"}
+{"level":"info","message":"Data for MSFT up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.690Z"}
+{"level":"info","message":"Data for ORCL up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.698Z"}
+{"level":"info","message":"Data for BAC up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.705Z"}
+{"level":"info","message":"Data for ABBV up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.717Z"}
+{"level":"info","message":"Data for D up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.752Z"}
+{"level":"info","message":"Data for TM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.759Z"}
+{"level":"info","message":"Data for KO up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.786Z"}
+{"level":"info","message":"Data for CRM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.815Z"}
+{"level":"info","message":"Data for AMZN up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:52:08.826Z"}
+{"level":"info","message":"Data for HD up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:52:09.337Z"}
+{"level":"info","message":"Data for ABT up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:53:09.536Z"}
+{"level":"info","message":"Data for QCOM up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:53:09.654Z"}
+{"level":"info","message":"Data for AXP up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:53:10.644Z"}
+{"level":"info","message":"Data for ADBE up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:53:10.848Z"}
+{"level":"info","message":"Data for MRK up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:53:11.428Z"}
+{"level":"info","message":"Data for AMD up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:56:54.126Z"}
+{"level":"info","message":"Data for AMD up to 2025-03-10 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-11T15:57:23.778Z"}
+{"level":"info","message":"Data for VZ up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:25.506Z"}
+{"level":"info","message":"Data for CVX up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:25.798Z"}
+{"level":"info","message":"Data for SCHW up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:25.801Z"}
+{"level":"info","message":"Data for HON up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:25.839Z"}
+{"level":"info","message":"Data for NEE up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:25.952Z"}
+{"level":"info","message":"Data for CSCO up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:25.957Z"}
+{"level":"info","message":"Data for NKE up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:25.960Z"}
+{"level":"info","message":"Data for UNH up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.018Z"}
+{"level":"info","message":"Data for INTC up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.019Z"}
+{"level":"info","message":"Data for LOW up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.101Z"}
+{"level":"info","message":"Data for MS up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.104Z"}
+{"level":"info","message":"Data for MCD up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.107Z"}
+{"level":"info","message":"Data for PFE up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.147Z"}
+{"level":"info","message":"Data for XOM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.163Z"}
+{"level":"info","message":"Data for DIS up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.169Z"}
+{"level":"info","message":"Data for CMCSA up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.170Z"}
+{"level":"info","message":"Data for WMT up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.245Z"}
+{"level":"info","message":"Data for T up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.255Z"}
+{"level":"info","message":"Data for UPS up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.411Z"}
+{"level":"info","message":"Data for TXN up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.448Z"}
+{"level":"info","message":"Data for PEP up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.459Z"}
+{"level":"info","message":"Data for PM up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.475Z"}
+{"level":"info","message":"Data for LLY up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.764Z"}
+{"level":"info","message":"Data for BMY up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:57:26.765Z"}
+{"level":"info","message":"Data for SPGI up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:58:28.168Z"}
+{"level":"info","message":"Data for AMGN up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:58:28.301Z"}
+{"level":"info","message":"Data for CAT up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:58:28.427Z"}
+{"level":"info","message":"Data for RTX up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:58:28.441Z"}
+{"level":"info","message":"Data for GS up to 2025-03-10 has been updated.","service":"user-service","timestamp":"2025-03-11T15:58:28.688Z"}
+{"level":"info","message":"Data for BKNG up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:08.975Z"}
+{"level":"info","message":"Data for LMT up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.111Z"}
+{"level":"info","message":"Data for NOW up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.134Z"}
+{"level":"info","message":"Data for BLK up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.137Z"}
+{"level":"info","message":"Data for ISRG up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.173Z"}
+{"level":"info","message":"Data for DE up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.188Z"}
+{"level":"info","message":"Data for GILD up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.229Z"}
+{"level":"info","message":"Data for ZTS up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.267Z"}
+{"level":"info","message":"Data for EL up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.282Z"}
+{"level":"info","message":"Data for BDX up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.316Z"}
+{"level":"info","message":"Data for CCI up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.332Z"}
+{"level":"info","message":"Data for UNP up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.370Z"}
+{"level":"info","message":"Data for SYK up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.392Z"}
+{"level":"info","message":"Data for MMM up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.409Z"}
+{"level":"info","message":"Data for FIS up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.414Z"}
+{"level":"info","message":"Data for AMT up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.426Z"}
+{"level":"info","message":"Data for SO up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.481Z"}
+{"level":"info","message":"Data for TMO up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.516Z"}
+{"level":"info","message":"Data for MO up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.531Z"}
+{"level":"info","message":"Data for ADP up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.553Z"}
+{"level":"info","message":"Data for MDT up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.614Z"}
+{"level":"info","message":"Data for APD up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.630Z"}
+{"level":"info","message":"Data for C up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:09.778Z"}
+{"level":"info","message":"Data for DUK up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:10.096Z"}
+{"level":"info","message":"Data for CB up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:21:10.256Z"}
+{"level":"info","message":"Data for USB up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:22:12.325Z"}
+{"level":"info","message":"Data for PNC up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:22:12.460Z"}
+{"level":"info","message":"Data for ITW up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:22:12.501Z"}
+{"level":"info","message":"Data for CL up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:22:13.241Z"}
+{"level":"info","message":"Data for CL up to 2025-03-11 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-12T14:33:39.044Z"}
+{"level":"info","message":"Data for ITW up to 2025-03-11 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-12T14:33:39.173Z"}
+{"level":"info","message":"Data for DHR up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:33:39.231Z"}
+{"level":"info","message":"Data for MCO up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.270Z"}
+{"level":"info","message":"Data for MTD up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.499Z"}
+{"level":"info","message":"Data for ATVI up to 2023-10-13 already exists. Skipping update.","service":"user-service","timestamp":"2025-03-12T14:34:08.633Z"}
+{"level":"info","message":"Data for KLAC up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.715Z"}
+{"level":"info","message":"Data for AEP up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.839Z"}
+{"level":"info","message":"Data for WM up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.874Z"}
+{"level":"info","message":"Data for CTAS up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.876Z"}
+{"level":"info","message":"Data for ETN up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.892Z"}
+{"level":"info","message":"Data for ILMN up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.932Z"}
+{"level":"info","message":"Data for REGN up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.933Z"}
+{"level":"info","message":"Data for SBUX up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.944Z"}
+{"level":"info","message":"Data for ECL up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.964Z"}
+{"level":"info","message":"Data for MAR up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.965Z"}
+{"level":"info","message":"Data for PSA up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.966Z"}
+{"level":"info","message":"Data for KMB up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.981Z"}
+{"level":"info","message":"Data for NSC up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.984Z"}
+{"level":"info","message":"Data for HUM up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.996Z"}
+{"level":"info","message":"Data for AON up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.997Z"}
+{"level":"info","message":"Data for ROP up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:08.998Z"}
+{"level":"info","message":"Data for LRCX up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:09.001Z"}
+{"level":"info","message":"Data for SHW up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:09.379Z"}
+{"level":"info","message":"Data for EQIX up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:09.396Z"}
+{"level":"info","message":"Data for ORLY up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:09.420Z"}
+{"level":"info","message":"Data for IDXX up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:09.445Z"}
+{"level":"info","message":"Data for FISV up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:34:09.501Z"}
+{"level":"info","message":"Data for CDNS up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:35:10.635Z"}
+{"level":"info","message":"Data for SNPS up to 2025-03-11 has been updated.","service":"user-service","timestamp":"2025-03-12T14:35:10.642Z"}
+{"level":"info","message":"Data for PAYC up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:09.582Z"}
+{"level":"info","message":"Data for ANSS up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:09.876Z"}
+{"level":"info","message":"Data for FTNT up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:09.894Z"}
+{"level":"info","message":"Data for HUBS up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.381Z"}
+{"level":"info","message":"Data for TEAM up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.398Z"}
+{"level":"info","message":"Data for CRWD up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.416Z"}
+{"level":"info","message":"Data for DOCU up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.418Z"}
+{"level":"info","message":"Data for NET up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.420Z"}
+{"level":"info","message":"Data for SEDG up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.422Z"}
+{"level":"info","message":"Data for MSCI up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.424Z"}
+{"level":"info","message":"Data for TDG up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.429Z"}
+{"level":"info","message":"Data for VRSK up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.431Z"}
+{"level":"info","message":"Data for WST up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.436Z"}
+{"level":"info","message":"Data for CPRT up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.438Z"}
+{"level":"info","message":"Data for TECH up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.439Z"}
+{"level":"info","message":"Data for STE up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.442Z"}
+{"level":"info","message":"Data for RMD up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.443Z"}
+{"level":"info","message":"Data for ZS up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.454Z"}
+{"level":"info","message":"Data for FSLY up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.458Z"}
+{"level":"info","message":"Data for ENPH up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.459Z"}
+{"level":"info","message":"Data for TER up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.466Z"}
+{"level":"info","message":"Data for ALGN up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.487Z"}
+{"level":"info","message":"Data for KEYS up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.528Z"}
+{"level":"info","message":"Data for BIO up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:58:53.536Z"}
+{"level":"error","message":"Error fetching and updating stock data for BLD: HistoricalStock validation failed: timezone: Path `timezone` is required.","service":"user-service","timestamp":"2025-03-13T13:59:53.711Z"}
+{"level":"info","message":"Data for PTON up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:59:53.735Z"}
+{"level":"info","message":"Data for TWLO up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:59:53.749Z"}
+{"level":"info","message":"Data for ROKU up to 2025-03-12 has been updated.","service":"user-service","timestamp":"2025-03-13T13:59:53.765Z"}
+{"level":"info","message":"Data for GOOG up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.890Z"}
+{"level":"info","message":"Data for AVGO up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.907Z"}
+{"level":"info","message":"Data for PLTR up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.912Z"}
+{"level":"info","message":"Data for META up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.936Z"}
+{"level":"info","message":"Data for NVDA up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.938Z"}
+{"level":"info","message":"Data for CRM up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.939Z"}
+{"level":"info","message":"Data for TSLA up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.952Z"}
+{"level":"info","message":"Data for TM up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.954Z"}
+{"level":"info","message":"Data for AMZN up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.955Z"}
+{"level":"info","message":"Data for MA up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.957Z"}
+{"level":"info","message":"Data for COST up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.970Z"}
+{"level":"info","message":"Data for IBM up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.973Z"}
+{"level":"info","message":"Data for PG up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:57.974Z"}
+{"level":"info","message":"Data for TSM up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.005Z"}
+{"level":"info","message":"Data for JPM up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.007Z"}
+{"level":"info","message":"Data for MSFT up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.008Z"}
+{"level":"info","message":"Data for HD up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.009Z"}
+{"level":"info","message":"Data for NFLX up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.009Z"}
+{"level":"info","message":"Data for D up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.010Z"}
+{"level":"info","message":"Data for AAPL up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.022Z"}
+{"level":"info","message":"Data for JNJ up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.025Z"}
+{"level":"info","message":"Data for KO up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.041Z"}
+{"level":"info","message":"Data for ABBV up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.048Z"}
+{"level":"info","message":"Data for BAC up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.079Z"}
+{"level":"info","message":"Data for ORCL up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:34:58.099Z"}
+{"level":"info","message":"Data for ABT up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:35:58.403Z"}
+{"level":"info","message":"Data for ADBE up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:35:58.403Z"}
+{"level":"info","message":"Data for AXP up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:35:58.405Z"}
+{"level":"info","message":"Data for QCOM up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:35:58.425Z"}
+{"level":"info","message":"Data for MRK up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T19:35:58.458Z"}
+{"level":"info","message":"Data for NKE up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:21:28.838Z"}
+{"level":"info","message":"Data for PFE up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:21:29.049Z"}
+{"level":"info","message":"Data for DIS up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:21:29.075Z"}
+{"level":"info","message":"Data for T up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:21:29.083Z"}
+{"level":"info","message":"Data for VZ up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:21:29.143Z"}
+{"level":"info","message":"Data for PEP up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:21:29.144Z"}
+{"level":"info","message":"Data for T up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T20:35:11.808Z"}
+{"level":"info","message":"Data for NKE up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T20:35:12.246Z"}
+{"level":"info","message":"Data for PEP up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T20:35:12.418Z"}
+{"level":"info","message":"Data for DIS up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T20:35:12.535Z"}
+{"level":"info","message":"Data for VZ up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T20:35:12.643Z"}
+{"level":"info","message":"Data for AMD up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.031Z"}
+{"level":"info","message":"Data for CVX up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.061Z"}
+{"level":"info","message":"Data for PFE up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T20:35:13.085Z"}
+{"level":"info","message":"Data for INTC up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.163Z"}
+{"level":"info","message":"Data for UPS up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.216Z"}
+{"level":"info","message":"Data for TXN up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.218Z"}
+{"level":"info","message":"Data for SCHW up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.242Z"}
+{"level":"info","message":"Data for LOW up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.301Z"}
+{"level":"info","message":"Data for UNH up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.306Z"}
+{"level":"info","message":"Data for HON up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.328Z"}
+{"level":"info","message":"Data for NEE up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.337Z"}
+{"level":"info","message":"Data for MS up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.382Z"}
+{"level":"info","message":"Data for LLY up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.407Z"}
+{"level":"info","message":"Data for PM up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.524Z"}
+{"level":"info","message":"Data for XOM up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.553Z"}
+{"level":"info","message":"Data for CSCO up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.620Z"}
+{"level":"info","message":"Data for CMCSA up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.720Z"}
+{"level":"info","message":"Data for WMT up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:13.847Z"}
+{"level":"info","message":"Data for MCD up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:14.325Z"}
+{"level":"info","message":"Data for BMY up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:35:14.413Z"}
+{"level":"info","message":"Data for CAT up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:36:15.474Z"}
+{"level":"info","message":"Data for AMGN up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:36:15.753Z"}
+{"level":"info","message":"Data for GS up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:36:15.899Z"}
+{"level":"info","message":"Data for ISRG up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.698Z"}
+{"level":"info","message":"Data for BDX up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.743Z"}
+{"level":"info","message":"Data for LMT up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.782Z"}
+{"level":"info","message":"Data for FIS up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.783Z"}
+{"level":"info","message":"Data for BLK up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.784Z"}
+{"level":"info","message":"Data for BKNG up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.790Z"}
+{"level":"info","message":"Data for SYK up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.822Z"}
+{"level":"info","message":"Data for ZTS up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.838Z"}
+{"level":"info","message":"Data for MDT up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.843Z"}
+{"level":"info","message":"Data for NOW up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.846Z"}
+{"level":"info","message":"Data for SO up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.848Z"}
+{"level":"info","message":"Data for EL up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.855Z"}
+{"level":"info","message":"Data for CB up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.856Z"}
+{"level":"info","message":"Data for MO up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.863Z"}
+{"level":"info","message":"Data for C up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.864Z"}
+{"level":"info","message":"Data for GILD up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.866Z"}
+{"level":"info","message":"Data for TMO up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.872Z"}
+{"level":"info","message":"Data for UNP up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.889Z"}
+{"level":"info","message":"Data for APD up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.891Z"}
+{"level":"info","message":"Data for CCI up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.893Z"}
+{"level":"info","message":"Data for DUK up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.895Z"}
+{"level":"info","message":"Data for MMM up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.896Z"}
+{"level":"info","message":"Data for AMT up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.905Z"}
+{"level":"info","message":"Data for DE up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.918Z"}
+{"level":"info","message":"Data for ADP up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:57:34.921Z"}
+{"level":"info","message":"Data for CL up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:58:35.176Z"}
+{"level":"info","message":"Data for PNC up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:58:35.183Z"}
+{"level":"info","message":"Data for USB up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:58:35.254Z"}
+{"level":"info","message":"Data for DHR up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:58:35.286Z"}
+{"level":"info","message":"Data for ITW up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T20:58:35.322Z"}
+{"level":"info","message":"Data for ECL up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:06.254Z"}
+{"level":"info","message":"Data for ROP up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:06.692Z"}
+{"level":"info","message":"Data for ATVI up to 2023-10-13 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T21:55:06.719Z"}
+{"level":"info","message":"Data for NSC up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:06.843Z"}
+{"level":"info","message":"Data for HUM up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:06.908Z"}
+{"level":"info","message":"Data for IDXX up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:06.950Z"}
+{"level":"info","message":"Data for EQIX up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.052Z"}
+{"level":"info","message":"Data for CTAS up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.063Z"}
+{"level":"info","message":"Data for REGN up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.084Z"}
+{"level":"info","message":"Data for ILMN up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.089Z"}
+{"level":"info","message":"Data for ORLY up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.111Z"}
+{"level":"info","message":"Data for AON up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.125Z"}
+{"level":"info","message":"Data for KMB up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.173Z"}
+{"level":"info","message":"Data for AEP up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.193Z"}
+{"level":"info","message":"Data for WM up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.198Z"}
+{"level":"info","message":"Data for SHW up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.219Z"}
+{"level":"info","message":"Data for LRCX up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.223Z"}
+{"level":"info","message":"Data for FISV up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.245Z"}
+{"level":"info","message":"Data for KLAC up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.260Z"}
+{"level":"info","message":"Data for MCO up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.302Z"}
+{"level":"info","message":"Data for ETN up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.335Z"}
+{"level":"info","message":"Data for SBUX up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.360Z"}
+{"level":"info","message":"Data for PSA up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.650Z"}
+{"level":"info","message":"Data for MTD up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.778Z"}
+{"level":"info","message":"Data for MAR up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:55:07.945Z"}
+{"level":"info","message":"Data for ANSS up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:56:09.500Z"}
+{"level":"info","message":"Data for CDNS up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T21:56:09.506Z"}
+{"level":"info","message":"Data for FTNT up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T21:56:09.831Z"}
+{"level":"info","message":"Data for SEDG up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.248Z"}
+{"level":"info","message":"Data for CRWD up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.410Z"}
+{"level":"info","message":"Data for KEYS up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.414Z"}
+{"level":"info","message":"Data for NET up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.610Z"}
+{"level":"info","message":"Data for MSCI up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.613Z"}
+{"level":"info","message":"Data for OKTA up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.614Z"}
+{"level":"info","message":"Data for ZS up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.733Z"}
+{"level":"info","message":"Data for BIO up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.735Z"}
+{"level":"info","message":"Data for WST up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.744Z"}
+{"level":"info","message":"Data for DDOG up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.757Z"}
+{"level":"info","message":"Data for STE up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.759Z"}
+{"level":"info","message":"Data for FSLY up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.761Z"}
+{"level":"info","message":"Data for TER up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.763Z"}
+{"level":"info","message":"Data for DOCU up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.869Z"}
+{"level":"info","message":"Data for TDG up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.872Z"}
+{"level":"info","message":"Data for ALGN up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.881Z"}
+{"level":"info","message":"Data for ENPH up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.913Z"}
+{"level":"info","message":"Data for HUBS up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:44.920Z"}
+{"level":"info","message":"Data for TECH up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:45.007Z"}
+{"level":"info","message":"Data for PLUG up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:45.059Z"}
+{"level":"info","message":"Data for CPRT up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:45.063Z"}
+{"level":"info","message":"Data for VRSK up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:45.351Z"}
+{"level":"info","message":"Data for TEAM up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:45.560Z"}
+{"level":"info","message":"Data for RMD up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:05:45.987Z"}
+{"level":"info","message":"Data for VRSK up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:35.285Z"}
+{"level":"info","message":"Data for TEAM up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:35.764Z"}
+{"level":"info","message":"Data for CRWD up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:36.248Z"}
+{"level":"info","message":"Data for TDG up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:36.740Z"}
+{"level":"info","message":"Data for ENPH up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:37.218Z"}
+{"level":"info","message":"Data for DOCU up to 2025-04-01 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:37.327Z"}
+{"level":"info","message":"Data for HUBS up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:37.696Z"}
+{"level":"info","message":"Data for OKTA up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:37.809Z"}
+{"level":"info","message":"Data for CPRT up to 2025-04-01 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:38.649Z"}
+{"level":"info","message":"Data for ALGN up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:39.239Z"}
+{"level":"info","message":"Data for RMD up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:39.497Z"}
+{"level":"info","message":"Data for WST up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:39.728Z"}
+{"level":"info","message":"Data for BIO up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:39.997Z"}
+{"level":"info","message":"Data for KEYS up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:08:40.433Z"}
+{"level":"info","message":"Data for NET up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:08:41.192Z"}
+{"level":"info","message":"Data for ZS up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:08:41.205Z"}
+{"level":"info","message":"Data for SEDG up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:08:41.438Z"}
+{"level":"info","message":"Data for TECH up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:08:41.682Z"}
+{"level":"info","message":"Data for MSCI up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:08:41.687Z"}
+{"level":"info","message":"Data for FSLY up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:08:41.854Z"}
+{"level":"info","message":"Data for TER up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:08:41.924Z"}
+{"level":"info","message":"Data for STE up to 2025-04-01 has been updated.","service":"user-service","timestamp":"2025-04-02T22:08:42.923Z"}
+{"level":"info","message":"Data for DDOG up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:08:43.344Z"}
+{"level":"info","message":"Data for PLUG up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:08:43.548Z"}
+{"level":"error","message":"Error fetching and updating stock data for BLD: HistoricalStock validation failed: timezone: Path `timezone` is required.","service":"user-service","timestamp":"2025-04-02T22:09:45.718Z"}
+{"level":"info","message":"Data for ROKU up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:09:46.764Z"}
+{"level":"info","message":"Data for PTON up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:09:46.806Z"}
+{"level":"info","message":"Data for TWLO up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:09:48.913Z"}
+{"level":"info","message":"Data for ZM up to 2025-04-02 has been updated.","service":"user-service","timestamp":"2025-04-02T22:23:52.726Z"}
+{"level":"info","message":"Data for ZSAN up to 2022-12-09 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:23:53.179Z"}
+{"level":"error","message":"Error fetching and updating stock data for U: HistoricalStock validation failed: timezone: Path `timezone` is required.","service":"user-service","timestamp":"2025-04-02T22:23:53.348Z"}
+{"level":"info","message":"Data for ZM up to 2025-04-02 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:33:38.658Z"}
+{"level":"info","message":"Data for ZSAN up to 2022-12-09 already exists. Skipping update.","service":"user-service","timestamp":"2025-04-02T22:33:39.815Z"}
+{"level":"error","message":"Error fetching and updating stock data for U: HistoricalStock validation failed: timezone: Path `timezone` is required.","service":"user-service","timestamp":"2025-04-02T22:33:40.001Z"}
+{"level":"info","message":"Stock VTI - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-04-02T22:34:27.955Z"}
+{"level":"info","message":"Stock QQQ - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-04-02T22:34:28.770Z"}
+{"level":"info","message":"Stock DIA - Matched: 0, Modified: 0, Upserted: 1","service":"user-service","timestamp":"2025-04-02T22:34:29.045Z"}
+{"level":"info","message":"Stock DIA - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-04-02T22:36:21.814Z"}
+{"level":"info","message":"Stock VTI - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-04-02T22:36:22.971Z"}
+{"level":"info","message":"Stock QQQ - Matched: 1, Modified: 1, Upserted: 0","service":"user-service","timestamp":"2025-04-02T22:36:23.184Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:18.026Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:18.635Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:19.247Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:19.454Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:19.659Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:19.863Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:20.063Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:20.081Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:20.087Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:20.632Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:20.638Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:24.138Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:24.141Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:24.152Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:24.156Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:24.159Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:24.325Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:24.333Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:24.342Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:25.130Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:25.134Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:28.221Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:28.400Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:28.403Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:28.413Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:28.417Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:28.419Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:28.423Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:28.596Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:29.446Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:29.450Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:32.668Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:32.678Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:32.680Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:32.684Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:32.689Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:32.695Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:32.701Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:32.704Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:33.285Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:33.690Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:37.331Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:37.334Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:37.338Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:37.342Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:37.346Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:37.350Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:37.354Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:37.356Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:37.358Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:37.799Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:41.202Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:41.207Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:41.212Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:41.216Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:41.219Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:41.221Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:41.225Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:41.228Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:41.230Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:41.232Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:45.116Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:45.121Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:45.128Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:45.132Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:45.136Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:45.142Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:45.145Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:45.148Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:45.150Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:45.152Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:49.156Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:49.160Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:49.164Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:49.171Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:49.173Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:49.177Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:49.180Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:49.182Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:49.186Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:49.398Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:53.023Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:53.025Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:53.027Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:53.032Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:53.036Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:53.040Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:53.042Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:53.045Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:53.047Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:53.051Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:56.881Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:56.886Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:56.891Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:56.899Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:56.901Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:56.904Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:56.906Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:56.910Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:56.912Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:23:56.915Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:00.753Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:00.755Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:00.757Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:00.759Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:00.761Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:00.763Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:00.765Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:00.767Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:00.769Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:00.771Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:05.488Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:05.492Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:05.496Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:05.502Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:05.511Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:05.514Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:05.516Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:05.518Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:05.520Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:05.525Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:10.248Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:10.250Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:10.252Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:10.256Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:10.260Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:10.263Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:10.266Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:10.268Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:10.272Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:13.717Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:13.719Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:13.720Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:13.901Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:13.905Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:13.909Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:13.913Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:13.917Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:13.920Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:13.924Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:16.976Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:16.979Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:16.981Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:16.984Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:16.987Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:16.990Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:17.159Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:17.162Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:20.234Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:24:20.238Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:19.797Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:20.415Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:21.057Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:21.241Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:21.640Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:21.649Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:21.856Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:21.862Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:21.871Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:22.408Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:22.416Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:25.864Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:25.867Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:25.875Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:25.881Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:25.884Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:26.056Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:26.064Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:26.069Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:44.687Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:45.494Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:46.717Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-03T00:26:46.725Z"}

@@ -8,7 +8,6 @@ import { logger } from "../utilities/logger.mjs";
 
 export const fetchStockHistory = async (symbol, updateDB = true) => {
     if (mongoose.connection.readyState !== 1) {
-      1 = connected
       console.error("MongoDB connection is not established. Aborting operation.");
       return;
     }
@@ -22,8 +21,7 @@ export const fetchStockHistory = async (symbol, updateDB = true) => {
     }
     const { metadata } = parseStockData(data);
     const { monthlyTimeSeries, lastRefreshed, 
-      timezone, monthlyData } =
- metadata;
+      timezone, monthlyData } = metadata;
 
     // Ensure monthlyData is always an array (if null or undefined, make it an empty array)
     if (!Array.isArray(monthlyData)) {

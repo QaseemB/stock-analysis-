@@ -18,5 +18,5 @@ const stockSymbols = [
   'OKTA', 'ZS', 'CRWD', 'DDOG', 'DOCU', 'FSLY', 'NET', 'PLUG', 'BLD', 
   'PTON', 'ROKU', 'SQ', 'TWLO', 'U', 'ZM', 'ZSAN'
 ];
-
-backupRawStockData(stockSymbols)
+const symbol2 = ['VOO','QQQ','DIA', 'VTI']
+backupRawStockData(symbol2)

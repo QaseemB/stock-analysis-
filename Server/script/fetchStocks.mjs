@@ -41,7 +41,9 @@ const stockstack5 = ['VRSK', 'MSCI', 'FLT', 'CPRT', 'TDG', 'WST', 'RMD', 'ALGN',
                      'BIO', 'TER', 'KEYS', 'HUBS', 'SEDG', 'ENPH', 'TEAM', 'OKTA', 'ZS', 'CRWD', 
                      'DDOG', 'DOCU', 'FSLY', 'NET', 'PLUG', 'BLD', 'PTON', 'ROKU', 'SQ', 'TWLO'];
 
-const stockstack6 = ['U', 'ZM', 'ZSAN'];
+const stockstack6 = ['U', 'ZM', 'ZSAN','VOO','QQQ','DIA', 'VTI'];
+
+
 
 const runFetchStockss = async (symbols) => {
   try {
@@ -68,4 +70,4 @@ const runFetchStockss = async (symbols) => {
   }
 }
 // run the stocks updates
-runFetchStockss(stockstack1)
+runFetchStockss(stockstack7)

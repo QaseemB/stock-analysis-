@@ -150,7 +150,7 @@ def analyze_all_stocks():
   'ANSS', 'VRSK', 'MSCI', 'FLT', 'CPRT', 'TDG', 'WST', 'RMD', 'ALGN', 
   'STE', 'TECH', 'BIO', 'TER', 'KEYS', 'HUBS', 'SEDG', 'ENPH', 'TEAM', 
   'OKTA', 'ZS', 'CRWD', 'DDOG', 'DOCU', 'FSLY', 'NET', 'PLUG', 'BLD', 
-  'PTON', 'ROKU', 'SQ', 'TWLO', 'U', 'ZM', 'ZSAN'
+  'PTON', 'ROKU', 'SQ', 'TWLO', 'U', 'ZM', 'ZSAN', 'VOO','QQQ','DIA', 'VTI'
 ];  # Add your complete list of stocks
     results = []
     for symbol in stock_symbols:

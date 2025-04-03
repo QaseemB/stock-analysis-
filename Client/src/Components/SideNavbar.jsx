@@ -214,9 +214,10 @@ export const SideNav = ({ onStockSelect }) => {
       </button>
 
       {showStockDropdown && (
-        <div ref={stockDropdownRef} className="flex flex-col mb-6">
-          <label>
-            <select onChange={(e) => handleStockSelect(e.target.value)}>
+        <div ref={stockDropdownRef} className="flex flex-col items-center mb-6">
+          <label className="w-full">
+            <select onChange={(e) => handleStockSelect(e.target.value)}
+               className="w-full text-center border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
             {Object.entries(stockOptions).map(([symbol, companyName]) => (
       <option key={symbol} value={symbol}>
         {companyName}

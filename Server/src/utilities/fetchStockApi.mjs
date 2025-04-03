@@ -2,7 +2,7 @@ import axios from 'axios';
 import { config } from './config.mjs';
 
 
-const APIKEY = config.APIKEY1
+const APIKEY = config.APIKEY
 const BASE_URL = config.BASE_URL;
 
 export const fetchStockApi = async (symbol) => {
