@@ -20,7 +20,7 @@ export function Dashboard({ selectedStock }) {
   useEffect(() => {
     const fetchStockData = async (symbol) => {
       try {
-        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/${selectedStock}`);
+        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/api/stock/${selectedStock}`);
         const monthlyData = response.data?.monthlyData;
         console.log("reposne: ", response.data);
         if (monthlyData) {
@@ -45,7 +45,7 @@ export function Dashboard({ selectedStock }) {
     const fetchFlaskData = async (symbol) =>{
       try{
         setFlaskLoading(true)
-        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/${selectedStock}`)
+        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/api/stock/${selectedStock}`)
 
         const summary= response.data?.summary;
         if (summary) {
