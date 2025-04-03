@@ -80,11 +80,14 @@ export function Dashboard({ selectedStock }) {
       }
 
       setPlotData(response.data); // Store the fetched data
+      console.log("Plotly Data preview", response.data.data);
+      console.log("Plotly layout preview", response.data.layout);
       setFlaskLoading(false);
     } catch (err) {
       console.error("Error fetching Plotly data from S3:", err);
       setFlaskError(err.message || "Error fetching plot data from S3");
       setFlaskLoading(false);
+      console.log("flaskLoading:", flaskLoading);
     }
   };
 
@@ -120,24 +123,21 @@ console.log("S3 Bucket URL:", plotUrl);
       </div>
       <div className="dashboard-content grid grid-cols-2 gap-4 ">
            <div className="linegraph plot border-2 flex">
-  {flaskLoading ? (
-    <div>Loading...</div>
-  ) : plotData?.data && plotData?.layout ? (
-    <Plot
-      data={plotData.data} // Use data from S3
-      layout={{
-        ...plotData.layout,
-        autosize: true,
-        width: undefined,
-        height: 400,
-        responsive: true,
-        margin: { l: 50, r: 50, t: 50, b: 50 },
-      }}
-      config={{ responsive: true }}
-      style={{ width: "100%", maxWidth: "600px", margin: "auto" }}
-    />
+  {plotData?.data?.length && plotData?.layout ? (
+  <Plot
+    data={plotData.data}
+    layout={{
+      ...plotData.layout,
+      autosize: true,
+      height: 400,
+      margin: { l: 50, r: 50, t: 50, b: 50 },
+    }}
+    config={{ responsive: true }}
+    useResizeHandler={true}
+    style={{ width: "100%", height: "100%", maxWidth: "600px", margin: "auto" }}
+  />
   ) : (
-    <div>Error loading chart data</div>
+    <div>loading chart data</div>
   )}
 </div>
        
