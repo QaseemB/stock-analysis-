@@ -19,10 +19,10 @@ export function Dashboard({ selectedStock }) {
     const fetchStockData = async (symbol) => {
       try {
         const response = await axios.get(
-          `https://stock-analysis-frcb.onrender.com/api/stock/${selectedStock}`
+          `https://stock-analysis-6age.onrender.com/api/analyze/${selectedStock}`
         );
-        const monthlyData = response.data?.monthlyData;
         console.log("reposne: ", response.data);
+        const monthlyData = response.data?.monthlyData;
         if (monthlyData) {
           setDummydata(monthlyData); // Set stock data
         } else {
