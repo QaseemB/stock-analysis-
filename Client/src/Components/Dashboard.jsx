@@ -48,7 +48,6 @@ export function Dashboard({ selectedStock }) {
         const response = await axios.get(`https://stock-analysis-frcb.onrender.com/${selectedStock}`)
 
         const summary= response.data?.summary;
-        // const plot= response.data?.interactive_plot;
         if (summary) {
           setSummaryData(summary);
           // setPlotData(plot);
@@ -110,9 +109,10 @@ const movingAveragePath = `https://stock-analysis-6age.onrender.com/${selectedSt
 const tradingVolumePath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_volume_plot.png`
 const macdPath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_macd_plot.png`
 const plotUrl = `https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`;
-console.log("S3 Bucket URL:", plotUrl);
+// console.log("S3 Bucket URL:", plotUrl);
 
-
+console.log("Plotly Data preview",plotData.data)
+console.log("Plotly layout preview", plotData.layout)
   return (
     <div className="dashboard-container ml-[15%]">
       <div className="dashboard-title text-center block">
