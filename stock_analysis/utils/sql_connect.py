@@ -10,7 +10,7 @@ def connect_to_sql():
         # host= config["SQL_HOST"],
         # port= config["SQL_PORT"]
         url = config["DATABASE_URL"]
-        print("🔎 DATABASE_URL from env:", os.getenv("DATABASE_URL"))
+        print("🔎 DATABASE_URL from env:", config["DATABASE_URL"])
 
         
         if not url:
