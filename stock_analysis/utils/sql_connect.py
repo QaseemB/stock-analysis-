@@ -9,7 +9,11 @@ def connect_to_sql():
         # password= config["SQL_PASSWORD"],
         # host= config["SQL_HOST"],
         # port= config["SQL_PORT"]
-        url = os.getenv("DATABASE_URL")
+        url = config["DATABASE_URL"]
+        
+        if not url:
+            raise ValueError("❌ DATABASE_URL is missing from config")
         if url.startswith("postgres://"):
             url = url.replace("postgres://", "postgresql://")
         return psycopg2.connect(url)
+
