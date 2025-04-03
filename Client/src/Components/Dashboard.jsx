@@ -20,7 +20,7 @@ export function Dashboard({ selectedStock }) {
   useEffect(() => {
     const fetchStockData = async (symbol) => {
       try {
-        const response = await axios.get(`http://localhost:3030/api/stock/${selectedStock}`);
+        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/${selectedStock}`);
         const monthlyData = response.data?.monthlyData;
         console.log("reposne: ", response.data);
         if (monthlyData) {
@@ -45,7 +45,7 @@ export function Dashboard({ selectedStock }) {
     const fetchFlaskData = async (symbol) =>{
       try{
         setFlaskLoading(true)
-        const response = await axios.get(`http://localhost:3030/api/stock-analysis/${selectedStock}`)
+        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/${selectedStock}`)
 
         const summary= response.data?.summary;
         // const plot= response.data?.interactive_plot;
@@ -105,10 +105,10 @@ export function Dashboard({ selectedStock }) {
   timeZone: 'UTC',
 });
 
-const bollingerPath = `http://127.0.0.1:5001/stockreport/${selectedStock}/${selectedStock}_bollinger_plot.png`
-const movingAveragePath = `http://127.0.0.1:5001/stockreport/${selectedStock}/${selectedStock}_moving_avg_plot.png`
-const tradingVolumePath = `http://127.0.0.1:5001/stockreport/${selectedStock}/${selectedStock}_volume_plot.png`
-const macdPath = `http://127.0.0.1:5001/stockreport/${selectedStock}/${selectedStock}_macd_plot.png`
+const bollingerPath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_bollinger_plot.png`
+const movingAveragePath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_moving_avg_plot.png`
+const tradingVolumePath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_volume_plot.png`
+const macdPath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_macd_plot.png`
 const plotUrl = `https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`;
 console.log("S3 Bucket URL:", plotUrl);
 
