@@ -5,22 +5,22 @@ import LinePlot from "./LinePlot";
 
 export function Dashboard({ selectedStock }) {
   const [dummydata, setDummydata] = useState([]); // Store stock data
-  const [summaryData, setSummaryData] = useState({})
-  const [plotData, setPlotData] = useState({})
-  const [loading, setLoading] = useState(true);  // Loading status
-  const [error, setError] = useState(null);  // Error status
+  const [summaryData, setSummaryData] = useState({});
+  const [plotData, setPlotData] = useState({});
+  const [loading, setLoading] = useState(true); // Loading status
+  const [error, setError] = useState(null); // Error status
   const [flaskLoading, setFlaskLoading] = useState(true);
   const [stockError, setStockError] = useState(null);
   const [flaskError, setFlaskError] = useState(null);
 
-
   const s3Bucket = import.meta.env.VITE_APP_S3_BUCKET || "default-bucket-name";
-
 
   useEffect(() => {
     const fetchStockData = async (symbol) => {
       try {
-        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/api/stock/${selectedStock}`);
+        const response = await axios.get(
+          `https://stock-analysis-frcb.onrender.com/api/stock/${selectedStock}`
+        );
         const monthlyData = response.data?.monthlyData;
         console.log("reposne: ", response.data);
         if (monthlyData) {
@@ -32,7 +32,7 @@ export function Dashboard({ selectedStock }) {
         setError(err.message || "Error fetching data");
       } finally {
         setLoading(false);
-        setFlaskLoading(false)
+        setFlaskLoading(false);
       }
     };
 
@@ -41,137 +41,156 @@ export function Dashboard({ selectedStock }) {
     }
   }, [selectedStock]); // Re-fetch data whenever the stock symbol changes
 
-  useEffect(()=>{
-    const fetchFlaskData = async (symbol) =>{
-      try{
-        setFlaskLoading(true)
-        const response = await axios.get(`https://stock-analysis-frcb.onrender.com/api/stock/${selectedStock}`)
+  useEffect(() => {
+    const fetchFlaskData = async (symbol) => {
+      try {
+        setFlaskLoading(true);
+        const response = await axios.get(
+          `https://stock-analysis-frcb.onrender.com/api/stock/${selectedStock}`
+        );
 
-        const summary= response.data?.summary;
+        const summary = response.data?.summary;
         if (summary) {
           setSummaryData(summary);
           // setPlotData(plot);
-          } else {
-            throw new Error("Unexpected response structure");
+        } else {
+          throw new Error("Unexpected response structure");
         }
-        } catch (err) {
+      } catch (err) {
         setError(err.message || "Error fetching data");
       } finally {
         setLoading(false);
       }
-      };
-      if (selectedStock) {
+    };
+    if (selectedStock) {
       fetchFlaskData(selectedStock);
     }
-    }, [selectedStock]);
+  }, [selectedStock]);
 
-    useEffect(() => {
-  const fetchPlotlyDataFromS3 = async () => {
-    try {
-      setFlaskLoading(true);
-      // console.log(`Fetching from: https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`);
-      
-      const response = await axios.get(`https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`);
-      console.log("Raw S3 Response:", response);
+  useEffect(() => {
+    const fetchPlotlyDataFromS3 = async () => {
+      try {
+        setFlaskLoading(true);
+        // console.log(`Fetching from: https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`);
 
-      if (!response.data || !response.data.data || !response.data.layout) {
-        throw new Error("Invalid Plotly JSON structure");
+        const response = await axios.get(
+          `https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`
+        );
+        console.log("Raw S3 Response:", response);
+
+        if (!response.data || !response.data.data || !response.data.layout) {
+          throw new Error("Invalid Plotly JSON structure");
+        }
+
+        setPlotData(response.data); // Store the fetched data
+        console.log("Plotly Data preview", plotData.data);
+        console.log("Plotly layout preview", plotData.layout);
+        console.log(
+          "plotData ready:",
+          plotData?.data?.length > 0 && !!plotData?.layout
+        );
+        setFlaskLoading(false);
+      } catch (err) {
+        console.error("Error fetching Plotly data from S3:", err);
+        setFlaskError(err.message || "Error fetching plot data from S3");
+        setFlaskLoading(false);
+        console.log("flaskLoading:", flaskLoading);
       }
+    };
 
-      console.log("Plotly Data preview",plotData.data)
-      console.log("Plotly layout preview", plotData.layout)
-
-      setPlotData(response.data); // Store the fetched data
-      setFlaskLoading(false);
-    } catch (err) {
-      console.error("Error fetching Plotly data from S3:", err);
-      setFlaskError(err.message || "Error fetching plot data from S3");
-      setFlaskLoading(false);
+    if (selectedStock) {
+      fetchPlotlyDataFromS3();
     }
-  };
-
-  if (selectedStock) {
-    fetchPlotlyDataFromS3();
-  }
-}, [selectedStock, s3Bucket]);
+  }, [selectedStock, s3Bucket]);
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
-  
   const latestDate = new Date(summaryData.latest_date);
   const formattedDate = latestDate.toLocaleDateString("en-GB", {
-  year: 'numeric',
-  month: 'short',
-  day: 'numeric',
-  timeZone: 'UTC',
-});
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
 
-
-
-const bollingerPath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_bollinger_plot.png`
-const movingAveragePath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_moving_avg_plot.png`
-const tradingVolumePath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_volume_plot.png`
-const macdPath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_macd_plot.png`
-const plotUrl = `https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`;
-// console.log("S3 Bucket URL:", plotUrl);
-
+  const bollingerPath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_bollinger_plot.png`;
+  const movingAveragePath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_moving_avg_plot.png`;
+  const tradingVolumePath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_volume_plot.png`;
+  const macdPath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_macd_plot.png`;
+  const plotUrl = `https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`;
+  // console.log("S3 Bucket URL:", plotUrl);
 
   return (
     <div className="dashboard-container ml-[15%]">
       <div className="dashboard-title text-center block">
         <h1 className="text-3xl font-bold mb-4">Dashboard</h1>
       </div>
-      <div className="dashboard-content grid grid-cols-2 gap-4 ">
-           <div className="linegraph plot border-2 flex">
-  {flaskLoading ? (
-    <div>Loading...</div>
-  ) : plotData?.data && plotData?.layout ? (
-    <Plot
-      data={plotData.data} // Use data from S3
-      layout={{
-        ...plotData.layout,
-        autosize: true,
-        width: undefined,
-        height: 400,
-        responsive: true,
-        margin: { l: 50, r: 50, t: 50, b: 50 },
-      }}
-      config={{ responsive: true }}
-      style={{ width: "100%", maxWidth: "600px", margin: "auto" }}
-    />
-  ) : (
-    <div>Error loading chart data</div>
-  )}
+      <div className="debug p-2 bg-gray-100 text-xs">
+  <p>flaskLoading: {flaskLoading.toString()}</p>
+  <p>plotData ready: {plotData?.data?.length > 0 ? "✅" : "❌"}</p>
+  <p>layout ready: {plotData?.layout ? "✅" : "❌"}</p>
 </div>
-       
+      <div className="dashboard-content grid grid-cols-2 gap-4 ">
+        <div className="linegraph plot border-2 flex">
+          {plotData?.data?.length && plotData?.layout ? (
+            <Plot
+              data={plotData.data}
+              layout={{
+                ...plotData.layout,
+                autosize: true,
+                height: 400,
+                margin: { l: 50, r: 50, t: 50, b: 50 },
+              }}
+              config={{ responsive: true }}
+              useResizeHandler={true}
+              style={{
+                width: "100%",
+                height: "100%",
+                maxWidth: "600px",
+                margin: "auto",
+              }}
+            />
+          ) : (
+            <div> loading chart data</div>
+          )}
+        </div>
+
         <div className="Profile border-2 p-4">
           <h2 className="text-center">STOCK SUMMARY FOR {selectedStock}</h2>
-          <p className="tracking-wide leading-8">As of {formattedDate}, the latest data shows that {selectedStock} opened at ${summaryData.latest_open} and closed at ${summaryData.latest_close}. The monthly return for the stock stands at {summaryData.monthly_return}%, reflecting its recent performance. The 6-month moving average is {summaryData.moving_avg_6}, providing a broader view of the stock's trend, while the 3-month moving average is {summaryData.moving_avg_3}, offering a more short-term perspective on its movement.
-
-This analysis provides valuable insights into the stock's current performance and trend over multiple timeframes.</p>
+          <p className="tracking-wide leading-8">
+            As of {formattedDate}, the latest data shows that {selectedStock}{" "}
+            opened at ${summaryData.latest_open} and closed at $
+            {summaryData.latest_close}. The monthly return for the stock stands
+            at {summaryData.monthly_return}%, reflecting its recent performance.
+            The 6-month moving average is {summaryData.moving_avg_6}, providing
+            a broader view of the stock's trend, while the 3-month moving
+            average is {summaryData.moving_avg_3}, offering a more short-term
+            perspective on its movement. This analysis provides valuable
+            insights into the stock's current performance and trend over
+            multiple timeframes.
+          </p>
         </div>
-     
+
         <div className="bollinger-graph border-2 p-4">
           <h2 className="text-center">Bollinger bands for {selectedStock}</h2>
-        <img
-         src={`${bollingerPath}`}
-         style= {{width: "100%", maxWidth: "600px", margin:"auto"}}
-         />
-
-        </div>
-        <div className= "trading-volume border-2 p-4">
-          <h2 className="text-center">Trading Volume for {selectedStock}</h2>
           <img
-          src={`${tradingVolumePath}`}
-          style={{width: "100%", maxWidth: "600px", margin:"auto"}}
+            src={`${bollingerPath}`}
+            style={{ width: "100%", maxWidth: "600px", margin: "auto" }}
           />
         </div>
-        <div className= "macd border-2 p-4">
+        <div className="trading-volume border-2 p-4">
+          <h2 className="text-center">Trading Volume for {selectedStock}</h2>
+          <img
+            src={`${tradingVolumePath}`}
+            style={{ width: "100%", maxWidth: "600px", margin: "auto" }}
+          />
+        </div>
+        <div className="macd border-2 p-4">
           <h2 className="text-center">MACD for {selectedStock}</h2>
           <img
-          src={`${macdPath}`}
-          style={{width: "100%", maxWidth: "600px", margin:"auto"}}
+            src={`${macdPath}`}
+            style={{ width: "100%", maxWidth: "600px", margin: "auto" }}
           />
         </div>
       </div>
