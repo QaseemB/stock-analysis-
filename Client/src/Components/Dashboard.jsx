@@ -69,7 +69,7 @@ export function Dashboard({ selectedStock }) {
   const fetchPlotlyDataFromS3 = async () => {
     try {
       setFlaskLoading(true);
-      console.log(`Fetching from: https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`);
+      // console.log(`Fetching from: https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`);
       
       const response = await axios.get(`https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`);
       console.log("Raw S3 Response:", response);
@@ -77,6 +77,9 @@ export function Dashboard({ selectedStock }) {
       if (!response.data || !response.data.data || !response.data.layout) {
         throw new Error("Invalid Plotly JSON structure");
       }
+
+      console.log("Plotly Data preview",plotData.data)
+      console.log("Plotly layout preview", plotData.layout)
 
       setPlotData(response.data); // Store the fetched data
       setFlaskLoading(false);
@@ -104,6 +107,8 @@ export function Dashboard({ selectedStock }) {
   timeZone: 'UTC',
 });
 
+
+
 const bollingerPath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_bollinger_plot.png`
 const movingAveragePath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_moving_avg_plot.png`
 const tradingVolumePath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_volume_plot.png`
@@ -111,8 +116,7 @@ const macdPath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${se
 const plotUrl = `https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`;
 // console.log("S3 Bucket URL:", plotUrl);
 
-console.log("Plotly Data preview",plotData.data)
-console.log("Plotly layout preview", plotData.layout)
+
   return (
     <div className="dashboard-container ml-[15%]">
       <div className="dashboard-title text-center block">
