@@ -10,7 +10,7 @@ app.register_blueprint(routes)
 load_dotenv()
 # Allow specific origins
 
-# CORS(app, resources={r"/*": {"origins": "https://stock-analysis-0f8t.onrender.com"}})
+CORS(app, resources={r"/*": {"origins": "https://stock-analysis-0f8t.onrender.com"}})
 
 
 @app.route('/')
