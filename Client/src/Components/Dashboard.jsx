@@ -21,7 +21,7 @@ export function Dashboard({ selectedStock }) {
     const fetchStockData = async (symbol) => {
       try {
         const response = await axios.get(
-          `https://stock-analysis-6age.onrender.com/api/analyze/${selectedStock}`
+          `${nodeUrl}/api/stock/${selectedStock}`
         );
         console.log("reposne: ", response.data);
         const monthlyData = response.data?.monthlyData;
@@ -48,7 +48,7 @@ export function Dashboard({ selectedStock }) {
       try {
         setFlaskLoading(true);
         const response = await axios.get(
-          `https://stock-analysis-frcb.onrender.com/api/stock/${selectedStock}`
+          `${nodeUrl}/api/stock-analysis/${selectedStock}`
         );
 
         const summary = response.data?.summary;
@@ -109,10 +109,10 @@ export function Dashboard({ selectedStock }) {
     timeZone: "UTC",
   });
 
-  const bollingerPath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_bollinger_plot.png`;
-  const movingAveragePath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_moving_avg_plot.png`;
-  const tradingVolumePath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_volume_plot.png`;
-  const macdPath = `https://stock-analysis-6age.onrender.com/${selectedStock}/${selectedStock}_macd_plot.png`;
+  const bollingerPath = `${flaskUrl}/${selectedStock}/${selectedStock}_bollinger_plot.png`;
+  const movingAveragePath = `${flaskUrl}/${selectedStock}/${selectedStock}_moving_avg_plot.png`;
+  const tradingVolumePath = `${flaskUrl}/${selectedStock}/${selectedStock}_volume_plot.png`;
+  const macdPath = `${flaskUrl}/${selectedStock}/${selectedStock}_macd_plot.png`;
   const plotUrl = `https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`;
   // console.log("S3 Bucket URL:", plotUrl);
 

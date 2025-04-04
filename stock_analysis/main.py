@@ -18,7 +18,7 @@ def hello():
     return "Hello, World!"
 
 if __name__ == "__main__":
-    port =  int(os.getenv("PORT", 5000))
+    port =  int(os.getenv("PO", 5001))
     app.run(debug=True, host='0.0.0.0', port=port )
 
     # port=int(port)+ 1 
