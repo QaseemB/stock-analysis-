@@ -14,6 +14,7 @@ export function Dashboard({ selectedStock }) {
   const [flaskError, setFlaskError] = useState(null);
 
   const s3Bucket = import.meta.env.VITE_APP_S3_BUCKET || "default-bucket-name";
+  const apiUrl = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const fetchStockData = async (symbol) => {
