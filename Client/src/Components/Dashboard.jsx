@@ -15,12 +15,13 @@ export function Dashboard({ selectedStock }) {
 
 
   const s3Bucket = import.meta.env.VITE_APP_S3_BUCKET || "default-bucket-name";
+  const apiUrl = import.meta.env.VITE_API_URL;
 
 
   useEffect(() => {
     const fetchStockData = async (symbol) => {
       try {
-        const response = await axios.get(`http://localhost:3030/api/stock/${selectedStock}`);
+        const response = await axios.get(`${apiUrl}/stock/${selectedStock}`);
         const monthlyData = response.data?.monthlyData;
         console.log("reposne: ", response.data);
         if (monthlyData) {
@@ -45,7 +46,7 @@ export function Dashboard({ selectedStock }) {
     const fetchFlaskData = async (symbol) =>{
       try{
         setFlaskLoading(true)
-        const response = await axios.get(`http://localhost:3030/api/stock-analysis/${selectedStock}`)
+        const response = await axios.get(`${apiUrl}/stock-analysis/${selectedStock}`)
 
         const summary= response.data?.summary;
         // const plot= response.data?.interactive_plot;
