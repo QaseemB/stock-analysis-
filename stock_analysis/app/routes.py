@@ -1,4 +1,7 @@
-from flask import Blueprint, jsonify, request, send_from_directory
+from flask import Blueprint, jsonify, request, send_from_directory, send_file, make_response
+from flask_cors import cross_origin
+from werkzeug.exceptions import NotFound
+import mimetypes
 import os
 import threading
 import pandas as pd
@@ -125,12 +128,25 @@ def analyze(symbol):
         logging.error(f"An error occurred during analysis: {e}")
         return jsonify({"error": "An internal error occurred", "details": str(e)}), 500
     
+
+
 @routes.route('/stockreport/<symbol>/<filename>', methods=['GET'])
+@cross_origin()  # ← this handles CORS for most cases
 def serve_stock_report(symbol, filename):
     directory = os.path.join('stockreport', symbol)
-    if not os.path.exists(os.path.join(directory, filename)):
+    filepath = filepath = os.path.join(directory, filename)
+    try:
+       # Guess MIME type using file extension
+        mime_type, _ = mimetypes.guess_type(filepath)
+        response = make_response(send_from_directory(directory, filename))
+        response.headers['Access-Control-Allow-Origin'] = '*'
+        if mime_type:
+            response.headers['Content-Type'] = mime_type
+        return response
+    except NotFound:
         return jsonify({"error": "File not found"}), 404
-    return send_from_directory(directory, filename, as_attachment=True)
+    # return send_from_directory(directory, filename, as_attachment=True)
+
 
 @routes.route("/api/analyze/all", methods=["GET"])
 def analyze_all_stocks():

@@ -14,6 +14,7 @@ config = {
 "S3_BUCKET": os.getenv("S3_BUCKET"),
 "BASE_URL": "https://www.alphavantage.co/query",
 "DB_NAME": os.getenv("DB_NAME"),
+"DATABASE_URL": os.getenv("DATABASE_URL"),
 "DB_RAW_COLLECTION": os.getenv("DB_Raw_Collection"),
 "DB_PROCESSED_COLLECTION": os.getenv("DB_Processed_Collection"),
 "environment": os.getenv("NODE_ENV", "development"),

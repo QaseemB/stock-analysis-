@@ -10,7 +10,7 @@ app.register_blueprint(routes)
 load_dotenv()
 # Allow specific origins
 
-# CORS(app, resources={r"/*": {"origins": "https://stock-analysis-0f8t.onrender.com"}})
+CORS(app, resources={r"/*": {"origins": "https://stock-analysis-0f8t.onrender.com"}})
 
 
 @app.route('/')
@@ -18,5 +18,7 @@ def hello():
     return "Hello, World!"
 
 if __name__ == "__main__":
-    port =  os.getenv("PORT_PYTHON", 5000)
-    app.run(debug=True, host='0.0.0.0', port=int(port)+ 1 )
+    port =  int(os.getenv("PORT", 5000))
+    app.run(debug=True, host='0.0.0.0', port=port )
+
+    # port=int(port)+ 1 
