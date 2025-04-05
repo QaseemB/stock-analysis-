@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from utils.config import config
+from stock_analysis.config.settings import config
 from pydantic import BaseModel, Field
 from datetime import date,datetime
 from typing import Optional, List

@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from utils.config import config
+from stock_analysis.config.settings import config
 from utils.mongo_connect import client, db
 
 

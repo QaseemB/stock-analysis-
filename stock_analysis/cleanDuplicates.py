@@ -1,4 +1,4 @@
-from utils.config import config
+from stock_analysis.config.settings import config
 from utils.get_mongo_collection import get_mongo_collection
 
 collection = get_mongo_collection(config)

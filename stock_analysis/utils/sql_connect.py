@@ -1,6 +1,6 @@
 import psycopg2
 import os
-from utils.config import config
+from stock_analysis.config.settings import config
 
 def connect_to_sql():
     
