@@ -26,5 +26,6 @@ config = {
 "SQL_DB": os.getenv("SQL_DB"),
 "SQL_TABLE_NAME": os.getenv("SQL_TABLE_NAME"),   
 "SQL_TABLE_ANALYSIS": os.getenv("SQL_TABLE_NAME_ANALYSIS"),
+"PYTHON_FILE_BASE_SYS": os.getenv("PYTHON_FILE_BASE_SYS")
 }
 

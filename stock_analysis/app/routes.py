@@ -7,12 +7,12 @@ import threading
 import pandas as pd
 import json
 from pydantic import ValidationError
-from analysis.data_retrieval import get_stock_data
+from stock_analysis.utils.data_retrieval import get_stock_data
 from analysis.data_analysis import analyze_stock_data
-from analysis.generate_summary import generate_summary
-from analysis.data_visualization import generate_plots
-from analysis.report_generation import create_pdf_report
-from analysis.gen_interactive_plt import gen_interactive_plt
+from stock_analysis.utils.generate_summary import generate_summary
+from stock_analysis.services.data_visualization import generate_plots
+from stock_analysis.utils.pdf_report_generation import create_pdf_report
+from stock_analysis.utils.gen_interactive_plt import gen_interactive_plt
 from utils.transform_data import transform_to_processed_data_sql
 from utils.insert_processed_data import insert_processed_data
 from utils.store_plots_in_sql import store_plot_in_db
