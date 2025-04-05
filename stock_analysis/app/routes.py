@@ -9,10 +9,10 @@ import json
 from pydantic import ValidationError
 from stock_analysis.services.data_retrieval import get_stock_data
 from analysis.data_analysis import analyze_stock_data
-from stock_analysis.utils.generate_summary import generate_summary
-from stock_analysis.services.data_visualization import generate_plots
-from stock_analysis.utils.pdf_report_generation import create_pdf_report
-from stock_analysis.utils.gen_interactive_plt import gen_interactive_plt
+from stock_analysis.transfomer.stock_summary_transformer import generate_summary
+from stock_analysis.renderers.matplotlib_png_renderer import generate_plots
+from stock_analysis.services.pdf_report_generation import create_pdf_report
+from stock_analysis.renderers.interactive_plot_renderer import gen_interactive_plt
 from utils.transform_data import transform_to_processed_data_sql
 from stock_analysis.services.insert_processed_data import insert_processed_data
 from utils.store_plots_in_sql import store_plot_in_db
@@ -21,6 +21,19 @@ from utils.sql_connect import connect_to_sql
 from stock_analysis.config.settings import config
 import matplotlib
 import logging
+
+
+
+## ideal setup for safe memory usage 
+##def get_analysis(symbol):
+ # Just grab precomputed values (JSON/summary/plot URLs)
+   ## analysis = fetch_summary_from_db(symbol)
+   ## graph_urls = get_plot_urls_from_s3(symbol)  
+   ## return jsonify({
+   ##     "symbol": symbol,
+   ##     "summary": analysis,
+    ##    "plots": graph_urls
+   ## })
 
 # Configure Matplotlib for non-interactive mode
 matplotlib.use('Agg')

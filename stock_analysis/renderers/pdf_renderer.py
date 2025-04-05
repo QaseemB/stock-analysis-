@@ -1,14 +1,8 @@
-import os
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
+import os
 
-def create_pdf_report(symbol, plot_paths, df):
-    # Create the subfolder for the symbol if it doesn't exist
-    symbol_folder = os.path.join('stockreport', symbol)
-    os.makedirs(symbol_folder, exist_ok=True)
-    # Define the PDF file path in the symbol-specific folder
-    pdf_filename = os.path.join(symbol_folder, f"{symbol}_stock_report.pdf")
-    # Create a PDF canvas
+def draw_pdf_report(symbol, plot_paths, df, pdf_filename):
     c = canvas.Canvas(pdf_filename, pagesize=letter)
     c.drawString(100, 750, f"{symbol} Stock Analysis Report")
 
@@ -31,9 +25,3 @@ def create_pdf_report(symbol, plot_paths, df):
     c.drawText(text_object)
 
     c.save()
-    print(f"PDF report for {symbol} saved as {pdf_filename}")
-
-    # Clean up image files
-    # for plot_path in plot_paths.values():
-    #     if os.path.exists(plot_path):
-    #         os.remove(plot_path)
