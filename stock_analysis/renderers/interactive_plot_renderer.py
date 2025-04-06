@@ -1,6 +1,7 @@
 import plotly.express as px
 import plotly.io as pio
 import pandas as pd
+from utils.file_helpers import get_plotly_path
 
 def gen_interactive_plt(symbol, df):
     """
@@ -11,12 +12,21 @@ def gen_interactive_plt(symbol, df):
         df['date'] = pd.to_datetime(df['date'])
         df.set_index('date', inplace=True)
 
+    color_discrete_map = {
+    "close": "blue",
+    "moving_avg_3": "red",
+    "moving_avg_6": "green",
+    "upper_band": "purple",
+    "lower_band": "orange"
+}
+
     # Create the Plotly figure
     fig = px.line(
         df,
         x=df.index,
         y=["close", "moving_avg_3", "moving_avg_6", "upper_band", "lower_band"],
-        title=f"{symbol} Interactive Stock Analysis"
+        title=f"{symbol} Interactive Stock Analysis",
+        color_discrete_map=color_discrete_map
     )
 
     # Update layout with proper titles and formatting
@@ -29,5 +39,10 @@ def gen_interactive_plt(symbol, df):
         )
     )
 
-    # Convert the Plotly figure to JSON
-    return pio.to_json(fig)  # This JSON can be passed to React for rendering
+    fig_json = pio.to_json(fig)
+    plotly_path = get_plotly_path(symbol, "interactive")
+    fig.write_html(plotly_path)
+    print(f"📊 Plotly HTML saved to: {plotly_path}")
+
+
+    return fig_json

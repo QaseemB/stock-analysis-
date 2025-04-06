@@ -9,3 +9,5 @@ def transform_monthly_data(monthly_data):
     
         # Convert '_id' to string for JSON serialization
         entry["_id"] = str(entry.get("_id"))
+
+    return monthly_data

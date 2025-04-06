@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import os
 import pandas as pd
-from utils.file_helpers import create_png_folder
+from utils.file_helpers import get_png_folder
 
 
 def bollinger_band(df,symbol):
@@ -12,8 +12,8 @@ def bollinger_band(df,symbol):
     ax.plot(df.index, df['lower_band'], label='Lower Band', color='red', linestyle='--')
     ax.fill_between(df.index, df['upper_band'], df['lower_band'], color='lightgray', alpha=0.5)
     ax.set_title(f"{symbol} Bollinger Bands Analysis")
-    ax.xlabel("Date")
-    ax.ylabel("Price")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Price")
     ax.legend()
     ax.grid(True)
     fig.tight_layout()
@@ -24,8 +24,8 @@ def macd(df,symbol):
     ax.plot(df.index, df['macd'], label="MACD", color="blue")
     ax.plot(df.index, df['signal_line'], label="Signal Line", color="red", linestyle="--")
     ax.set_title(f"{symbol} MACD Analysis")
-    ax.xlabel("Date")
-    ax.ylabel("MACD Value")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("MACD Value")
     ax.legend()
     return fig
 
@@ -34,8 +34,8 @@ def trade_volume(df,symbol):
         fig, ax = plt.subplots(figsize=(10,6))
         ax.bar(df.index, df['volume'], color='gray', alpha=0.5)
         ax.set_title(f"{symbol} Trading Volume")
-        ax.xlabel("Date")
-        ax.ylabel("Volume")
+        ax.set_xlabel("Date")
+        ax.set_ylabel("Volume")
         return fig
     return None
 
@@ -46,21 +46,20 @@ def moving_avg(df,symbol):
     ax.plot(df.index, df["moving_avg_6"], label="6-Month Moving Average", linestyle="--", color="green")
     ax.plot(df.index, df["moving_avg_12"], label="12-Month Moving Average", linestyle="--", color="orange")
     ax.set_title(f"{symbol} Moving Averages")
-    ax.xlabel("Date")
-    ax.ylabel("Price")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Price")
     ax.legend()
     ax.grid(True)
     return fig
 
 def generate_plots(symbol, df):
     print(f"Generating plots for {symbol}")
-    
     # Ensure the index is datetime before plotting (if not already)
     if not pd.api.types.is_datetime64_any_dtype(df.index):
         df['date'] = pd.to_datetime(df['date'])
         df.set_index('date', inplace=True)
 
-    png_folder = create_png_folder(symbol)
+    png_folder = get_png_folder(symbol)
     # Create a dictionary to store plot paths for different plots
     plot_paths = {} 
 
@@ -81,7 +80,7 @@ def generate_plots(symbol, df):
                 continue 
             
             plot_path = png_folder / f"{symbol}_{name}_plot.png"
-            fig.savefig(plot_path)
+            fig.savefig(plot_path, dpi=150)
             plot_paths[name] = str(plot_path)
             print(f"{name.capitalize()} plot saved ➡️ {plot_path}")
             plt.close(fig)

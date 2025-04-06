@@ -32,9 +32,9 @@ def macd_signal_line(df):
     
 
 
-def analyze_stock_data(monthly_data,symbol):
+def analyze_stock_data(cleaned_monthly_data,symbol):
 
-    df = pd.DataFrame(monthly_data)
+    df = pd.DataFrame(cleaned_monthly_data)
     if df.empty:
         print("No data available for analysis.")
         return None
