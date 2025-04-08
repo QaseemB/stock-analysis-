@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import os
 import pandas as pd
 from utils.file_helpers import get_png_folder
+from utils.s3_helper import save_png_to_s3, delete_local_file, upload_file_to_s3
 
 
 def bollinger_band(df,symbol):
@@ -52,6 +53,36 @@ def moving_avg(df,symbol):
     ax.grid(True)
     return fig
 
+def rsi_plot(df, symbol):
+    if "rsi" not in df.columns:
+        print(f"Skipping RSI plot for {symbol} — RSI not found in DataFrame.")
+        return None
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.plot(df.index, df["rsi"], label="RSI", color="purple")
+    ax.axhline(70, color='red', linestyle='--', linewidth=1)
+    ax.axhline(30, color='green', linestyle='--', linewidth=1)
+    ax.set_title(f"{symbol} RSI (Relative Strength Index)")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("RSI Value")
+    ax.legend()
+    ax.grid(True)
+    fig.tight_layout()
+    return fig
+
+def obv_plot(df, symbol):
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.plot(df.index, df['obv'], label="OBV", color="brown")
+    ax.set_title(f"{symbol} On-Balance Volume")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("OBV Value")
+    ax.legend()
+    ax.grid(True)
+    fig.tight_layout()
+    return fig
+
+
+
 def generate_plots(symbol, df):
     print(f"Generating plots for {symbol}")
     # Ensure the index is datetime before plotting (if not already)
@@ -67,7 +98,10 @@ def generate_plots(symbol, df):
         "bollinger": bollinger_band,
         "macd": macd,
         "volume": trade_volume,
-        "moving_avg": moving_avg
+        "moving_avg": moving_avg,
+        "Rsi": rsi_plot,
+        "Obv": obv_plot
+
     }
 
     for name, plot_func in plot_map.items():
@@ -84,6 +118,11 @@ def generate_plots(symbol, df):
             plot_paths[name] = str(plot_path)
             print(f"{name.capitalize()} plot saved ➡️ {plot_path}")
             plt.close(fig)
+            filename = f"{symbol}_{name}_plot.png"
+            s3_uri = upload_file_to_s3(plot_path,symbol,'png',filename)
+            if s3_uri:
+                delete_local_file(plot_path)
+                print(f"local path to png files for {symbol} has been deleted and the files have been uploaded to s3 succefully")
         except Exception as e:
             print(f"Error generating {name} plot: {e}")
 

@@ -28,8 +28,26 @@ def macd_signal_line(df):
     df['signal_line'] = df['macd'].ewm(span=9, adjust=False).mean()
     return df
     
+def rsi(df, period: int = 14):
+    delta = df["close"].diff()
+    gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
+    loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
+    rs = gain / loss
+    df["rsi"] = 100 - (100 / (1 + rs))
+    return df    
     
-    
+def obv(df):
+    obv_vals = [0]  # Start OBV at 0
+    for i in range(1, len(df)):
+        if df['close'].iloc[i] > df['close'].iloc[i-1]:
+            obv_vals.append(obv_vals[-1] + df['volume'].iloc[i])
+        elif df['close'].iloc[i] < df['close'].iloc[i-1]:
+            obv_vals.append(obv_vals[-1] - df['volume'].iloc[i])
+        else:
+            obv_vals.append(obv_vals[-1])  # No price change
+
+    df["obv"] = obv_vals
+    return df
 
 
 def analyze_stock_data(cleaned_monthly_data,symbol):
@@ -50,6 +68,10 @@ def analyze_stock_data(cleaned_monthly_data,symbol):
     monthly_returns(df)
     # MACD and Signal Line
     macd_signal_line(df)
+    #Relative Strength Index
+    rsi(df)
+    #On balance volume
+    obv(df)
     # Drop NaN values from the DataFrame
     df.dropna(inplace=True)
     return df

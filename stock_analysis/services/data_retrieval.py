@@ -19,8 +19,8 @@ def get_stock_data(symbol):
 
         # Convert the data into a DataFrame
         df = pd.DataFrame(cleaned_data)
-        print("Columns:", df.columns)
-        print("Unique symbols:", df["symbol"].unique())     
+        # print("Columns:", df.columns)
+        # print("Unique symbols:", df["symbol"].unique())     
 
 
         return df

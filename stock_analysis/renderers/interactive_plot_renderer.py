@@ -2,6 +2,7 @@ import plotly.express as px
 import plotly.io as pio
 import pandas as pd
 from utils.file_helpers import get_plotly_path
+from utils.s3_helper import save_plotly_to_s3, delete_local_file
 
 def gen_interactive_plt(symbol, df):
     """
@@ -13,18 +14,20 @@ def gen_interactive_plt(symbol, df):
         df.set_index('date', inplace=True)
 
     color_discrete_map = {
-    "close": "blue",
-    "moving_avg_3": "red",
+    
+    "close": "cyan",
+    "moving_avg_3": "coral",
     "moving_avg_6": "green",
-    "upper_band": "purple",
-    "lower_band": "orange"
+    "upper_band": "chocolate",
+    "lower_band": "darkblue",
+    "rsi": "red"
 }
 
     # Create the Plotly figure
     fig = px.line(
         df,
         x=df.index,
-        y=["close", "moving_avg_3", "moving_avg_6", "upper_band", "lower_band"],
+        y=["close", "moving_avg_3", "moving_avg_6", "upper_band", "lower_band","rsi"],
         title=f"{symbol} Interactive Stock Analysis",
         color_discrete_map=color_discrete_map
     )
@@ -43,6 +46,14 @@ def gen_interactive_plt(symbol, df):
     plotly_path = get_plotly_path(symbol, "interactive")
     fig.write_html(plotly_path)
     print(f"📊 Plotly HTML saved to: {plotly_path}")
+
+    s3_uri = save_plotly_to_s3(plotly_path,symbol,"interactive")
+
+    if s3_uri:
+        delete_local_file(plotly_path)
+        print(f"local path to plotly for {symbol} has been deleted and the file has been uploaded to s3 succefully")
+
+
 
 
     return fig_json

@@ -19,6 +19,6 @@ def data_transformation(symbol):
     return summary
 
 
-# summary = data_transformation("AAPL")
+summary = data_transformation("AAPL")
 
-# print(summary)
+print(summary)
