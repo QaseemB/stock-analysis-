@@ -1,8 +1,8 @@
 import plotly.express as px
 import plotly.io as pio
 import pandas as pd
-from utils.file_helpers import get_plotly_path
-from utils.s3_helper import save_plotly_to_s3, delete_local_file
+from stock_analysis.utils.file_helpers import get_plotly_path
+from stock_analysis.utils.s3_helper import save_plotly_to_s3, delete_local_file
 
 def gen_interactive_plt(symbol, df):
     """
@@ -20,7 +20,8 @@ def gen_interactive_plt(symbol, df):
     "moving_avg_6": "green",
     "upper_band": "chocolate",
     "lower_band": "darkblue",
-    "rsi": "red"
+    "rsi": "red",
+    # "obv": "gray",
 }
 
     # Create the Plotly figure

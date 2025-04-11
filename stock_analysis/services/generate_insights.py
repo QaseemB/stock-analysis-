@@ -1,4 +1,4 @@
-from utils.indicator_glossary import indicator_glossary
+from stock_analysis.utils.indicator_glossary import indicator_glossary
 
 def generate_insights(df):
     latest = df.iloc[-1]

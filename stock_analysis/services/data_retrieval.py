@@ -1,5 +1,5 @@
-from repositories.fetch_stock_from_mongo import fetch_stock_from_mongo
-from transfomer.transform_monthly_data import transform_monthly_data
+from stock_analysis.repositories.fetch_stock_from_mongo import fetch_stock_from_mongo
+from stock_analysis.transfomer.transform_monthly_data import transform_monthly_data
 import pandas as pd
 
 def get_stock_data(symbol):

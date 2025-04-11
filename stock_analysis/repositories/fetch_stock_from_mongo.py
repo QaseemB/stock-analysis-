@@ -1,5 +1,5 @@
-from utils.get_mongo_collection import get_mongo_collection
-from config.settings import config 
+from stock_analysis.utils.get_mongo_collection import get_mongo_collection
+from stock_analysis.config.settings import config 
 
 def fetch_stock_from_mongo(symbol):
 

@@ -13,7 +13,7 @@ from stock_analysis.transfomer.stock_summary_transformer import generate_summary
 from stock_analysis.renderers.matplotlib_png_renderer import generate_plots
 from stock_analysis.services.pdf_report_generation import create_pdf_report
 from stock_analysis.renderers.interactive_plot_renderer import gen_interactive_plt
-from utils.transform_data import transform_to_processed_data_sql
+from stock_analysis.transfomer.sql_transform_data import transform_to_processed_data_sql
 from stock_analysis.services.insert_processed_data import insert_processed_data
 from utils.store_plots_in_sql import store_plot_in_db
 from utils.sql_connect import connect_to_sql

@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import os
 import pandas as pd
-from utils.file_helpers import get_png_folder
-from utils.s3_helper import save_png_to_s3, delete_local_file, upload_file_to_s3
+from stock_analysis.utils.file_helpers import get_png_folder
+from stock_analysis.utils.s3_helper import save_png_to_s3, delete_local_file, upload_file_to_s3
 
 
 def bollinger_band(df,symbol):

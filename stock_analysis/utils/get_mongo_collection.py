@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 from stock_analysis.config.settings import config
-from utils.mongo_connect import client, db
+from stock_analysis.utils.mongo_connect import client, db
 
 
 def get_mongo_collection(config):

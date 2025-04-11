@@ -20,8 +20,9 @@ def generate_summary(df, symbol):
         'upper_band': round(df['upper_band'].iloc[-1],2),
         'lower_band':round(df['lower_band'].iloc[-1],2),
         'monthly_return':round(df['monthly_return'].iloc[-1],2),
-        'macd': round(df['macd'].iloc[-1],2),
+        'MACD': round(df['macd'].iloc[-1],2),
         'signal_line': round(df['signal_line'].iloc[-1],2),
+        'OBV': round(df['obv'].iloc[-1],2),
         'RSI': round(df['rsi'].iloc[-1],2) if 'rsi' in df.columns else None
     }
 

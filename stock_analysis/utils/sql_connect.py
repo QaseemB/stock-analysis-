@@ -3,19 +3,20 @@ import os
 from stock_analysis.config.settings import config
 
 def connect_to_sql():
-    
-        # dbname= config["SQL_NAME"],
-        # user= config["SQL_USER"],
-        # password= config["SQL_PASSWORD"],
-        # host= config["SQL_HOST"],
-        # port= config["SQL_PORT"]
-        url = config["DATABASE_URL"]
-        print("🔎 DATABASE_URL from env:", config["DATABASE_URL"])
+        env = config["environment"]
+        if env == "production":         
+            uri = config["REMOTE_DATABASE_URL"]
+            print("🔎 Connecting Remote DATABASE_URL")
+        else:
+             uri = config["LOCAL_DATABASE_URL"]
+             print(f"🔎 Connecting to Local DATABASE URL")
 
         
-        if not url:
+        if not uri:
             raise ValueError("❌ DATABASE_URL is missing from config")
-        if url.startswith("postgres://"):
-            url = url.replace("postgres://", "postgresql://")
-        return psycopg2.connect(url)
+        if uri.startswith("postgres://"):
+            uri = uri.replace("postgres://", "postgresql://")
+
+        print(f"🔎 DATABASE URL:",uri)
+        return psycopg2.connect(uri)
 

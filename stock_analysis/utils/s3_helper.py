@@ -1,6 +1,6 @@
 import boto3
 from botocore.exceptions import NoCredentialsError
-from config.settings import config
+from stock_analysis.config.settings import config
 import os
 
 

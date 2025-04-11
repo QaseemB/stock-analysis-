@@ -1,9 +1,9 @@
-from renderers.interactive_plot_renderer import gen_interactive_plt
-from renderers.matplotlib_png_renderer import generate_plots
+from stock_analysis.renderers.interactive_plot_renderer import gen_interactive_plt
+from stock_analysis.renderers.matplotlib_png_renderer import generate_plots
 from stock_analysis.services.csv_file_export import generate_csv_files
-from services.data_retrieval import get_stock_data
-from transfomer.stock_analysis_transformer import analyze_stock_data
-from services.generate_insights import generate_insights
+from stock_analysis.services.data_retrieval import get_stock_data
+from stock_analysis.transfomer.stock_analysis_transformer import analyze_stock_data
+from stock_analysis.services.generate_insights import generate_insights
 
 
 
@@ -40,5 +40,5 @@ def file_generation(symbol):
     
     return plotly_rendering, png_rendering, csv_exporting, insights
 
-testing = file_generation('AAPL')
+testing = file_generation('TSLA')
 
