@@ -1,8 +1,8 @@
-from psycopg2 import sql
+from psycopg2.extras import execute_values
 from datetime import datetime
 from stock_analysis.utils.sql_connect import connect_to_sql
 
-def insert_processed_data(processed_data,stock_symbol):
+def insert_processed_data(processed_data: list,stock_symbol: str):
     conn = connect_to_sql()
     cursor = conn.cursor()
 
@@ -27,25 +27,15 @@ def insert_processed_data(processed_data,stock_symbol):
 
     stock_id = stock[0]
 
-    for data in processed_data:
-        date_str = data["date"]
-        try:
-            parsed_date = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%S.%f+00:00")
-        except ValueError:
-            parsed_date = datetime.strptime(date_str, "%Y-%m-%d")
 
-        query = """
+    insert_query = """
         INSERT INTO stock_analysis (
             stock_id, symbol, date, open_price, high_price, low_price, close_price, volume,
             moving_avg_3, moving_avg_6, moving_avg_12, upper_band, lower_band,
             monthly_return, rolling_mean, rolling_std, ema12, ema26,
             macd, signal_line, obv, rsi
-        ) VALUES (
-            %s, %s, %s, %s, %s, %s, %s, %s,
-            %s, %s, %s, %s, %s,
-            %s, %s, %s, %s, %s,
-            %s, %s, %s, %s
-        ) ON CONFLICT (stock_id, date)
+        ) VALUES %s
+        ON CONFLICT (stock_id, date)
         DO UPDATE SET
             symbol = EXCLUDED.symbol,
             open_price = EXCLUDED.open_price,
@@ -69,8 +59,15 @@ def insert_processed_data(processed_data,stock_symbol):
             rsi = EXCLUDED.rsi;
         """
 
-
-        values = (
+    values = []
+    for data in processed_data:
+        date_str = data["date"]
+        try: 
+            parsed_date = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%S.%f+00:00")
+        except ValueError:
+            parsed_date = datetime.strptime(date_str, "%Y-%m-%d")
+    
+        row= (
             stock_id,
             stock_symbol,
             parsed_date.date(),
@@ -94,18 +91,19 @@ def insert_processed_data(processed_data,stock_symbol):
             data['RSI'],
             data['OBV'],
         )
+        values.append(row)
 
         # Debug logging to ensure matching values
-        print(f"\n🔹 Executing insert for {stock_symbol} on {parsed_date.date()}")
-        print(f"🔹 Values ({len(values)}): {values}")
+    # print(f"\n🔹 Executing insert for {stock_symbol} on {parsed_date.date()}")
+    # print(f"🔹 Values ({len(values)}): {values}")
 
-        try:
-            cursor.execute(query, values)
-            conn.commit()
-            print(f"✅ Inserted/Updated: {stock_symbol} on {parsed_date.date()}")
-        except Exception as e:
-            print(f"❌ SQL error: {e}")
-            conn.rollback()
-
-    cursor.close()
-    conn.close()
+    try:
+        execute_values(cursor, insert_query, values)
+        conn.commit()
+        print(f"✅ Batch insert/update complete for {stock_symbol}: {len(values)} rows.")
+    except Exception as e:
+        conn.rollback()
+        print(f"❌ SQL error: {e}")
+    finally:
+        cursor.close()
+        conn.close()
