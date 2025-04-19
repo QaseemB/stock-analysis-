@@ -40,5 +40,5 @@ def file_generation(symbol):
     
     return plotly_rendering, png_rendering, csv_exporting, insights
 
-testing = file_generation('TSLA')
+# testing = file_generation('TSLA')
 

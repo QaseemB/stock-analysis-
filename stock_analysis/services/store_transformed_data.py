@@ -6,15 +6,13 @@ from stock_analysis.utils.format_for_sql_insert import format_for_sql_insert
 
 
 def store_transformed_data(symbols: list):
-    for symbol in symbols:
-        print(f"🔍 Processing: {symbol}")
-        result = data_transformation(symbol)
+    results = data_transformation(symbols)
 
-        if result is None:
-            print(f"⚠️ No data returned for symbol: {symbol}")
-            continue
+    for result in results:
+        symbol, df, summary = result
+        print(f"🔍 Processing stock symbol: {symbol}")
+        
 
-        df, summary = result
 
         if df is None or df.empty:
             print(f"⚠️ Empty DataFrame for {symbol}")
@@ -29,5 +27,5 @@ def store_transformed_data(symbols: list):
         insert_processed_data(processed, symbol)
 
 
-store_transformed_data(['TSLA','VOO','TSM','BAC','GOOG','AAPL'])
+# store_transformed_data(stock_list)
 
