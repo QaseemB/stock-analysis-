@@ -64,7 +64,7 @@ def stock_analysis_dag():
 
  
     # Create all batch task chains dynamically
-    batches = chunk_list(stock_list, 25)
+    batches = chunk_list(stock_list, 10)
     for i, batch in enumerate(batches):
         generated = generate_batch.override(task_id=f"generate_batch_{i+1}")(batch)
         inserted = insert_batch.override(task_id=f"insert_batch_{i+1}")(batch)

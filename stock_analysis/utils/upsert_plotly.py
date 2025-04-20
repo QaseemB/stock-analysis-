@@ -1,7 +1,7 @@
-from utils.sql_connect import connect_to_sql
+from stock_analysis.utils.sql_connect import connect_to_sql
 import json
 
-def store_plot_in_db(symbol, plot_json):
+def upsert_plotly(symbol, plot_json):
     # Connect to the database
     conn = connect_to_sql()
     cur = conn.cursor()

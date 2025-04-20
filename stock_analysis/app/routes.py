@@ -15,7 +15,7 @@ from stock_analysis.services.pdf_report_generation import create_pdf_report
 from stock_analysis.renderers.interactive_plot_renderer import gen_interactive_plt
 from stock_analysis.transfomer.sql_transform_data import transform_to_processed_data_sql
 from stock_analysis.services.insert_processed_data import insert_processed_data
-from utils.store_plots_in_sql import store_plot_in_db
+from stock_analysis.utils.upsert_plotly import store_plot_in_db
 from utils.sql_connect import connect_to_sql
 # from utils.mongo_connect import db
 from stock_analysis.config.settings import config

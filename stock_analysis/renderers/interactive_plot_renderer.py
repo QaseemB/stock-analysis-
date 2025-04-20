@@ -4,7 +4,8 @@ import pandas as pd
 from stock_analysis.utils.file_helpers import get_plotly_path
 from stock_analysis.utils.s3_helper import save_plotly_to_s3, delete_local_file
 
-def gen_interactive_plt(symbol, df):
+
+def gen_interactive_plt(symbol, df, save_html=True, upload_s3=True):
     """
     Generates an interactive Plotly plot and returns its JSON representation.
     """
@@ -44,17 +45,22 @@ def gen_interactive_plt(symbol, df):
     )
 
     fig_json = pio.to_json(fig)
-    plotly_path = get_plotly_path(symbol, "interactive")
-    fig.write_html(plotly_path)
-    print(f"📊 Plotly HTML saved to: {plotly_path}")
+    s3_uri = None
 
-    s3_uri = save_plotly_to_s3(plotly_path,symbol,"interactive")
+    if save_html:
+        plotly_path = get_plotly_path(symbol, "interactive")
+        fig.write_html(plotly_path)
+        print(f"📊 Plotly HTML saved to: {plotly_path}")
 
-    if s3_uri:
-        delete_local_file(plotly_path)
-        print(f"local path to plotly for {symbol} has been deleted and the file has been uploaded to s3 succefully")
+        if upload_s3:
+            s3_uri = save_plotly_to_s3(plotly_path,symbol,"interactive")
+            if s3_uri:
+                delete_local_file(plotly_path)
+                print(f"local path to plotly for {symbol} has been deleted and the file has been uploaded to s3 succefully")
 
 
 
 
-    return fig_json
+    return {'fig_json':fig_json,
+            's3_uri': s3_uri
+            }

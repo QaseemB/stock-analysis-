@@ -10,6 +10,7 @@ from stock_analysis.services.generate_insights import generate_insights
 
 
 
+
 def process_symbol(symbol):
         try:
             print(f'🔎 processing stock symbol: {symbol}')
@@ -25,7 +26,8 @@ def process_symbol(symbol):
             plotly_rendering = gen_interactive_plt(symbol,df)
             if plotly_rendering is None:
                 raise ValueError("Interactive plot generation failed")
-
+           
+            
             png_rendering = generate_plots(symbol,df)
             if png_rendering is None:
                 raise ValueError("PNG rendering failed")
@@ -36,8 +38,6 @@ def process_symbol(symbol):
     
             insights = generate_insights(df)
             print(f"🧠 Insights for {symbol}:\n{insights}") 
-    
-            print(f"All files for symbol: {symbol} has generated sucessfully")
 
             return{
                 "symbol": symbol,
@@ -76,11 +76,11 @@ def file_generation_parallel(symbols, max_workers=3):
                 })
                 continue
             visual_generator_results.append(result)
-            print(f"✅ Done: {result['symbol']} — Status: {result['status']}")
+            print(f"✅ Done: {result['symbol']} — Status: {result['status']} - Error: {result.get('error', 'None')}")
 
     return visual_generator_results
 
-testing = file_generation_parallel(['FSLY'])
+testing = file_generation_parallel(['QQQ'])
 
 def write_results_to_csv(results, csv_path="generation_summary.csv"):
     keys = ["timestamp", "symbol", "status", "error"]
