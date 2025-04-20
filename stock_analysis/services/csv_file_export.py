@@ -4,6 +4,17 @@ from stock_analysis.utils.s3_helper import save_csv_to_s3, delete_local_file
 
 def generate_csv_files(symbol, df):
     print(f"Generating csv files for {symbol}")
+
+    # Drop the '_id' column if it exists (likely from MongoDB)
+    if '_id' in df.columns:
+        df = df.drop(columns=['_id'])
+
+    # Reorder columns to move 'symbol' to the front if it exists
+    if 'symbol' in df.columns:
+        cols = df.columns.tolist()
+        cols.insert(0, cols.pop(cols.index('symbol')))
+        df = df[cols]
+        
      # Create the subfolder for the symbol if it doesn't exist
     csv_path = get_csv_path(symbol)
 
@@ -21,5 +32,5 @@ def generate_csv_files(symbol, df):
     s3_uri = save_csv_to_s3(csv_path,symbol)
     if s3_uri:
         delete_local_file(csv_path)
-        print(f"local path to csv files for {symbol} have been deltedand the file has be uploaded to s3")
+        print(f"local path to csv files for {symbol} have been delted and the file has be uploaded to s3")
     return str(s3_uri or csv_path)

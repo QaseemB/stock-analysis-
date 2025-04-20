@@ -1,10 +1,11 @@
+import matplotlib
 import matplotlib.pyplot as plt
 import os
 import pandas as pd
 from stock_analysis.utils.file_helpers import get_png_folder
 from stock_analysis.utils.s3_helper import save_png_to_s3, delete_local_file, upload_file_to_s3
 
-
+matplotlib.use('Agg')
 def bollinger_band(df,symbol):
      # Plot Close Price with Bollinger Bands
     fig, ax = plt.subplots(figsize=(10,6))

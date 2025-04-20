@@ -51,6 +51,7 @@ def transform_to_processed_data_sql(df: pd.DataFrame, symbol: str) -> list:
                 "RSI": safe_float(row.get("rsi")),
             }
             processed_list.append(processed_row)
+            # print(pd.dataframe(processed_list).head(3))
         except Exception as e:
             print(f"❌ Error processing row: {e}")
     

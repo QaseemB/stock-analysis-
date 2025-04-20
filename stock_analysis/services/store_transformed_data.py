@@ -27,5 +27,5 @@ def store_transformed_data(symbols: list):
         insert_processed_data(processed, symbol)
 
 
-# store_transformed_data(stock_list)
+# store_transformed_data(['CRWD', 'DDOG', 'DOCU', 'FSLY'])
 

@@ -33,7 +33,7 @@ def insert_processed_data(processed_data: list,stock_symbol: str):
             stock_id, symbol, date, open_price, high_price, low_price, close_price, volume,
             moving_avg_3, moving_avg_6, moving_avg_12, upper_band, lower_band,
             monthly_return, rolling_mean, rolling_std, ema12, ema26,
-            macd, signal_line, obv, rsi
+            MACD, signal_line, RSI, OBV
         ) VALUES %s
         ON CONFLICT (stock_id, date)
         DO UPDATE SET
@@ -55,8 +55,9 @@ def insert_processed_data(processed_data: list,stock_symbol: str):
             ema26 = EXCLUDED.ema26,
             macd = EXCLUDED.macd,
             signal_line = EXCLUDED.signal_line,
-            obv = EXCLUDED.obv,
-            rsi = EXCLUDED.rsi;
+            rsi = EXCLUDED.rsi,
+            obv = EXCLUDED.obv;
+            
         """
 
     values = []
