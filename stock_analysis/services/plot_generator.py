@@ -7,6 +7,7 @@ from stock_analysis.services.csv_file_export import generate_csv_files
 from stock_analysis.services.data_retrieval import get_stock_data
 from stock_analysis.transfomer.stock_analysis_transformer import analyze_stock_data
 from stock_analysis.services.generate_insights import generate_insights
+from stock_analysis.utils.stock_list import stock_list
 
 
 
@@ -80,7 +81,7 @@ def file_generation_parallel(symbols, max_workers=3):
 
     return visual_generator_results
 
-testing = file_generation_parallel(['QQQ'])
+testing = file_generation_parallel(stock_list)
 
 def write_results_to_csv(results, csv_path="generation_summary.csv"):
     keys = ["timestamp", "symbol", "status", "error"]

@@ -46,4 +46,4 @@ def plotly_insert_into_psql(symbols: list):
             print(f"❌ Failed for {symbol}: {e}")
     return plotly_results
     
-plotly_insert_into_psql(['TSM','BAC','VOO', 'AMZN', 'META'])
+# plotly_insert_into_psql(['AAPL'])

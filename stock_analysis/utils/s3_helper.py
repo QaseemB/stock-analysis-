@@ -7,8 +7,8 @@ import os
 s3 = boto3.client('s3')
 S3_BUCKET_NAME = config["S3_BUCKET"]
 
-def get_s3_key(symbol,subfoler,filename):
-    return f'STOCKMARKET_FBS / {symbol}/{subfoler}/{filename}'
+def get_s3_key(symbol,subfolder,filename):
+    return f'STOCKMARKET_FBS/{symbol}/{subfolder}/{filename}'
 
 def upload_file_to_s3(local_path, symbol, subfolder, filename):
     key = get_s3_key(symbol, subfolder, filename)

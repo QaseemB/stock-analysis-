@@ -1,6 +1,7 @@
 from stock_analysis.services.data_transformation import data_transformation
 from stock_analysis.transfomer.sql_transform_data import transform_to_processed_data_sql
 from stock_analysis.services.insert_processed_data import insert_processed_data
+from stock_analysis.utils.stock_list import stock_list
 from stock_analysis.utils.format_for_sql_insert import format_for_sql_insert
 
 
@@ -27,5 +28,5 @@ def store_transformed_data(symbols: list):
         insert_processed_data(processed, symbol)
 
 
-# store_transformed_data(['CRWD', 'DDOG', 'DOCU', 'FSLY'])
+# store_transformed_data(stock_list)
 

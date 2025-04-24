@@ -35,6 +35,7 @@ config = {
 "PYTHON_FILE_BASE_SYS": os.getenv("PYTHON_FILE_BASE_SYS"),
 "REMOTE_DATABASE_URL": os.getenv("REMOTE_DATABASE_URL"),
 "LOCAL_DATABASE_URL": os.getenv("LOCAL_DATABASE_URL"),
+"RDS_DB_URL": os.getenv("RDS_DB_URL"),
 "PORT": os.getenv("PORT"),
 "BASE_URL": "https://www.alphavantage.co/query",
 "environment": os.getenv("ENV", "development")
