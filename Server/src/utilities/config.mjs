@@ -14,5 +14,6 @@ S3_BUCKET: process.env.S3_BUCKET,
 BASE_URL :'https://www.alphavantage.co/query',
 DB_NAME: process.env.DB_NAME,
 DB_Collection: process.env.DB_Raw_Collection,
-environment: process.env.NODE_ENV || 'development'
+environment: process.env.NODE_ENV || 'development',
+FLASK_API_URL: 'https://stock-analysis-6age.onrender.com'
 } 

@@ -1,23 +1,39 @@
-from flask import Blueprint, jsonify, request, send_from_directory
+from flask import Blueprint, jsonify, request, send_from_directory, send_file, make_response
+from flask_cors import cross_origin
+from werkzeug.exceptions import NotFound
+import mimetypes
 import os
 import threading
 import pandas as pd
 import json
 from pydantic import ValidationError
-from analysis.data_retrieval import get_stock_data
+from stock_analysis.services.data_retrieval import get_stock_data
 from analysis.data_analysis import analyze_stock_data
-from analysis.generate_summary import generate_summary
-from analysis.data_visualization import generate_plots
-from analysis.report_generation import create_pdf_report
-from analysis.gen_interactive_plt import gen_interactive_plt
-from utils.transform_data import transform_to_processed_data_sql
-from utils.insert_processed_data import insert_processed_data
-from utils.store_plots_in_sql import store_plot_in_db
+from stock_analysis.transfomer.stock_summary_transformer import generate_summary
+from stock_analysis.renderers.matplotlib_png_renderer import generate_plots
+from stock_analysis.services.pdf_report_generation import create_pdf_report
+from stock_analysis.renderers.interactive_plot_renderer import gen_interactive_plt
+from stock_analysis.transfomer.sql_transform_data import transform_to_processed_data_sql
+from stock_analysis.services.insert_processed_data import insert_processed_data
+from stock_analysis.utils.upsert_plotly import store_plot_in_db
 from utils.sql_connect import connect_to_sql
 # from utils.mongo_connect import db
-from utils.config import config
+from stock_analysis.config.settings import config
 import matplotlib
 import logging
+
+
+
+## ideal setup for safe memory usage 
+##def get_analysis(symbol):
+ # Just grab precomputed values (JSON/summary/plot URLs)
+   ## analysis = fetch_summary_from_db(symbol)
+   ## graph_urls = get_plot_urls_from_s3(symbol)  
+   ## return jsonify({
+   ##     "symbol": symbol,
+   ##     "summary": analysis,
+    ##    "plots": graph_urls
+   ## })
 
 # Configure Matplotlib for non-interactive mode
 matplotlib.use('Agg')
@@ -125,12 +141,25 @@ def analyze(symbol):
         logging.error(f"An error occurred during analysis: {e}")
         return jsonify({"error": "An internal error occurred", "details": str(e)}), 500
     
+
+
 @routes.route('/stockreport/<symbol>/<filename>', methods=['GET'])
+@cross_origin()  # ← this handles CORS for most cases
 def serve_stock_report(symbol, filename):
     directory = os.path.join('stockreport', symbol)
-    if not os.path.exists(os.path.join(directory, filename)):
+    filepath = filepath = os.path.join(directory, filename)
+    try:
+       # Guess MIME type using file extension
+        mime_type, _ = mimetypes.guess_type(filepath)
+        response = make_response(send_from_directory(directory, filename))
+        response.headers['Access-Control-Allow-Origin'] = '*'
+        if mime_type:
+            response.headers['Content-Type'] = mime_type
+        return response
+    except NotFound:
         return jsonify({"error": "File not found"}), 404
-    return send_from_directory(directory, filename, as_attachment=True)
+    # return send_from_directory(directory, filename, as_attachment=True)
+
 
 @routes.route("/api/analyze/all", methods=["GET"])
 def analyze_all_stocks():

@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "npm run dev --prefix Client",
     "dev": "nodemon Server/src/server.mjs",
+    "build:preview": "npm run build --prefix Client && npm run preview --prefix Client",
     "update": "node Server/script/updateStocks.mjs",
     "fetchStocks": "node Server/script/fetchStocks.mjs",
     "backupData": "node Server/script/s3BackupData.mjs",

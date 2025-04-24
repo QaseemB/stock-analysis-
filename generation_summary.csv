@@ -1,0 +1,13 @@
+timestamp,symbol,status,error
+2025-04-20 10:37:00,PLUG,success,
+2025-04-20 10:37:00,NET,success,
+2025-04-20 10:37:00,FSLY,success,
+2025-04-20 10:37:00,DOCU,success,
+2025-04-20 10:37:00,CRWD,success,
+2025-04-20 10:37:00,DDOG,success,
+2025-04-20 11:10:51,DDOG,failed,Invalid value
+2025-04-20 11:10:51,DOCU,failed,Invalid value
+2025-04-20 11:10:51,PLUG,failed,Invalid value
+2025-04-20 11:10:51,FSLY,failed,Invalid value
+2025-04-20 11:10:51,NET,success,
+2025-04-20 11:10:51,CRWD,success,

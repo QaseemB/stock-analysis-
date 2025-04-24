@@ -17,8 +17,8 @@ pg_dump -U $SQL_USER -h $SQL_HOST $SQL_NAME > $BACKUP_FILE
 
 
 # Compress the backup
-gzip $BACKUP_FILE
+# gzip $BACKUP_FILE
 
 # Upload to S3
-aws s3 cp "$BACKUP_FILE.gz" s3://$BUCKET_NAME/$S3_DIR/
+aws s3 cp "$BACKUP_FILE" s3://$BUCKET_NAME/$S3_DIR/
 echo "Backup completed successfully and uploaded to S3"
