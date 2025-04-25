@@ -25,8 +25,8 @@ def save_pdf_to_s3(local_pdf_path,symbol):
 def save_csv_to_s3(local_csv_path, symbol):
     return upload_file_to_s3(local_csv_path,symbol, 'csv' ,f"{symbol}_report.csv")
 
-def get_summary_json_path(symbol):
-    return folder / f"{symbol}_summary.json"
+def save_summary_to_s3(local_sum_path,symbol):
+    return upload_file_to_s3(local_sum_path,symbol, 'summary' ,f"{symbol}_report.json")
 
 def save_png_to_s3(local_png_path,symbol):
     return  upload_file_to_s3(local_png_path,symbol, 'png' ,f"{symbol}_report.png")

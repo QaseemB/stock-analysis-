@@ -1,4 +1,3 @@
-
 from stock_analysis.utils.file_helpers import get_csv_path
 from stock_analysis.utils.s3_helper import save_csv_to_s3, delete_local_file
 

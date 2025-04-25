@@ -37,6 +37,7 @@ config = {
 "LOCAL_DATABASE_URL": os.getenv("LOCAL_DATABASE_URL"),
 "RDS_DB_URL": os.getenv("RDS_DB_URL"),
 "PORT": os.getenv("PORT"),
+"PORT_FLASK": os.getenv("PORT_FLASK"),
 "BASE_URL": "https://www.alphavantage.co/query",
 "environment": os.getenv("ENV", "development")
 
