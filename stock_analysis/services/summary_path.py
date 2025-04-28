@@ -41,7 +41,7 @@ def gen_summary_path(symbols: list, upload=True,):
     return result_map
 
 
-gen_summary_path(stock_list)
+# gen_summary_path(stock_list)
     
     
   

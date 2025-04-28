@@ -1,11 +1,7 @@
 from airflow.decorators import dag, task
 from datetime import datetime
 import pendulum
-from stock_analysis.renderers.interactive_plot_renderer import gen_interactive_plt
-from stock_analysis.renderers.matplotlib_png_renderer import generate_plots
-from stock_analysis.services.data_retrieval import get_stock_data
-from stock_analysis.transfomer.stock_analysis_transformer import analyze_stock_data
-# from stock_analysis.services.data_transformation import data_transformation
+from stock_analysis.services.summary_path import gen_summary_path
 from stock_analysis.services.plot_generator import file_generation_parallel
 from stock_analysis.services.store_transformed_data import store_transformed_data
 from stock_analysis.services.csv_file_export import generate_csv_files
@@ -56,6 +52,12 @@ def stock_analysis_dag():
     def generate_batch(symbols: list):
         file_generation_parallel(symbols)
         print(f"✅ Files generated for: {symbols}...")
+    
+    @task()
+    def summary_batch(symbols: list):
+        gen_summary_path(symbols)
+        print(f'fsummary files are being generated for: {symbols}...')
+
 
     @task()
     def insert_batch(symbols: list):
@@ -68,7 +70,8 @@ def stock_analysis_dag():
     for i, batch in enumerate(batches):
         generated = generate_batch.override(task_id=f"generate_batch_{i+1}")(batch)
         inserted = insert_batch.override(task_id=f"insert_batch_{i+1}")(batch)
-        generated >> inserted  # link them
+        summary = summary_batch.override(task_id=f"summary_batch_{i+1}")(batch)
+        generated >> inserted >> summary # link them
 
 
 stock_analysis_dag = stock_analysis_dag()
