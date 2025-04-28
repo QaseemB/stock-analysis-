@@ -17,7 +17,12 @@ def plotly_json_path(symbol, name):
     folder = get_base_symbol_folder(symbol) / 'plotly'
     folder.mkdir(parents=True, exist_ok=True)
     return folder / f"{symbol}_{name}.json"
+
+
 def backup_plotly_to_s3():
+    """
+    backing up the enitre psql plotly database
+    """
     conn = connect_to_sql()
     cursor = conn.cursor()
 
@@ -27,7 +32,7 @@ def backup_plotly_to_s3():
     for symbol, plot_json_raw, created_at in records:
         try:
             date_str = created_at.strftime("%Y-%m-%d")
-            filename = f"{symbol}_plotly_psql_{date_str}.json"
+            filename = f"{symbol}_plotly_psql_.json"
             local_path = plotly_json_path(symbol, 'Plotly_psql')
 
             # Convert raw string into valid JSON

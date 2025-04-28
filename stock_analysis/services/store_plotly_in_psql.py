@@ -1,6 +1,7 @@
 from stock_analysis.renderers.interactive_plot_renderer import gen_interactive_plt
 from stock_analysis.utils.upsert_plotly import upsert_plotly
 from stock_analysis.services.data_retrieval import get_stock_data
+from stock_analysis.utils.stock_list import stock_list
 from stock_analysis.transfomer.stock_analysis_transformer import analyze_stock_data
 
 def plotly_insert_into_psql(symbols: list):
@@ -46,4 +47,4 @@ def plotly_insert_into_psql(symbols: list):
             print(f"❌ Failed for {symbol}: {e}")
     return plotly_results
     
-# plotly_insert_into_psql(['AAPL'])
+# plotly_insert_into_psql(stock_list)
