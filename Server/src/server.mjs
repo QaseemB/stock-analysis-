@@ -6,6 +6,8 @@ import { logger } from '../src/utilities/logger.mjs';
 import cors from 'cors';
 import { createStockS3Client as S3Connection } from './utilities/connectS3.mjs';
 import { fetchStockDataWithRateLimiting } from '../script/stockHistory.mjs';
+import '../script/updateStocks.mjs';
+import '../script/s3BackupData.mjs';
 import {router as analyzeRoute} from './routes/pythonAnalystRoute.mjs';
 import {router as stockRoute} from './routes/StockHistoryRoute.mjs';
 
