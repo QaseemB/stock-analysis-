@@ -52,4 +52,4 @@ def backup_plotly_to_s3():
     cursor.close()
     conn.close()
 
-backup_plotly_to_s3()
+# backup_plotly_to_s3()

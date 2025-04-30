@@ -1,4 +1,6 @@
 import {backupRawStockData} from '../src/services/backupRawStockData.mjs'
+import cron from 'node-cron';
+import { logger } from '../src/utilities/logger.mjs';
 
 const stockSymbols = [
   'AAPL', 'GOOG', 'MSFT', 'AMZN', 'META', 
@@ -19,4 +21,27 @@ const stockSymbols = [
   'PTON', 'ROKU', 'SQ', 'TWLO', 'U', 'ZM', 'ZSAN'
 ];
 const symbol2 = ['VOO','QQQ','DIA', 'VTI']
-backupRawStockData(symbol2)
+
+cron.schedule('0 16 8 * *', async () => {
+  logger.info('backing up stock symbols to s3 ');
+  try{
+    await backupRawStockData(stockSymbols)
+
+  }catch (error) {
+    logger.error("Error during scheduled stock backups to s3", error.message)
+
+  }
+}, {
+  timezone: 'America/New_York'
+});
+
+//Run once immediately when the script starts
+(async () => {
+  logger.info('🚀 Immediate startup backup running...');
+  try {
+    await backupRawStockData(stockSymbols);
+    logger.info('✅ Startup backup completed successfully.');
+  } catch (error) {
+    logger.error('❌ Error during startup backup', error.message);
+  }
+})();

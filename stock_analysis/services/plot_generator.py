@@ -81,7 +81,7 @@ def file_generation_parallel(symbols, max_workers=3):
 
     return visual_generator_results
 
-testing = file_generation_parallel(stock_list)
+# testing = file_generation_parallel(stock_list)
 
 def write_results_to_csv(results, csv_path="generation_summary.csv"):
     keys = ["timestamp", "symbol", "status", "error"]

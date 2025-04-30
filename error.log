@@ -276,3 +276,5 @@
 {"level":"error","message":"Error fetching and updating stock data for BLD: HistoricalStock validation failed: timezone: Path `timezone` is required.","service":"user-service","timestamp":"2025-04-02T22:09:45.718Z"}
 {"level":"error","message":"Error fetching and updating stock data for U: HistoricalStock validation failed: timezone: Path `timezone` is required.","service":"user-service","timestamp":"2025-04-02T22:23:53.348Z"}
 {"level":"error","message":"Error fetching and updating stock data for U: HistoricalStock validation failed: timezone: Path `timezone` is required.","service":"user-service","timestamp":"2025-04-02T22:33:40.001Z"}
+{"level":"error","message":"Error fetching and updating stock data for VOO: HistoricalStock validation failed: timezone: Path `timezone` is required.","service":"user-service","timestamp":"2025-04-28T22:12:49.327Z"}
+{"level":"error","message":"Error fetching and updating stock data for U: HistoricalStock validation failed: timezone: Path `timezone` is required.","service":"user-service","timestamp":"2025-04-28T22:12:49.365Z"}

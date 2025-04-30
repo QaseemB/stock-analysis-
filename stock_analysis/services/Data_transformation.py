@@ -22,7 +22,7 @@ def data_transformation(symbols: list):
         transformation_results.append((symbol,df,summary))
     
 
-    return {transformation_results}
+    return transformation_results
 
 
 # summary = data_transformation(['TSM','BAC'])

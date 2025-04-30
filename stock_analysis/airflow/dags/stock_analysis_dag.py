@@ -1,13 +1,13 @@
 from airflow.decorators import dag, task
 from datetime import timedelta
 import pendulum
+import logging
 from stock_analysis.services.summary_path import gen_summary_path
 from stock_analysis.utils.stock_list import stock_list
 from stock_analysis.services.plot_generator import file_generation_parallel
 from stock_analysis.services.store_transformed_data import store_transformed_data
 from stock_analysis.services.store_plotly_in_psql import plotly_insert_into_psql
 from stock_analysis.services.backup_plotly_to_s3 import backup_plotly_to_s3
-from stock_analysis.services.csv_file_export import generate_csv_files
 
 def chunk_list(data, size):
     return [data[i:i + size] for i in range(0, len(data), size)]
@@ -28,11 +28,14 @@ batch6 = stock_list[125:]
     catchup=False,
     max_active_runs=1,
     concurrency=1,
-    retries=2,
-    retry_delay= timedelta(minutes=5),
+    default_args= {
+        "retries":2,
+        "retry_delay": timedelta(minutes=5),
+    },
     tags=["analysis_pipeline"],
     description="DAG to batch-process stock data: generate plots, store in SQL, and summarize."
 )
+
 def stock_analysis_dag():
 
 
@@ -40,33 +43,34 @@ def stock_analysis_dag():
 
     def generate_batch(symbols: list):
         file_generation_parallel(symbols)
-        print(f"✅ Files generated for: {symbols}...")
+        logging.info(f"✅ Files generated for: {symbols}...")
     
     @task()
     def summary_batch(symbols: list):
         gen_summary_path(symbols)
-        print(f'fsummary files are being generated for: {symbols}...')
+        logging.info(f'fsummary files are being generated for: {symbols}...')
 
 
     @task()
     def insert_batch(symbols: list):
         store_transformed_data(symbols)
-        print(f"📥 Inserted to SQL: {symbols}...")
+        logging.info(f"📥 Inserted to SQL: {symbols}...")
     
     @task()
     def plotly_to_sql(symbols: list):
         plotly_insert_into_psql(symbols)
-        print(f"inserting Plotly plots for symbol: {symbols}, into sql")
+        logging.info(f"inserting Plotly plots for symbol: {symbols}, into sql")
 
     @task()
     def plotly_json_s3_backup():
         backup_plotly_to_s3()
-        print(f'backing up entire plotly json database to aws s3')
+        logging.info(f'backing up entire plotly json database to aws s3')
         
 
  
     # Create all batch task chains dynamically
     batches = chunk_list(stock_list, 10)
+    previous_task = None
     for i, batch in enumerate(batches):
         generated = generate_batch.override(task_id=f"generate_batch_{i+1}")(batch)
         inserted = insert_batch.override(task_id=f"insert_batch_{i+1}")(batch)

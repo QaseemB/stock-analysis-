@@ -70,4 +70,4 @@ const runFetchStockss = async (symbols) => {
   }
 }
 // run the stocks updates
-runFetchStockss(stockstack7)
+runFetchStockss(stockstack6)
