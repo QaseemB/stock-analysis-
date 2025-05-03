@@ -1,5 +1,5 @@
-import express from 'express';
 import {config} from '../src/utilities/config.mjs'
+import express from 'express';
 import { validateConfig } from './utilities/configValidation.mjs';
 import connectDB from './utilities/connectDB.mjs';
 import { logger } from '../src/utilities/logger.mjs';

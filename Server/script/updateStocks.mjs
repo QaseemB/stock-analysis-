@@ -1,6 +1,7 @@
 import { updateStocksInBatches } from "../src/services/updateStocksInBatches.mjs"
 import connectDB from '../src/utilities/connectDB.mjs';
 import mongoose from "mongoose";
+import { logger } from '../src/utilities/logger.mjs';
 
 import cron from 'node-cron';
 
@@ -43,7 +44,7 @@ cron.schedule('0 16 * * *', async () => {
       await connectDB()
 
       if (mongoose.connection.readyState !== 1){
-      console.log("MongoDB connection is not established. Aborting operation.");
+      logger.info("MongoDB connection is not established. Aborting operation.");
       return;
     }
     const today = new Date();
@@ -64,30 +65,35 @@ cron.schedule('0 16 * * *', async () => {
   }
 });
 
-const runStockUpdates = async (symbols) => {
+  (async () => {
+  logger.info('Initiating the fetch for stocks');
   try {
     await connectDB()
 
     //
     if (mongoose.connection.readyState !== 1) {
-      console.log("MongoDB connection is not established. Aborting operation.");
+      logger.info("MongoDB connection is not established. Aborting operation.");
       return;
     }
-    console.log("Database connection established. Starting stock updates...");
+    logger.info("Database connection established. Starting stock updates...");
 
-    // Iterate through stock symbols and fetch/update data
-    // for (const symbol of stockSymbols) {
-    //   console.log(`Fetching data for symbol: ${symbol}`);
-    //   await updateStockWithRateLimiting(symbol); // Your stock update logic
-    // }
+    const today = new Date();
+    const dayOfMonth = today.getDate();
 
-    await updateStocksInBatches(symbols)
-    console.log("Stock updates completed.");
-  } catch (error) {
-    console.error("Error during stock updates:", error.message);
+    if (dayOfMonth >= 1 && dayOfMonth <= stockStacks.length) {
+      const symbolsToday = stockStacks[dayOfMonth - 1]; // index 0 = 1st day
+      logger.info(`📈 Running stockstack for Day ${dayOfMonth}: ${symbolsToday.length} symbols`);
+      await updateStocksInBatches(symbolsToday);
+    } else {
+      logger.info(`📅 No stockstack scheduled for Day ${dayOfMonth}.`);
+    }
+} catch (error) {
+    console.error("Error during scheduled stock updates:", error.message);
   } finally {
+    mongoose.connection.close();
   }
-}
+})();
+
 // run the stocks updates
-runStockUpdates(stockstack6)
+// runStockUpdates()
 
