@@ -2204,3 +2204,353 @@
 {"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-29T18:01:59.365Z"}
 {"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-04-29T18:01:59.367Z"}
 {"level":"info","message":"✅ Startup backup completed successfully.","service":"user-service","timestamp":"2025-04-29T18:02:01.444Z"}
+{"level":"info","message":"Initiating the fetch for stocks","service":"user-service","timestamp":"2025-05-07T18:54:00.312Z"}
+{"level":"info","message":"🚀 Immediate startup backup running...","service":"user-service","timestamp":"2025-05-07T18:54:00.396Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T18:54:00.705Z"}
+{"level":"info","message":"Database connection established. Starting stock updates...","service":"user-service","timestamp":"2025-05-07T18:54:00.898Z"}
+{"level":"info","message":"📅 No stockstack scheduled for Day 7.","service":"user-service","timestamp":"2025-05-07T18:54:00.898Z"}
+{"level":"info","message":"Initiating the fetch for stocks","service":"user-service","timestamp":"2025-05-07T18:54:57.894Z"}
+{"level":"info","message":"Database connection established. Starting stock updates...","service":"user-service","timestamp":"2025-05-07T18:54:58.311Z"}
+{"level":"info","message":"📅 No stockstack scheduled for Day 7.","service":"user-service","timestamp":"2025-05-07T18:54:58.311Z"}
+{"level":"info","message":"Initiating the fetch for stocks","service":"user-service","timestamp":"2025-05-07T18:56:09.569Z"}
+{"level":"info","message":"Database connection established. Starting stock updates...","service":"user-service","timestamp":"2025-05-07T18:56:10.203Z"}
+{"level":"info","message":"📅 No stockstack scheduled for Day 7.","service":"user-service","timestamp":"2025-05-07T18:56:10.204Z"}
+{"level":"info","message":"🚀 Immediate startup backup running...","service":"user-service","timestamp":"2025-05-07T19:01:35.139Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:35.829Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:35.931Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:36.060Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:36.065Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:36.084Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:36.108Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:36.124Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:36.133Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:36.177Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:36.197Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:36.305Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:38.508Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:38.511Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:38.514Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:38.517Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:38.520Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:38.528Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:38.535Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:38.537Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:38.615Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:38.692Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:40.877Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:40.883Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:40.886Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:40.894Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:40.896Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:40.898Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:40.903Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:40.906Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:41.007Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:41.011Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:43.232Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:43.237Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:43.239Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:43.241Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:43.245Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:43.249Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:43.254Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:43.258Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:43.260Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:43.364Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:45.574Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:45.576Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:45.579Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:45.581Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:45.585Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:45.588Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:45.592Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:45.595Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:45.597Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:45.599Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:47.835Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:47.839Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:47.841Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:47.848Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:47.850Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:47.863Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:47.865Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:47.867Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:47.869Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:47.871Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:50.123Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:50.129Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:50.135Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:50.138Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:50.140Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:50.144Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:50.147Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:50.148Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:50.150Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:50.152Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:52.411Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:52.415Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:52.425Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:52.427Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:52.429Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:52.433Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:52.435Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:52.438Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:52.440Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:52.442Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:54.735Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:54.738Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:54.741Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:54.743Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:54.746Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:54.749Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:54.751Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:54.757Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:54.760Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:54.764Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:57.082Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:57.084Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:57.086Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:57.089Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:57.091Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:57.093Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:57.098Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:57.103Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:57.108Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:57.111Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:59.396Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:59.399Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:59.402Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:59.405Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:59.407Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:59.409Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:59.412Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:59.414Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:59.416Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:01:59.418Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:01.643Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:01.645Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:01.647Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:01.651Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:01.653Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:01.656Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:01.659Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:01.661Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:01.664Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:01.666Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:03.969Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:03.975Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:03.977Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:03.981Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:03.984Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:03.987Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:03.989Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:03.991Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:03.994Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:06.474Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:06.478Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:06.481Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:06.483Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:06.487Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:06.490Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:06.492Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:06.495Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:06.497Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:06.499Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:08.681Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:08.683Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:08.686Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:08.689Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:08.692Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:08.693Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:08.696Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:08.698Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:10.951Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:02:10.954Z"}
+{"level":"info","message":"✅ Startup backup completed successfully.","service":"user-service","timestamp":"2025-05-07T19:02:13.091Z"}
+{"level":"info","message":"Data for ABT up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:02:35.537Z"}
+{"level":"info","message":"Data for MRK up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:02:35.537Z"}
+{"level":"info","message":"Data for QCOM up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:02:35.551Z"}
+{"level":"info","message":"Data for ADBE up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:02:35.552Z"}
+{"level":"info","message":"Data for AXP up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:02:35.565Z"}
+{"level":"info","message":"🚀 Immediate startup backup running...","service":"user-service","timestamp":"2025-05-07T19:08:17.872Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:18.693Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:18.795Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:18.913Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:18.935Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:18.940Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:18.961Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:18.975Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:18.979Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:18.984Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:19.048Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:19.132Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:21.430Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:21.434Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:21.444Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:21.446Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:21.449Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:21.452Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:21.454Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:21.458Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:21.566Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:21.573Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:23.732Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:23.752Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:23.754Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:23.758Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:23.760Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:23.761Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:23.763Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:23.774Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:23.860Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:23.879Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:26.068Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:26.073Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:26.076Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:26.079Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:26.081Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:26.083Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:26.085Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:26.086Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:26.089Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:26.200Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:28.380Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:28.382Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:28.384Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:28.386Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:28.391Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:28.394Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:28.400Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:28.402Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:28.405Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:28.504Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:30.827Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:30.829Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:30.832Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:30.835Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:30.840Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:30.842Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:30.847Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:30.850Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:30.853Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:30.857Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:33.122Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:33.124Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:33.126Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:33.128Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:33.130Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:33.132Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:33.136Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:33.141Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:33.147Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:33.149Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:35.400Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:35.404Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:35.408Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:35.411Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:35.415Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:35.418Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:35.424Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:35.426Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:35.428Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:35.430Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:37.690Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:37.696Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:37.698Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:37.700Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:37.706Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:37.708Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:37.710Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:37.714Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:37.718Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:37.719Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:39.985Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:39.987Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:39.989Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:39.994Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:39.996Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:39.999Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:40.002Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:40.005Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:40.008Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:40.012Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:42.287Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:42.288Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:42.292Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:42.297Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:42.299Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:42.302Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:42.307Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:42.309Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:42.311Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:42.314Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:44.604Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:44.605Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:44.608Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:44.610Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:44.619Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:44.620Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:44.623Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:44.625Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:44.629Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:44.631Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:46.897Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:46.906Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:46.908Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:46.912Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:46.914Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:46.920Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:46.922Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:46.924Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:46.930Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:49.195Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:49.198Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:49.200Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:49.204Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:49.206Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:49.210Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:49.211Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:49.214Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:49.216Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:49.218Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:51.429Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:51.431Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:51.433Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:51.435Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:51.437Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:51.440Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:51.442Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:51.451Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:53.668Z"}
+{"level":"info","message":"Bucket stock-market-analysis-qb exists.","service":"user-service","timestamp":"2025-05-07T19:08:53.673Z"}
+{"level":"info","message":"✅ Startup backup completed successfully.","service":"user-service","timestamp":"2025-05-07T19:08:55.760Z"}
+{"level":"info","message":"Data for PLTR up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.097Z"}
+{"level":"info","message":"Data for GOOG up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.105Z"}
+{"level":"info","message":"Data for AVGO up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.151Z"}
+{"level":"info","message":"Data for MA up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.152Z"}
+{"level":"info","message":"Data for ABBV up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.166Z"}
+{"level":"info","message":"Data for TM up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.170Z"}
+{"level":"info","message":"Data for AMZN up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.189Z"}
+{"level":"info","message":"Data for JPM up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.191Z"}
+{"level":"info","message":"Data for PG up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.193Z"}
+{"level":"info","message":"Data for HD up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.194Z"}
+{"level":"info","message":"Data for MSFT up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.195Z"}
+{"level":"info","message":"Data for KO up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.197Z"}
+{"level":"info","message":"Data for NVDA up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.208Z"}
+{"level":"info","message":"Data for BAC up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.211Z"}
+{"level":"info","message":"Data for AAPL up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.212Z"}
+{"level":"info","message":"Data for TSLA up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.214Z"}
+{"level":"info","message":"Data for JNJ up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.215Z"}
+{"level":"info","message":"Data for IBM up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.217Z"}
+{"level":"info","message":"Data for CRM up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.222Z"}
+{"level":"info","message":"Data for NFLX up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.227Z"}
+{"level":"info","message":"Data for COST up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.233Z"}
+{"level":"info","message":"Data for TSM up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.241Z"}
+{"level":"info","message":"Data for D up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.243Z"}
+{"level":"info","message":"Data for META up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.253Z"}
+{"level":"info","message":"Data for ORCL up to 2025-05-06 has been updated.","service":"user-service","timestamp":"2025-05-07T19:16:34.291Z"}
+{"level":"info","message":"Data for MRK up to 2025-05-06 already exists. Skipping update.","service":"user-service","timestamp":"2025-05-07T19:17:34.442Z"}
+{"level":"info","message":"Data for ADBE up to 2025-05-06 already exists. Skipping update.","service":"user-service","timestamp":"2025-05-07T19:17:34.454Z"}
+{"level":"info","message":"Data for ABT up to 2025-05-06 already exists. Skipping update.","service":"user-service","timestamp":"2025-05-07T19:17:34.463Z"}
+{"level":"info","message":"Data for QCOM up to 2025-05-06 already exists. Skipping update.","service":"user-service","timestamp":"2025-05-07T19:17:34.495Z"}
+{"level":"info","message":"Data for AXP up to 2025-05-06 already exists. Skipping update.","service":"user-service","timestamp":"2025-05-07T19:17:34.501Z"}

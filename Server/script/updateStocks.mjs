@@ -1,6 +1,6 @@
-import { updateStocksInBatches } from "../src/services/updateStocksInBatches.mjs"
 import connectDB from '../src/utilities/connectDB.mjs';
 import mongoose from "mongoose";
+import { updateStocksInBatches } from "../src/services/updateStocksInBatches.mjs"
 import { logger } from '../src/utilities/logger.mjs';
 
 import cron from 'node-cron';
@@ -8,6 +8,7 @@ import cron from 'node-cron';
 const stockSymbols = [
   'AAPL', 'GOOG', 'MSFT', 'AMZN', 'META', 
   'IBM','TSLA','NVDA','AVGO','TSM',
+
   'JPM','MA','COST','PG','NFLX','JNJ',
   'BAC','CRM','TM','KO'
 ];
@@ -70,7 +71,7 @@ cron.schedule('0 16 * * *', async () => {
   try {
     await connectDB()
 
-    //
+    
     if (mongoose.connection.readyState !== 1) {
       logger.info("MongoDB connection is not established. Aborting operation.");
       return;
@@ -95,5 +96,25 @@ cron.schedule('0 16 * * *', async () => {
 })();
 
 // run the stocks updates
-// runStockUpdates()
 
+
+const runStockUpdates = async (symbols) => {
+  try {
+    await connectDB()
+
+    //
+    if (mongoose.connection.readyState !== 1) {
+      console.log("MongoDB connection is not established. Aborting operation.");
+      return;
+    }
+    console.log("Database connection established. Starting stock updates...");
+
+    await updateStocksInBatches(symbols)
+    console.log("Stock updates completed.");
+  } catch (error) {
+    console.error("Error during stock updates:", error.message);
+  } finally {
+  }
+}
+
+// runStockUpdates(stockstack1)
