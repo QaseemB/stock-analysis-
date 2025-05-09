@@ -1,0 +1,48 @@
+version: '3.9'
+
+services:
+  smp-node:
+    build:
+      context: ./node-backend
+    container_name: smp-node
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./node-backend:/usr/src/app
+    environment:
+      - NODE_ENV=production
+    restart: always
+
+  airflow-webserver:
+    build:
+      context: ./stock_analysis/airflow
+    container_name: airflow-webserver
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./stock_analysis:/opt/stock_analysis
+    environment:
+      - PYTHONPATH=/opt/stock_analysis
+    depends_on:
+      - postgres
+    command: webserver
+
+  airflow-scheduler:
+    build: 
+      context: ./stock_analysis/airflow
+    container_name: airflow-scheduler
+    volumes:
+      - ./stock_analysis:/opt/stock_analysis
+    environment:
+      - PYTHONPATH=/opt/stock_analysis
+    depends_on:
+      - postgres
+    command: scheduler
+
+  postgres:
+    image: postgres:15
+    container_name: airflow-postgres
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
