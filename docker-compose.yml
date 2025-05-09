@@ -3,7 +3,7 @@ version: '3.9'
 services:
   smp-node:
     build:
-      context: ./node-backend
+      context: ./Server
     container_name: smp-node
     ports:
       - "3000:3000"
