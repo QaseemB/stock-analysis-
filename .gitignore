@@ -12,6 +12,7 @@ node_modules
 
 # Enviroment varibles
 .env
+Dockerfile
 
 
 dist

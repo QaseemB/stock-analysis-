@@ -1,13 +1,15 @@
-FROM apache/airflow:2.8.1
+FROM apache/airflow:2.8.1-python3.10
 
+# Allow root operations
+# ARG AIRFLOW_UID=50000
 USER root
-WORKDIR /stock_analysis/airflow
 
-# Install your custom Python dependencies
-COPY ../../requirements.txt ./requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+WORKDIR /opt/airflow
 
-# Optional: set the project root for your codebase
+
+COPY requirements.txt .
+
+
 ENV PYTHONPATH=/opt/stock_analysis
 
 USER airflow

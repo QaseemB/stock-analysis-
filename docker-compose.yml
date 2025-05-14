@@ -3,41 +3,45 @@ version: '3.9'
 services:
   smp-node:
     build:
-      context: ./Server
-    container_name: smp-node
+      context: .
+      dockerfile: Server/Dockerfile
     ports:
       - "3000:3000"
     volumes:
-      - ./node-backend:/usr/src/app
+      - ./Server:/usr/src/app
     environment:
       - NODE_ENV=production
     restart: always
 
   airflow-webserver:
-    build:
-      context: ./stock_analysis/airflow
+    image: my-custom-airflow:latest 
     container_name: airflow-webserver
     ports:
       - "8080:8080"
+    user: "0:0"
     volumes:
-      - ./stock_analysis:/opt/stock_analysis
+      - .:/opt/stockmarket
+      - ./stock_analysis/airflow/dags:/opt/airflow/dags
     environment:
-      - PYTHONPATH=/opt/stock_analysis
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - PYTHONPATH=/opt/stockmarket
     depends_on:
       - postgres
-    command: webserver
+    command: ["airflow", "webserver"]
 
   airflow-scheduler:
-    build: 
-      context: ./stock_analysis/airflow
+    image: my-custom-airflow:latest 
     container_name: airflow-scheduler
+    user: "0:0"
     volumes:
-      - ./stock_analysis:/opt/stock_analysis
+      - .:/opt/stockmarket
+      - ./stock_analysis/airflow/dags:/opt/airflow/dags
     environment:
-      - PYTHONPATH=/opt/stock_analysis
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - PYTHONPATH=/opt/stockmarket
     depends_on:
       - postgres
-    command: scheduler
+    command: ["airflow", "scheduler"]
 
   postgres:
     image: postgres:15
