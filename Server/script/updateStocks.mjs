@@ -90,9 +90,7 @@ cron.schedule('0 16 * * *', async () => {
     }
 } catch (error) {
     console.error("Error during scheduled stock updates:", error.message);
-  } finally {
-    mongoose.connection.close();
-  }
+  } 
 })();
 
 // run the stocks updates

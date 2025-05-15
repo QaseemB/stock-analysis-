@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import Plot from "react-plotly.js";
 import LinePlot from "./LinePlot";
-
 export function Dashboard({ selectedStock }) {
   const [dummydata, setDummydata] = useState([]); // Store stock data
   const [summaryData, setSummaryData] = useState({});
@@ -14,7 +13,6 @@ export function Dashboard({ selectedStock }) {
   const [flaskError, setFlaskError] = useState(null);
 
   const s3Bucket = import.meta.env.VITE_APP_S3_BUCKET || "default-bucket-name";
-
 
   useEffect(() => {
     const fetchStockData = async (symbol) => {
@@ -43,12 +41,13 @@ export function Dashboard({ selectedStock }) {
     const fetchFlaskData = async (symbol) =>{
       try{
         setFlaskLoading(true)
-        const response = await axios.get(`http://localhost:3030/api/stock-analysis/${selectedStock}`)
+        const response = await axios.get(`https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/summary/${selectedStock}_report.json`)
 
-        const summary = response.data?.summary;
+        const summary = response.data
         if (summary) {
           setSummaryData(summary);
           // setPlotData(plot);
+          console.log('summary response:',summary)
         } else {
           throw new Error("Unexpected response structure");
         }
@@ -70,7 +69,7 @@ export function Dashboard({ selectedStock }) {
         // console.log(`Fetching from: https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`);
 
         const response = await axios.get(
-          `https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`
+          `https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/plotly/${selectedStock}_plotly_psql_.json`
         );
         console.log("Raw S3 Response:", response);
 
@@ -103,11 +102,11 @@ export function Dashboard({ selectedStock }) {
     timeZone: "UTC",
   });
 
-  const bollingerPath = `${flaskUrl}/${selectedStock}/${selectedStock}_bollinger_plot.png`;
-  const movingAveragePath = `${flaskUrl}/${selectedStock}/${selectedStock}_moving_avg_plot.png`;
-  const tradingVolumePath = `${flaskUrl}/${selectedStock}/${selectedStock}_volume_plot.png`;
-  const macdPath = `${flaskUrl}/${selectedStock}/${selectedStock}_macd_plot.png`;
-  const plotUrl = `https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`;
+  const bollingerPath = `https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/png/${selectedStock}_bollinger_plot.png`;
+  const movingAveragePath = `https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/png/${selectedStock}_moving_avg_plot.png`;
+  const tradingVolumePath = `https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/png/${selectedStock}_volume_plot.png`;
+  const macdPath = `https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/png/${selectedStock}_macd_plot.png`;
+  const plotUrl = `https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/plotly/${selectedStock}_plotly_psql.json`;
   // console.log("S3 Bucket URL:", plotUrl);
 
   return (
