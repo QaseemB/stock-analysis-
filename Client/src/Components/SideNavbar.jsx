@@ -52,11 +52,11 @@ export const SideNav = ({ onStockSelect }) => {
 
   return (
     <div className={`sideNav ${collapsed ? "collapsed" : ""}`}>
-      <button onClick={handleToggleSidebar} className="bg-cyan-500 mb-6 hover:bg-sky-700">
+      <button onClick={handleToggleSidebar} className="bg-primary rounded-md mb-6 hover:bg-hover text-textSecondary bg-opacity-40">
         Toggle sidebar
       </button>
 
-      <button onClick={toggleStockDropdown} className="bg-red-500 mb-4 hover:bg-red-700">
+      <button onClick={toggleStockDropdown} className="bg-primary rounded-md mb-6 hover:bg-hover text-textSecondary bg-opacity-40">
         <Link to="/Stocks" className="text-center">Stocks</Link>
       </button>
 

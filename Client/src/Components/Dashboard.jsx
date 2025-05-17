@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import Plot from "react-plotly.js";
-import LinePlot from "./LinePlot";
+
+
 export function Dashboard({ selectedStock }) {
   const [dummydata, setDummydata] = useState([]); // Store stock data
   const [summaryData, setSummaryData] = useState({});
@@ -10,32 +11,31 @@ export function Dashboard({ selectedStock }) {
   const [error, setError] = useState(null); // Error status
   const [flaskLoading, setFlaskLoading] = useState(true);
   const [stockError, setStockError] = useState(null);
-  const [flaskError, setFlaskError] = useState(null);
 
   const s3Bucket = import.meta.env.VITE_APP_S3_BUCKET || "default-bucket-name";
 
-  useEffect(() => {
-    const fetchStockData = async (symbol) => {
-      try {
-        const response = await axios.get(`http://localhost:3030/api/stock/${selectedStock}`);
-        const monthlyData = response.data?.monthlyData;
-        if (monthlyData) {
-          setDummydata(monthlyData); // Set stock data
-        } else {
-          throw new Error("Unexpected response structure");
-        }
-      } catch (err) {
-        setError(err.message || "Error fetching data");
-      } finally {
-        setLoading(false);
-        setFlaskLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchStockData = async (symbol) => {
+  //     try {
+  //       const response = await axios.get(`http://localhost:3030/api/stock/${selectedStock}`);
+  //       const monthlyData = response.data?.monthlyData;
+  //       if (monthlyData) {
+  //         setDummydata(monthlyData); // Set stock data
+  //       } else {
+  //         throw new Error("Unexpected response structure");
+  //       }
+  //     } catch (err) {
+  //       setError(err.message || "Error fetching data");
+  //     } finally {
+  //       setLoading(false);
+  //       setFlaskLoading(false);
+  //     }
+  //   };
 
-    if (selectedStock) {
-      fetchStockData(selectedStock);
-    }
-  }, [selectedStock]); // Re-fetch data whenever the stock symbol changes
+  //   if (selectedStock) {
+  //     fetchStockData(selectedStock);
+  //   }
+  // }, [selectedStock]); // Re-fetch data whenever the stock symbol changes
 
   useEffect(()=>{
     const fetchFlaskData = async (symbol) =>{
@@ -66,8 +66,6 @@ export function Dashboard({ selectedStock }) {
     const fetchPlotlyDataFromS3 = async () => {
       try {
         setFlaskLoading(true);
-        // console.log(`Fetching from: https://${s3Bucket}.s3.amazonaws.com/interactive_plots/${selectedStock}.json`);
-
         const response = await axios.get(
           `https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/plotly/${selectedStock}_plotly_psql_.json`
         );
@@ -107,20 +105,19 @@ export function Dashboard({ selectedStock }) {
   const tradingVolumePath = `https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/png/${selectedStock}_volume_plot.png`;
   const macdPath = `https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/png/${selectedStock}_macd_plot.png`;
   const plotUrl = `https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/plotly/${selectedStock}_plotly_psql.json`;
-  // console.log("S3 Bucket URL:", plotUrl);
 
   return (
-    <div className="dashboard-container ml-[15%]">
-      <div className="dashboard-title text-center block">
+    <div className="dashboard-container ml-[12%] bg-background ">
+      <div className="dashboard-title text-center block text-textPrimary ">
         <h1 className="text-3xl font-bold mb-4">Dashboard</h1>
       </div>
-      <div className="debug p-2 bg-gray-100 text-xs">
-  <p>flaskLoading: {flaskLoading.toString()}</p>
+      <div className="debug p-2 text-xs">
+  {/* <p>flaskLoading: {flaskLoading.toString()}</p> */}
   <p>plotData ready: {plotData?.data?.length > 0 ? "✅" : "❌"}</p>
   <p>layout ready: {plotData?.layout ? "✅" : "❌"}</p>
 </div>
-      <div className="dashboard-content grid grid-cols-2 gap-4 ">
-           <div className="linegraph plot border-2 flex">
+      <div className="dashboard-content grid grid-cols-2 gap-4">
+           <div className="linegraph plot border-2 flex ">
   {flaskLoading ? (
     <div>Loading...</div>
   ) : plotData?.data && plotData?.layout ? (
@@ -142,7 +139,7 @@ export function Dashboard({ selectedStock }) {
   )}
 </div>
        
-        <div className="Profile border-2 p-4">
+        <div className="Profile border-2 p-4 bg-background text-textPrimary ">
           <h2 className="text-center">STOCK SUMMARY FOR {selectedStock}</h2>
           <p className="tracking-wide leading-8">
             As of {formattedDate}, the latest data shows that {selectedStock}{" "}
@@ -158,21 +155,21 @@ export function Dashboard({ selectedStock }) {
           </p>
         </div>
 
-        <div className="bollinger-graph border-2 p-4">
+        <div className="bollinger-graph border-2 p-4 text-textPrimary">
           <h2 className="text-center">Bollinger bands for {selectedStock}</h2>
           <img
             src={`${bollingerPath}`}
             style={{ width: "100%", maxWidth: "600px", margin: "auto" }}
           />
         </div>
-        <div className="trading-volume border-2 p-4">
+        <div className="trading-volume border-2 p-4 text-textPrimary">
           <h2 className="text-center">Trading Volume for {selectedStock}</h2>
           <img
             src={`${tradingVolumePath}`}
             style={{ width: "100%", maxWidth: "600px", margin: "auto" }}
           />
         </div>
-        <div className="macd border-2 p-4">
+        <div className="macd border-2 p-4 text-textPrimary">
           <h2 className="text-center">MACD for {selectedStock}</h2>
           <img
             src={`${macdPath}`}

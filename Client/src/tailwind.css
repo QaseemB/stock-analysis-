@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-color: grey;
-}
 
-.test-class {
-    background-color: red;
-}
+
+ body {
+    background-color:#6C6C6C;
+} 
 
 
 .tooltip {
@@ -24,4 +22,4 @@ body {
 
 .brush-selection {
     fill: rgba(0, 0, 255, 0.1);
-}
+} 
