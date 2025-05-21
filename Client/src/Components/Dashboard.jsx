@@ -155,7 +155,7 @@ export function Dashboard({ selectedStock }) {
           </p>
         </div>
 
-        <div className="bollinger-graph  bg-primary p-4 text-textPrimary">
+        <div className="bollinger-graph  p-4 text-textPrimary">
           <h2 className="text-center">Bollinger bands for {selectedStock}</h2>
           <img
             src={`${bollingerPath}`}

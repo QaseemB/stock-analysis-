@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
      colors: {
-      background: '#6C6C6C',
+      background: '#2C3E55',
       panel: '#DEDEDE',
-      primary: '#2C3E55',
+      primary: '#6C6C6C',
       success: '#22C55E',
       danger: '#EF4444',
       textPrimary: '#E5E7EB',
