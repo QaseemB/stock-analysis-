@@ -84,7 +84,7 @@ export const SideNav = ({ onStockSelect }) => {
       <button onClick  className="w-full bg-panel rounded-md mb-6 hover:bg-hover text-textSecondary bg-opacity-40">
         DOWNLOAD
       </button>
-      <select className="mt-2 bg-panel p-1 border border-border text-sm rounded">
+      <select className="mb-6  bg-panel p-1 border border text-sm rounded">
       <option>Download as...</option>
       <option value="csv">CSV</option>
       <option value="pdf">PDF</option>

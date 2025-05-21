@@ -139,7 +139,7 @@ export function Dashboard({ selectedStock }) {
   )}
 </div>
        
-        <div className="Profile border-2 p-4 bg-background text-textPrimary ">
+        <div className="Profile border-2 p-4 bg-primarytext-textPrimary ">
           <h2 className="text-center">STOCK SUMMARY FOR {selectedStock}</h2>
           <p className="tracking-wide leading-8">
             As of {formattedDate}, the latest data shows that {selectedStock}{" "}
@@ -155,7 +155,7 @@ export function Dashboard({ selectedStock }) {
           </p>
         </div>
 
-        <div className="bollinger-graph border-2 p-4 text-textPrimary">
+        <div className="bollinger-graph  bg-primary p-4 text-textPrimary">
           <h2 className="text-center">Bollinger bands for {selectedStock}</h2>
           <img
             src={`${bollingerPath}`}
