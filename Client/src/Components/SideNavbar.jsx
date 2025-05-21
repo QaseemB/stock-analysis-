@@ -52,17 +52,17 @@ export const SideNav = ({ onStockSelect }) => {
 
   return (
     <div className={`sideNav ${collapsed ? "collapsed" : ""}`}>
-      <button onClick={handleToggleSidebar} className="w-full bg-panel rounded-md mb-6 hover:bg-hover text-textSecondary bg-opacity-11">
+      <button onClick={handleToggleSidebar} className="w-full bg-accent rounded-md mb-6 text-sm hover:bg-hover text-textSecondary bg-opacity-11">
         Toggle sidebar
       </button>
       
       <div className="flex gap-2 mb-6">
       {['1M', '3M', '6M', '1Y', 'All'].map(range => (
-    <button className="bg-panel hover:bg-hover text-xs px-2 py-1 rounded">{range}</button>
+    <button className="bg-accent hover:bg-hover text-xs px-2 py-1 rounded">{range}</button>
         ))}
       </div>
 
-      <button onClick={toggleStockDropdown} className=" w-full bg-panel rounded-md mb-6 hover:bg-hover text-textSecondary bg-opacity-40">
+      <button onClick={toggleStockDropdown} className=" w-full bg-accent rounded-md mb-6 hover:bg-hover text-sm text-textSecondary bg-opacity-40">
         <Link to="/Stocks" className="text-center">Stocks</Link>
       </button>
 
@@ -81,10 +81,10 @@ export const SideNav = ({ onStockSelect }) => {
           </label>
         </div>   
       )}
-      <button onClick  className="w-full bg-panel rounded-md mb-6 hover:bg-hover text-textSecondary bg-opacity-40">
+      <button onClick  className="w-full bg-accent rounded-md mb-6 hover:bg-hover text-textSecondary text-sm bg-opacity-40">
         DOWNLOAD
       </button>
-      <select className="mb-6  bg-panel p-1 border border text-sm rounded">
+      <select className="mb-6  bg-accent p-1 border border text-sm text-textSecondary rounded">
       <option>Download as...</option>
       <option value="csv">CSV</option>
       <option value="pdf">PDF</option>

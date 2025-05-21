@@ -107,7 +107,7 @@ export function Dashboard({ selectedStock }) {
   const plotUrl = `https://${s3Bucket}.s3.amazonaws.com/STOCKMARKET_FBS/${selectedStock}/plotly/${selectedStock}_plotly_psql.json`;
 
   return (
-    <div className="dashboard-container ml-[12%] bg-background ">
+    <div className="dashboard-container ml-[12%]">
       <div className="dashboard-title text-center block text-textPrimary ">
         <h1 className="text-3xl font-bold mb-4">Dashboard</h1>
       </div>
@@ -117,7 +117,7 @@ export function Dashboard({ selectedStock }) {
   <p>layout ready: {plotData?.layout ? "✅" : "❌"}</p>
 </div>
       <div className="dashboard-content grid grid-cols-2 gap-4">
-           <div className="linegraph plot border-2 flex ">
+           <div className="linegraph plot flex p-6 bg-panel rounded-md shadow-lg ">
   {flaskLoading ? (
     <div>Loading...</div>
   ) : plotData?.data && plotData?.layout ? (
@@ -139,7 +139,7 @@ export function Dashboard({ selectedStock }) {
   )}
 </div>
        
-        <div className="Profile border-2 p-4 bg-primarytext-textPrimary ">
+        <div className="Profile p-6 bg-panel rounded-lg shadow-lg text-textPrimary ">
           <h2 className="text-center">STOCK SUMMARY FOR {selectedStock}</h2>
           <p className="tracking-wide leading-8">
             As of {formattedDate}, the latest data shows that {selectedStock}{" "}
@@ -155,27 +155,27 @@ export function Dashboard({ selectedStock }) {
           </p>
         </div>
 
-        <div className="bollinger-graph  p-4 text-textPrimary">
+        <div className="bollinger-graph p-6 text-textPrimary mt-20 mb-10 bg-panel rounded-md shadow-lg">
           <h2 className="text-center">Bollinger bands for {selectedStock}</h2>
           <img
             src={`${bollingerPath}`}
             style={{ width: "100%", maxWidth: "600px", margin: "auto" }}
           />
         </div>
-        <div className="trading-volume border-2 p-4 text-textPrimary">
+        <div className="trading-volume p-6 text-textPrimary mt-20 mb-10 bg-panel rounded-md shadow-lg">
           <h2 className="text-center">Trading Volume for {selectedStock}</h2>
           <img
             src={`${tradingVolumePath}`}
             style={{ width: "100%", maxWidth: "600px", margin: "auto" }}
           />
         </div>
-        <div className="macd border-primary p-4 text-textPrimary ">
+        {/* <div className="macd border-primary p-4 text-textPrimary ">
           <h2 className="text-center">MACD for {selectedStock}</h2>
           <img
             src={`${macdPath}`}
             style={{ width: "100%", maxWidth: "600px", margin: "auto" }}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

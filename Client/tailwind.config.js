@@ -7,15 +7,16 @@ export default {
   theme: {
     extend: {
      colors: {
-      background: '#2C3E55',
-      panel: '#DEDEDE',
-      primary: '#6C6C6C',
+      background: '#F5F7FA',
+      panel: '#FFFFFF',
+      primary: '#1A73E8',
       success: '#22C55E',
       danger: '#EF4444',
-      textPrimary: '#E5E7EB',
-      textSecondary: '#9CA3AF',
-      border: '#212E49',
+      textPrimary: '#1F2937',
+      textSecondary: '#6B7280',
+      border: '#D1D5DB',
       hover: '#E0E7FF',
+      accent: '#D9A441',
     },
       borderWidth:{
         '20': '20%',
