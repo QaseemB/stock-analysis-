@@ -52,11 +52,17 @@ export const SideNav = ({ onStockSelect }) => {
 
   return (
     <div className={`sideNav ${collapsed ? "collapsed" : ""}`}>
-      <button onClick={handleToggleSidebar} className="bg-primary rounded-md mb-6 hover:bg-hover text-textSecondary bg-opacity-40">
+      <button onClick={handleToggleSidebar} className="w-full bg-panel rounded-md mb-6 hover:bg-hover text-textSecondary bg-opacity-11">
         Toggle sidebar
       </button>
+      
+      <div className="flex gap-2 mb-6">
+      {['1M', '3M', '6M', '1Y', 'All'].map(range => (
+    <button className="bg-panel hover:bg-hover text-xs px-2 py-1 rounded">{range}</button>
+        ))}
+      </div>
 
-      <button onClick={toggleStockDropdown} className="bg-primary rounded-md mb-6 hover:bg-hover text-textSecondary bg-opacity-40">
+      <button onClick={toggleStockDropdown} className=" w-full bg-panel rounded-md mb-6 hover:bg-hover text-textSecondary bg-opacity-40">
         <Link to="/Stocks" className="text-center">Stocks</Link>
       </button>
 
@@ -73,8 +79,18 @@ export const SideNav = ({ onStockSelect }) => {
       
             </select>
           </label>
-        </div>
+        </div>   
       )}
+      <button onClick  className="w-full bg-panel rounded-md mb-6 hover:bg-hover text-textSecondary bg-opacity-40">
+        DOWNLOAD
+      </button>
+      <select className="mt-2 bg-panel p-1 border border-border text-sm rounded">
+      <option>Download as...</option>
+      <option value="csv">CSV</option>
+      <option value="pdf">PDF</option>
+      <option value="json">JSON</option>
+      </select>
+      <input type="text" placeholder="Search symbol..." className="w-full bg-panel border border-border p-2 text-sm rounded text-textSecondary " />
     </div>
   );
 };

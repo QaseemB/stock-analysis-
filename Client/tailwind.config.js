@@ -8,13 +8,13 @@ export default {
     extend: {
      colors: {
       background: '#6C6C6C',
-      panel: '#1E1E1E',
+      panel: '#DEDEDE',
       primary: '#2C3E55',
       success: '#22C55E',
       danger: '#EF4444',
       textPrimary: '#E5E7EB',
       textSecondary: '#9CA3AF',
-      border: '#E5E7EB',
+      border: '#212E49',
       hover: '#E0E7FF',
     },
       borderWidth:{

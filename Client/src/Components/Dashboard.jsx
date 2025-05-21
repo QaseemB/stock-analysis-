@@ -169,7 +169,7 @@ export function Dashboard({ selectedStock }) {
             style={{ width: "100%", maxWidth: "600px", margin: "auto" }}
           />
         </div>
-        <div className="macd border-2 p-4 text-textPrimary">
+        <div className="macd border-primary p-4 text-textPrimary ">
           <h2 className="text-center">MACD for {selectedStock}</h2>
           <img
             src={`${macdPath}`}
